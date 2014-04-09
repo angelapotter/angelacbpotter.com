@@ -1,0 +1,481 @@
+@import "modules";
+@import "generics";
+
+/***HEAD***/
+
+#head {
+  height: 5em;
+  overflow: hidden;
+  position: relative;
+  margin: 20px 0 10px;
+}
+
+/***NAV***/
+
+#nav {
+  margin: 0 0 10px;
+  width: 100%;
+  display: table;
+}
+.halfNav, .tabContainer {
+	border: 0;
+	margin: 6px 0 0;
+	padding: 0;
+  display: block;
+  float: left;
+}
+.halfNav {
+  width: 50%;
+}
+.tabContainer {
+  margin: 0 1.4%;
+  width: 47.9%;
+  // @include box-shadow($standardBoxShadow);
+}
+#nav .tab {
+  color: $lightGray;
+  display: block;
+  font-size: 1.3em;
+  text-align: center;
+  width: 100%;
+  padding: 0.5em 0 0.6em; 
+}
+#nav .tab:hover,
+.activeTab {
+  background-color: white !important;
+  color: $primaryColor !important;
+  // @include box-shadow($standardBoxShadow);
+}
+
+/***CONTENT***/
+.colorBlock.top {
+  background-color: $darkGray;
+  height: 400px;
+  top: 0;
+}
+.content {
+  padding: 22px 30px;
+  // @include box-shadow($standardBoxShadow);
+}
+.profile {
+  float: left;
+  margin: 0 30px 0 0;
+  // height: 150px;
+}
+.profile.web {
+  height: 400px;
+  width: 230px;
+}
+.profile.mobile {
+  display: none;
+}
+
+/* page specifics */
+#resume {
+  .content {
+    > div {
+      margin-bottom: 5px;
+    }
+  }
+  h4 {
+    margin-top: 24px;
+    margin-bottom: 6px;
+  }
+  p {
+    margin-top: 1em;
+    margin-bottom: 0.1em;
+  }
+  ul, li {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+}
+
+.profileContainer {
+  @extend .noPadBot;
+  min-height: 378px;
+}
+
+/***PORTFOLIO***/
+
+#portfolio {
+  .content { overflow: hidden; }
+  #items, .portfolioSidebarContainer {
+    display: inline-block;
+    vertical-align: top;
+    // width: 33.3333%;
+  }
+  .portfolioSidebarContainer {
+    width: 33.3333%;
+    .portfolioSidebar {
+      background: white;
+      margin-right: 10px;
+      padding: 15px 0;
+      // font-size: 1.2em;
+      .active {
+        background-color: $primaryColor;
+        color: white;
+      }
+      h4, h5, span {
+        display: block;
+        padding: 5px 20px;
+        margin: 0;
+        cursor: pointer;
+        &:hover {
+          @extend .active;
+        }
+      }
+      h5 {
+        color: $darkGray;
+        font-size: 1.7em;
+        font-weight: bold;
+        text-transform: lowercase;
+      }
+      span {
+        // display: block;
+        font-size: 1.4em;
+        padding-left: 40px;
+      }
+      a {
+        
+      }
+      
+    }
+  }
+  #items {
+    // width: 66.6667%;
+  }
+  .item {
+    float: left;
+    width: 33.3333%;
+    img {
+      width: 252px;
+      height: 150px;
+    }
+    .itemLink {
+      @extend .inlineBlock;
+      height: 150px;
+      display: block;
+      width: auto;
+      // width: 100%;
+      // width: 252px;
+      margin: 0 10px 10px 0;
+      position: relative;
+      
+      // background-size: cover;
+      // float: left;
+      // @include box-shadow($standardBoxShadow);
+      .itemImage {
+        background: url('/portfolio/images/portfolio-thumbs.png') 0 0 no-repeat;
+        background-size: 500px 2000px;
+        height: 150px;
+        width: 252px;
+        // width: auto;
+        margin: 0 auto;
+      }
+    }
+    &#beforeItWasCool .itemLink {
+      background: white;
+      .itemImage {
+        background-position: 0 -200px; 
+      }
+    }
+    &#snake .itemLink {
+      background: #539574;
+      .itemImage {
+        background-position: 0 -400px; 
+      }
+    }
+    &#thirdLayerSoftware .itemLink {
+      background: $lightGray;
+      .itemImage {
+        background-position: 0 -600px; 
+      }
+    }
+    &#oldPersonApp .itemLink {
+      background: url('/portfolio/images/old-person-bg.png') 50% 40% no-repeat;
+      background-size: cover;
+      .itemImage {
+        background-position: 0 -800px; 
+      }
+    }
+    &#myFive .itemLink {
+      background: white;
+      .itemImage {
+        background-position: 0 -1000px; 
+      }
+    }
+    &#olsetWebsite .itemLink {
+      background: #00a0cc;
+      .itemImage {
+        background-position: 0 -1200px; 
+      }
+    }
+  }
+
+  .itemOverlay {
+    display: table;
+    // vertical-align: middle;
+    @include opacity(0.95);
+    height: 100%;
+    width: 100%;
+    background-color: white;
+    position: absolute;
+    // padding: 20px;
+    // text-align: center;
+    font-size: 1.2em;
+    // text-transform: uppercase;
+    // font-weight: bold;
+    // color: $mediumGray;
+    div {
+      padding: 20px;
+      display: table-cell;
+      vertical-align: top;
+      // font-weight: bold;
+      strong {
+        color: $mediumGray;
+        display: block;
+        padding-bottom: 8px;
+      }      
+    }
+  }  
+}
+
+/***TWITTER FEED***/
+#twitterFeed .content {
+  min-height: 700px;
+}
+.twitter-timeline {
+  width: 100%;
+  // height: auto;
+  // min-height: 100%;
+}
+
+/*applied to multiple*/
+#portfolio h4,
+.portfolioPage h4, .date {
+	display: inline-block;
+}
+
+#items {
+	position: relative;
+	clear: both;
+	width: 786px;
+}
+.item {
+	display: block;
+	// width: 262px;
+ //  height: 160px;
+  // float: left;
+	// margin: 0 auto;
+  p {
+    margin-top: 0;
+    padding-top: 0;
+    margin-bottom: 10px;
+    // font-size: 1.4em;
+  }
+}
+
+.date {
+	color: #666;
+	font-size: 0.8em;
+	margin-bottom: 10px;
+	margin-left: 10px;
+}
+.border { border:2px solid #919FAC; }
+
+hr {
+	background-color: #9CA9B4;
+	border: 0;
+	color: #9CA9B4;
+	height: 1px;
+	margin: 50px 0;
+	width: 100%;
+}
+.portfolioNav {
+  display: table;
+  width: 100%;
+  margin: 16px auto;
+  > div {
+    display: table-cell;
+    vertical-align: middle;
+  }
+}
+.portfolioNav .miniNav {
+  div {
+    display: inline-block;
+  }
+  a {
+    @extend .inlineBlock;
+    height: 30px;
+    width: 60px;
+    background: url('/portfolio/images/portfolio-mini-nav-thumbs.png') left top no-repeat;
+    background-size: 800px 30px;
+    margin: 10px 2px;
+    &.biwc {
+      background-position: -75px 0;
+    }
+    &.snake {
+      background-position: -150px 0;
+    }
+    &.thirdLayer {
+      background-position: -225px 0;
+    }
+    &.oldPerson {
+      background-position: -300px 0;
+    }
+    &.myfive {
+      background-position: -375px 0;
+    }
+    &.olsetWebsite {
+      background-position: -450px 0;
+    }
+    &.active, &:hover {
+      border-bottom: 2px solid white;
+      margin-bottom: 2px !important;
+      padding-bottom: 6px;
+    }
+  }
+  // img {
+  //   margin: 10px 2px;
+  //   height: 30px;
+  //   width: 60px;
+  // }   
+}
+// portfolioNav .miniNav a.active, .portfolioNav .miniNav a:hover {
+//   border-bottom: 2px solid white;
+//   margin-bottom: 2px !important;
+//   padding-bottom: 6px;
+// }
+.portfolioNav {
+  .prev, .next {
+    background: url('/images/arrows-retina.png') 0 0 no-repeat;
+    background-size: 80px 40px;
+    height: 40px;
+    width: 40px;
+    a {
+      display: block;
+      height: 100%;
+      width: 100%;
+    }
+  }
+  .next {
+    background-position: -40px 0;
+  }
+}
+.portfolioNav .prev { text-align: left; }
+.portfolioNav .next { text-align: right; }
+.portfolioNav .miniNav { text-align: center; }
+
+/***FOOTER***/
+
+.contact {
+  color: white;
+  width: 100%;
+  clear: both;
+  font-size: 1.2em;
+  display: block;
+  padding-bottom: 60px;
+  margin-top: 4px;
+  height: 100%;
+  .mainArea {
+    padding-top: 8px;
+    padding-bottom: 8px;
+    text-align: right;
+    a {
+      display: inline-block;
+      margin: 6px 15px 6px 0;
+      text-transform: lowercase;
+      vertical-align: middle;
+      div {
+        display: block;
+        // text-align: center;
+        // vertical-align: middle;
+      }
+      .socialIcon {
+        background: url('/images/social-icons-retina.png') left top no-repeat;
+        background-size: 280px 80px;
+        display: inline-block;
+        height: 40px;
+        width: 40px;
+        // margin-right: 8px;
+        &.behance {
+          // &:hover, &:active {
+          //   background-position: 0 -40px;
+          // }
+        }
+        &.github {
+          background-position: -40px 0;
+          // &:hover, &:active {
+          //   background-position: -40px -40px;
+          // }
+        }
+        &.stackExchange {
+          background-position: -80px 0;
+          // &:hover, &:active {
+          //   background-position: -80px -40px;
+          // }
+        }
+        &.twitter {
+          background-position: -120px 0;
+          // &:hover, &:active {
+          //   background-position: -120px -40px;
+          // }
+        }
+        &.linkedIn {
+          background-position: -160px 0;
+          // &:hover, &:active {
+          //   background-position: -160px -40px;
+          // }
+        }
+        &.email {
+          background-position: -200px 0;
+        }
+        &.phone {
+          background-position: -240px 0;
+        }
+        
+      }
+    }
+  }
+}
+// .contact img {
+//   margin: 0 6px -10px 0;
+// }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,560 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  overflow: auto;
+  font-size: 16px; }
+
+body {
+  background-color: #737899;
+  font-family: 'HelveticaNeue', 'Helvetica Neue', helvetica, tahoma, arial, sans-serif;
+  font-size: 100%;
+  color: #444444;
+  min-height: 100%;
+  width: 100%; }
+
+/***BIG CONTAINERS***/
+.colorBlock {
+  position: absolute;
+  z-index: 0;
+  width: 100%; }
+
+.mainArea {
+  margin: 0 auto;
+  width: 776px;
+  position: relative;
+  z-index: 999;
+  padding-left: 15px;
+  padding-right: 15px;
+  overflow: hidden; }
+
+/***TEXT***/
+h1, h2 {
+  font-weight: normal;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  font-size: 3.5em;
+  bottom: 0.1em;
+  letter-spacing: -0.01em;
+  text-transform: lowercase; }
+
+h1 {
+  color: white;
+  left: 0;
+  /*-webkit-margin-before: 0;*/ }
+
+h2 {
+  color: #008299;
+  right: 0; }
+
+/*content head*/
+h4 {
+  color: #999999;
+  text-transform: uppercase;
+  font-size: 1.3em;
+  font-weight: normal;
+  line-height: 1.1;
+  margin: 10px 0;
+  letter-spacing: 0.02em; }
+
+p, ul, ol {
+  color: #333;
+  font-size: 1em;
+  line-height: 1.45; }
+
+li {
+  margin-bottom: 10px; }
+
+p {
+  margin: 0 0 0.8em 0; }
+
+.small {
+  font-size: 0.8em; }
+
+/*** LINKS ***/
+a, img {
+  border: none; }
+
+a:link {
+  color: inherit;
+  text-decoration: none; }
+
+a:visited {
+  color: inherit;
+  text-decoration: none; }
+
+.content a:link {
+  color: #008299; }
+
+.content a:visited {
+  color: #8130a4; }
+
+.content a:hover {
+  text-decoration: underline; }
+
+/*** ALIGNMENT ETC ***/
+.indented {
+  margin-left: 40px; }
+
+.indent10 {
+  margin-left: 10px; }
+
+.indent50 {
+  margin-left: 50px; }
+
+.inline {
+  display: inline; }
+
+.inlineBlock, #portfolio .item .itemLink, .portfolioNav .miniNav a {
+  display: inline-block; }
+
+.noMargTop {
+  margin-top: 0 !important; }
+
+.topMarg10 {
+  margin-top: 10px !important; }
+
+.topMarg20 {
+  margin-top: 20px !important; }
+
+.topMarg50 {
+  margin-top: 50px !important; }
+
+.noMargBot {
+  margin-bottom: 0 !important; }
+
+.noPadBot, .profileContainer {
+  padding-bottom: 0 !important; }
+
+.botMarg20 {
+  margin-bottom: 20px !important; }
+
+.rMarg10 {
+  margin-right: 10px !important; }
+
+.noPadTop {
+  padding-top: 0 !important; }
+
+.noMargR {
+  margin-right: 0 !important; }
+
+.noMargL {
+  margin-left: 0 !important; }
+
+.left {
+  float: left; }
+
+.right {
+  float: right; }
+
+.clear {
+  clear: both; }
+
+.center {
+  margin: 0 auto;
+  text-align: center; }
+
+.invisible {
+  visibility: hidden !important; }
+
+.white {
+  color: white; }
+
+.whiteBG {
+  background-color: white; }
+
+/***************************/
+/*******MEDIA QUERIES*******/
+/***************************/
+@media (max-width: 806px) {
+  .mainArea {
+    width: auto; }
+
+  #items {
+    max-width: 102%; } }
+@media (max-width: 800px) {
+  #portfolio .item {
+    width: 50%; }
+
+  #head {
+    min-height: 8em; }
+
+  h1 {
+    top: -0.1em; }
+
+  h2 {
+    top: 1em;
+    left: 0; } }
+@media only screen and (max-width: 780px) {
+  #about .content {
+    padding-bottom: 22px !important; } }
+@media only screen and (max-width: 544px) {
+  #portfolio .item {
+    width: 100%; } }
+@media (max-width: 520px), only screen and (max-device-width: 720px) and (orientation: portrait) {
+  .miniNav div {
+    display: block; }
+
+  .profile.web {
+    display: none !important; }
+
+  .profile.mobile {
+    display: block; }
+
+  #about .content {
+    min-height: 0;
+    margin-top: -4px; }
+
+  .profile {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    float: none;
+    width: 100%; } }
+@media (max-width: 480px), only screen and (max-device-width: 720px) {
+  #head {
+    font-size: 0.8em; } }
+@media only screen and (max-width: 430px) {
+  .contact .mainArea {
+    text-align: left; }
+    .contact .mainArea .left {
+      float: none; } }
+@media (max-width: 400px), only screen and (max-device-width: 720px) and (orientation: portrait) {
+  #head {
+    font-size: 0.7em; }
+
+  .halfNav {
+    min-width: 100%;
+    clear: both; }
+
+  .tabContainer {
+    width: 48.6%; }
+    .tabContainer:nth-child(2) {
+      margin-right: 0 !important; }
+
+  .tabContainer:first-child {
+    margin-left: 0 !important; }
+
+  body .indented {
+    margin-left: 24px !important; } }
+@media (max-width: 340px), only screen and (max-device-width: 720px) and (orientation: portrait) {
+  #head {
+    font-size: 0.6em; } }
+/***mobile***/
+@media only screen and (max-device-width: 720px) {
+  body {
+    font-size: 11px; }
+
+  hr {
+    margin: 30px 0; } }
+@media only screen and (max-device-width: 720px) and (orientation: portrait) {
+  h4 {
+    font-size: 1.8em; }
+
+  .item .date {
+    font-size: 1.1em;
+    margin-left: 0; }
+
+  #items {
+    margin-left: auto;
+    margin-right: auto; } }
+/***HEAD***/
+#head {
+  height: 5em;
+  overflow: hidden;
+  position: relative;
+  margin: 20px 0 10px; }
+
+/***NAV***/
+#nav {
+  margin: 0 0 10px;
+  width: 100%;
+  display: table; }
+
+.halfNav, .tabContainer {
+  border: 0;
+  margin: 6px 0 0;
+  padding: 0;
+  display: block;
+  float: left; }
+
+.halfNav {
+  width: 50%; }
+
+.tabContainer {
+  margin: 0 1.4%;
+  width: 47.9%; }
+
+#nav .tab {
+  color: #cccccc;
+  display: block;
+  font-size: 1.3em;
+  text-align: center;
+  width: 100%;
+  padding: 0.5em 0 0.6em; }
+
+#nav .tab:hover,
+.activeTab {
+  background-color: white !important;
+  color: #008299 !important; }
+
+/***CONTENT***/
+.colorBlock.top {
+  background-color: #444444;
+  height: 400px;
+  top: 0; }
+
+.content {
+  padding: 22px 30px; }
+
+.profile {
+  float: left;
+  margin: 0 30px 0 0; }
+
+.profile.web {
+  height: 400px;
+  width: 230px; }
+
+.profile.mobile {
+  display: none; }
+
+/* page specifics */
+#resume .content > div {
+  margin-bottom: 5px; }
+#resume h4 {
+  margin-top: 24px;
+  margin-bottom: 6px; }
+#resume p {
+  margin-top: 1em;
+  margin-bottom: 0.1em; }
+#resume ul, #resume li {
+  margin-top: 0;
+  margin-bottom: 0; }
+
+.profileContainer {
+  min-height: 378px; }
+
+/***PORTFOLIO***/
+#portfolio .content {
+  overflow: hidden; }
+#portfolio #items, #portfolio .portfolioSidebarContainer {
+  display: inline-block;
+  vertical-align: top; }
+#portfolio .portfolioSidebarContainer {
+  width: 33.3333%; }
+  #portfolio .portfolioSidebarContainer .portfolioSidebar {
+    background: white;
+    margin-right: 10px;
+    padding: 15px 0; }
+    #portfolio .portfolioSidebarContainer .portfolioSidebar .active, #portfolio .portfolioSidebarContainer .portfolioSidebar h4:hover, #portfolio .portfolioSidebarContainer .portfolioSidebar h5:hover, #portfolio .portfolioSidebarContainer .portfolioSidebar span:hover {
+      background-color: #008299;
+      color: white; }
+    #portfolio .portfolioSidebarContainer .portfolioSidebar h4, #portfolio .portfolioSidebarContainer .portfolioSidebar h5, #portfolio .portfolioSidebarContainer .portfolioSidebar span {
+      display: block;
+      padding: 5px 20px;
+      margin: 0;
+      cursor: pointer; }
+    #portfolio .portfolioSidebarContainer .portfolioSidebar h5 {
+      color: #444444;
+      font-size: 1.7em;
+      font-weight: bold;
+      text-transform: lowercase; }
+    #portfolio .portfolioSidebarContainer .portfolioSidebar span {
+      font-size: 1.4em;
+      padding-left: 40px; }
+#portfolio .item {
+  float: left;
+  width: 33.3333%; }
+  #portfolio .item img {
+    width: 252px;
+    height: 150px; }
+  #portfolio .item .itemLink {
+    height: 150px;
+    display: block;
+    width: auto;
+    margin: 0 10px 10px 0;
+    position: relative; }
+    #portfolio .item .itemLink .itemImage {
+      background: url("/portfolio/images/portfolio-thumbs.png") 0 0 no-repeat;
+      background-size: 500px 2000px;
+      height: 150px;
+      width: 252px;
+      margin: 0 auto; }
+  #portfolio .item#beforeItWasCool .itemLink {
+    background: white; }
+    #portfolio .item#beforeItWasCool .itemLink .itemImage {
+      background-position: 0 -200px; }
+  #portfolio .item#snake .itemLink {
+    background: #539574; }
+    #portfolio .item#snake .itemLink .itemImage {
+      background-position: 0 -400px; }
+  #portfolio .item#thirdLayerSoftware .itemLink {
+    background: #cccccc; }
+    #portfolio .item#thirdLayerSoftware .itemLink .itemImage {
+      background-position: 0 -600px; }
+  #portfolio .item#oldPersonApp .itemLink {
+    background: url("/portfolio/images/old-person-bg.png") 50% 40% no-repeat;
+    background-size: cover; }
+    #portfolio .item#oldPersonApp .itemLink .itemImage {
+      background-position: 0 -800px; }
+  #portfolio .item#myFive .itemLink {
+    background: white; }
+    #portfolio .item#myFive .itemLink .itemImage {
+      background-position: 0 -1000px; }
+  #portfolio .item#olsetWebsite .itemLink {
+    background: #00a0cc; }
+    #portfolio .item#olsetWebsite .itemLink .itemImage {
+      background-position: 0 -1200px; }
+#portfolio .itemOverlay {
+  display: table;
+  opacity: 0.95;
+  filter: alpha(opacity=95);
+  height: 100%;
+  width: 100%;
+  background-color: white;
+  position: absolute;
+  font-size: 1.2em; }
+  #portfolio .itemOverlay div {
+    padding: 20px;
+    display: table-cell;
+    vertical-align: top; }
+    #portfolio .itemOverlay div strong {
+      color: #999999;
+      display: block;
+      padding-bottom: 8px; }
+
+/***TWITTER FEED***/
+#twitterFeed .content {
+  min-height: 700px; }
+
+.twitter-timeline {
+  width: 100%; }
+
+/*applied to multiple*/
+#portfolio h4,
+.portfolioPage h4, .date {
+  display: inline-block; }
+
+#items {
+  position: relative;
+  clear: both;
+  width: 786px; }
+
+.item {
+  display: block; }
+  .item p {
+    margin-top: 0;
+    padding-top: 0;
+    margin-bottom: 10px; }
+
+.date {
+  color: #666;
+  font-size: 0.8em;
+  margin-bottom: 10px;
+  margin-left: 10px; }
+
+.border {
+  border: 2px solid #919FAC; }
+
+hr {
+  background-color: #9CA9B4;
+  border: 0;
+  color: #9CA9B4;
+  height: 1px;
+  margin: 50px 0;
+  width: 100%; }
+
+.portfolioNav {
+  display: table;
+  width: 100%;
+  margin: 16px auto; }
+  .portfolioNav > div {
+    display: table-cell;
+    vertical-align: middle; }
+
+.portfolioNav .miniNav div {
+  display: inline-block; }
+.portfolioNav .miniNav a {
+  height: 30px;
+  width: 60px;
+  background: url("/portfolio/images/portfolio-mini-nav-thumbs.png") left top no-repeat;
+  background-size: 800px 30px;
+  margin: 10px 2px; }
+  .portfolioNav .miniNav a.biwc {
+    background-position: -75px 0; }
+  .portfolioNav .miniNav a.snake {
+    background-position: -150px 0; }
+  .portfolioNav .miniNav a.thirdLayer {
+    background-position: -225px 0; }
+  .portfolioNav .miniNav a.oldPerson {
+    background-position: -300px 0; }
+  .portfolioNav .miniNav a.myfive {
+    background-position: -375px 0; }
+  .portfolioNav .miniNav a.olsetWebsite {
+    background-position: -450px 0; }
+  .portfolioNav .miniNav a.active, .portfolioNav .miniNav a:hover {
+    border-bottom: 2px solid white;
+    margin-bottom: 2px !important;
+    padding-bottom: 6px; }
+
+.portfolioNav .prev, .portfolioNav .next {
+  background: url("/images/arrows-retina.png") 0 0 no-repeat;
+  background-size: 80px 40px;
+  height: 40px;
+  width: 40px; }
+  .portfolioNav .prev a, .portfolioNav .next a {
+    display: block;
+    height: 100%;
+    width: 100%; }
+.portfolioNav .next {
+  background-position: -40px 0; }
+
+.portfolioNav .prev {
+  text-align: left; }
+
+.portfolioNav .next {
+  text-align: right; }
+
+.portfolioNav .miniNav {
+  text-align: center; }
+
+/***FOOTER***/
+.contact {
+  color: white;
+  width: 100%;
+  clear: both;
+  font-size: 1.2em;
+  display: block;
+  padding-bottom: 60px;
+  margin-top: 4px;
+  height: 100%; }
+  .contact .mainArea {
+    padding-top: 8px;
+    padding-bottom: 8px;
+    text-align: right; }
+    .contact .mainArea a {
+      display: inline-block;
+      margin: 6px 15px 6px 0;
+      text-transform: lowercase;
+      vertical-align: middle; }
+      .contact .mainArea a div {
+        display: block; }
+      .contact .mainArea a .socialIcon {
+        background: url("/images/social-icons-retina.png") left top no-repeat;
+        background-size: 280px 80px;
+        display: inline-block;
+        height: 40px;
+        width: 40px; }
+        .contact .mainArea a .socialIcon.github {
+          background-position: -40px 0; }
+        .contact .mainArea a .socialIcon.stackExchange {
+          background-position: -80px 0; }
+        .contact .mainArea a .socialIcon.twitter {
+          background-position: -120px 0; }
+        .contact .mainArea a .socialIcon.linkedIn {
+          background-position: -160px 0; }
+        .contact .mainArea a .socialIcon.email {
+          background-position: -200px 0; }
+        .contact .mainArea a .socialIcon.phone {
+          background-position: -240px 0; }
