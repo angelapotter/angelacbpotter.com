@@ -12,7 +12,7 @@
     <?php include 'portfolio-mini-nav.php'; ?>
     <div class="next invisible"><a href="#" title="next project"></a></div>
       <div>
-        <a href="myfive.php" title="myFIVE: a referral tracking app"><img class="myfive" src="images/myfive-mini.png" /></a>
+<!--         <a href="myfive.php" title="myFIVE: a referral tracking app"><img class="myfive" src="images/myfive-mini.png" /></a>
         <a href="old-person.php" title="Old Person App for Android: a flashlight, magnifying glass, and notebook"><img class="oldPerson" src="images/old-person-mini.png" /></a>
         <a href="third-layer.php" title="Third Layer Software: a mobile app company"><img class="thirdLayer" src="images/third-layer-mini.png" /></a>
       </div>
@@ -21,8 +21,8 @@
         <a href="biwc.php" title="Before It Was Cool: a Facebook app"><img class="biwc" src="images/biwc-mini.png" /></a>
         <a href="ssa.php" title="Secular Student Alliance: a Northwestern University student group"><img class="ssa" src="images/ssa-mini.png" /></a>
       </div>
-    </div>
-    <div class="next invisible" ><a href="#" title="next project"><img src="images/next-arrow.png" /></a></div>
+    </div> -->
+    <!-- <div class="next invisible" ><a href="#" title="next project"><img src="images/next-arrow.png" /></a></div> -->
   </div>
   <a href="http://groups.northwestern.edu/ssa" title="Secular Student Alliance" target="_blank"><img src="images/ssa_screenshot.png" /></a>
   <div class="content whiteBG topMarg20">
