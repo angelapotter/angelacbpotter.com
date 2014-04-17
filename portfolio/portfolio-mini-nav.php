@@ -9,6 +9,6 @@
     <a href="third-layer.php" class="thirdLayer" title="Third Layer Software: a mobile app company"><!-- <img class="thirdLayer" src="images/third-layer-mini.png" /> --></a>
     <a href="snake.php" class="snake" title="Snake: the classic animated game"><!-- <img class="snake" src="images/snake-mini.png" /> --></a>
     <a href="biwc.php" class="biwc" title="Before It Was Cool: a Facebook app"><!-- <img class="biwc" src="images/biwc-mini.png" /> --></a>
-    <!-- <a href="ssa.php" title="Secular Student Alliance: a Northwestern University student group"><img class="ssa" src="images/ssa-mini.png" /></a> -->
+    <a href="ssa.php" class="ssa" title="Secular Student Alliance: a Northwestern University student group"></a>
   </div>
 </div>
