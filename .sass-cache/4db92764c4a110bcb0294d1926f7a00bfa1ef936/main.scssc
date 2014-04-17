@@ -1,7 +1,7 @@
 3.2.10 (Media Mark)
-c7c6ca093a27d5613c0bb6ff6515c833d3cc9454
+f87a73cc03cd86da87afffd040df8cf50a7374d9
 o:Sass::Tree::RootNode
-:@template"J#@import "modules";
+:@template"E#@import "modules";
 @import "generics";
 
 /***HEAD***/
@@ -181,7 +181,7 @@ c7c6ca093a27d5613c0bb6ff6515c833d3cc9454
       background: url('/portfolio/images/ssa-thumb-bg.png') 50% 0 no-repeat;
       background-size: cover;
       .itemImage {
-        background-position: 0 -200px; 
+        background-position: 0 0; 
       }
     }
     &#beforeItWasCool .itemLink {
@@ -1056,7 +1056,7 @@ cover;
 @
 ;
 @
-;i³;;o;;i ;[o;;i ;["background-position;[ ;o;;;;"0 -200px;
+;i³;;o;;i ;[o;;i ;["background-position;[ ;o;;;;"0 0;
 @
 ;
 @
