@@ -381,6 +381,11 @@ a:visited {
       height: 150px;
       width: 252px;
       margin: 0 auto; }
+  #portfolio .item#ssa .itemLink {
+    background: url("/portfolio/images/ssa-thumb-bg.png") 50% 0 no-repeat;
+    background-size: cover; }
+    #portfolio .item#ssa .itemLink .itemImage {
+      background-position: 0 -200px; }
   #portfolio .item#beforeItWasCool .itemLink {
     background: white; }
     #portfolio .item#beforeItWasCool .itemLink .itemImage {

@@ -9,7 +9,8 @@
 <div class="item">
   <div class="portfolioNav">
     <div class="prev"><a href="biwc.php" title="previous project"></a></div>
-    <div class="miniNav center">
+    <?php include 'portfolio-mini-nav.php'; ?>
+    <div class="next invisible"><a href="#" title="next project"></a></div>
       <div>
         <a href="myfive.php" title="myFIVE: a referral tracking app"><img class="myfive" src="images/myfive-mini.png" /></a>
         <a href="old-person.php" title="Old Person App for Android: a flashlight, magnifying glass, and notebook"><img class="oldPerson" src="images/old-person-mini.png" /></a>

@@ -70,14 +70,15 @@
         <!-- <img src="images/biwc-thumb.png" /> -->
       </a>
 		</div>
-    <!-- <div id="ssa" class="item">
+    <div id="ssa" class="item">
       <a class="itemLink" href="ssa.php">
         <div class="itemOverlay">
-          <div>A website for a Northwestern University student group</div>
+          <div><strong>SSA</strong>A website for a Northwestern University student group</div>
         </div>
-        <img src="images/ssa-thumb.png" />
+        <div class="itemImage"></div>
+        <!-- <img src="images/ssa-thumb.png" /> -->
       </a>
-    </div> -->
+    </div>
     <div class="clear"></div>		
 	</div>
   <div class="clear"></div>
