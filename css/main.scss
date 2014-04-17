@@ -262,6 +262,11 @@
 .portfolioPage h4, .date {
 	display: inline-block;
 }
+.portfolioPage {
+  img {
+    max-width: 100%;
+  }
+}
 
 #items {
 	position: relative;
