@@ -18,7 +18,7 @@
     <br />
     <p><strong>Collaborators:</strong> 
       <a href="https://www.olset.com/ux/pages/about" title="OLSET About Us" target="_blank">the OLSET team</a>, 
-      <a href="http://www.any.do" title="Any.do website">the Any.do team</a>
+      <a href="http://www.any.do" title="Any.do website" target="_blank">the Any.do team</a>
     </p>
     <p><strong>My role:</strong> design &amp; front-end development</p>
     <br />
