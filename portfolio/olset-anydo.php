@@ -35,6 +35,7 @@
     </div>
     <div class="clear"></div>
   </div>
+  <a href="https://play.google.com/store/apps/details?id=com.anydo" title="OLSET: Get personalized hotel recommendations in seconds" target="_blank"><img class="topMarg20" src="images/anydo-mockups-1.png" style="max-width: 100%;"/></a>  
   <div class="clear"></div>
 </div>
 
