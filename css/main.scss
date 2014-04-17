@@ -211,6 +211,12 @@
         background-position: 0 -1200px; 
       }
     }
+    &#olsetAnydo .itemLink {
+      background: white;
+      .itemImage {
+        background-position: 0 -1400px; 
+      }
+    }
   }
 
   .itemOverlay {
@@ -329,6 +335,9 @@ hr {
     }
     &.olsetWebsite {
       background-position: -450px 0;
+    }
+    &.olsetAnydo {
+      background-position: -525px 0;
     }
     &.active, &:hover {
       border-bottom: 2px solid white;

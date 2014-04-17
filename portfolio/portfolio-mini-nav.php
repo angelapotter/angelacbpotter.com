@@ -1,5 +1,6 @@
 <div class="miniNav center">
   <div>
+    <a href="olset-anydo.php" class="olsetAnydo" title="Any.do travel: powered by OLSET"></a>
     <a href="olset-website.php" class="olsetWebsite" title="OLSET: get personalized hotel recommendations"><!-- <img class="olsetWebsite" src="images/olset-website-mini.png" /> --></a>
     <a href="myfive.php" class="myfive" title="myFIVE: a referral tracking app"><!-- <img class="myfive" src="images/myfive-mini.png" /> --></a>
     <a href="old-person.php" class="oldPerson" title="Old Person App for Android: a flashlight, magnifying glass, and notebook"><!-- <img class="oldPerson" src="images/old-person-mini.png" /> --></a>    

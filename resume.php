@@ -66,7 +66,7 @@
       <li>Ran an experiment on the effects of syncopation on listeners’ perception of “groove” in short rhythmic sequences.</li>
     </ul>
   </div>
-  <p><a href="resume-angela-potter.pdf" class="right">View resume as PDF</a></p>
+  <p><a href="resume-angela-potter.pdf" class="right">View PDF</a></p>
   <div class="clear"></div>
 </div>
 

@@ -406,6 +406,10 @@ a:visited {
     background: #00a0cc; }
     #portfolio .item#olsetWebsite .itemLink .itemImage {
       background-position: 0 -1200px; }
+  #portfolio .item#olsetAnydo .itemLink {
+    background: white; }
+    #portfolio .item#olsetAnydo .itemLink .itemImage {
+      background-position: 0 -1400px; }
 #portfolio .itemOverlay {
   display: table;
   opacity: 0.95;
@@ -493,6 +497,8 @@ hr {
     background-position: -375px 0; }
   .portfolioNav .miniNav a.olsetWebsite {
     background-position: -450px 0; }
+  .portfolioNav .miniNav a.olsetAnydo {
+    background-position: -525px 0; }
   .portfolioNav .miniNav a.active, .portfolioNav .miniNav a:hover {
     border-bottom: 2px solid white;
     margin-bottom: 2px !important;

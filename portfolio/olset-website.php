@@ -7,7 +7,7 @@
 
 <div class="item">
   <div class="portfolioNav">
-    <div class="invisible prev"><a href="#" title="previous project"></a></div>
+    <div class="prev"><a href="olset-anydo.php" title="previous project"></a></div>
     <?php include 'portfolio-mini-nav.php'; ?>
     <div class="next"><a href="myfive.php" title="next project"></a></div>
   </div>
