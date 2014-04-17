@@ -10,7 +10,7 @@
     <div id="olsetAnydo" class="item">
       <a class="itemLink" href="olset-anydo.php" title="Any.do travel powered by OLSET">
         <div class="itemOverlay">
-          <div><strong>Any.do travel</strong>A mobile-only white label for the Any.do Android app</div>
+          <div><strong>Any.do travel</strong>A white label of OLSET for the Any.do Android app</div>
         </div>
         <div class="itemImage"></div>
         <!-- <img src="images/olset-website-thumb.png" /> -->
