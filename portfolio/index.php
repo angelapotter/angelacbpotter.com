@@ -2,11 +2,11 @@
 	$title='portfolio';
 	$bodyId='portfolio';
 	$bodyClass='portfolioPage';
-	include '../includes/header.php';
+	include $_SERVER["DOCUMENT_ROOT"] . '/includes/header.php';
 ?>
 
   <!--
-	--><div id="items">
+	--><div id="items topMarg10">
     <div id="olsetAnydo" class="item">
       <a class="itemLink" href="olset-anydo.php" title="Any.do travel powered by OLSET">
         <div class="itemOverlay">
@@ -83,4 +83,4 @@
 	</div>
   <div class="clear"></div>
 
-<?php include '../includes/footer.php'; ?>
+<?php include $_SERVER["DOCUMENT_ROOT"] . '/includes/footer.php'; ?>

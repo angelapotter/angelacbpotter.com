@@ -2,13 +2,12 @@
 	$title='Any.do travel, powered by OLSET';
 	$bodyId='olsetAnydo';
 	$bodyClass='portfolioPage';
-	include '../includes/header.php';
+	include $_SERVER["DOCUMENT_ROOT"] . '/includes/header.php';
 ?>
 
 <div class="item">
   <div class="portfolioNav">
     <div class="invisible prev"><a href="#" title="previous project"></a></div>
-    <?php include 'portfolio-mini-nav.php'; ?>
     <div class="next"><a href="olset-website.php" title="next project"></a></div>
   </div>
   <a href="https://play.google.com/store/apps/details?id=com.anydo" title="Any.do To-Do List for Android" target="_blank"><img src="images/anydo-screenshots.png" style="max-width: 100%;" /></a>
@@ -40,4 +39,4 @@
   <div class="clear"></div>
 </div>
 
-<?php include '../includes/footer.php'; ?>
+<?php include $_SERVER["DOCUMENT_ROOT"] .  '/includes/footer.php'; ?>

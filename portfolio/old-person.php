@@ -2,14 +2,13 @@
 	$title='Old Person App';
 	$bodyId='oldPerson';
 	$bodyClass='portfolioPage';
-	include '../includes/header.php';
+	include $_SERVER["DOCUMENT_ROOT"] . '/includes/header.php';
 ?>
 
 
 <div class="item">
   <div class="portfolioNav">
     <div class="prev"><a href="myfive.php" title="previous project"></a></div>
-    <?php include 'portfolio-mini-nav.php'; ?>
     <div class="next"><a href="third-layer.php" title="next project"></a></div>
   </div>
   <a href="http://www.thirdlayersoftware.com/oldperson.php" title="Third Layer: Old Person App" target="_blank"><img src="images/oldperson_screenshots.png" /></a>
@@ -33,4 +32,4 @@
   </div>
 </div>
 
-<?php include '../includes/footer.php'; ?>
+<?php include $_SERVER["DOCUMENT_ROOT"] .  '/includes/footer.php'; ?>

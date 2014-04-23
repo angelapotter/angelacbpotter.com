@@ -1,13 +1,16 @@
-$primaryColor: #008299;
+$primaryColor: #008299; //teal
 // $secondaryColor: #8f93ac;
-$secondaryColor: #737899;
+$secondaryColor: #737899; //purple-gray
 
-$darkGray: #444;
+$darkestGray: #333;
+$darkGray: #666;
 $mediumGray: #999;
-$lightGray: #ccc;
+$lightGray: #aaa;
 $lightestGray: #eee;
 
 $standardBoxShadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+
+$mainPadding: 25px;
 
 @mixin border-radius($pixels) {
   border-radius: $pixels;

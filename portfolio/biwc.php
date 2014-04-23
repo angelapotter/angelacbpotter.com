@@ -2,13 +2,12 @@
 	$title='Before It Was Cool';
 	$bodyId='biwc';
 	$bodyClass='portfolioPage';
-	include '../includes/header.php';
+	include $_SERVER["DOCUMENT_ROOT"] . '/includes/header.php';
 ?>
 
 <div class="item">
   <div class="portfolioNav">
     <div class="prev"><a href="snake.php" title="previous project"></a></div>
-    <?php include 'portfolio-mini-nav.php'; ?>
     <div class="next" ><a href="ssa.php" title="next project"></a></div>
   </div>
   <img src="images/biwc_screenshots.png" />
@@ -24,4 +23,4 @@
   </div>
 </div>
 
-<?php include '../includes/footer.php'; ?>
+<?php include $_SERVER["DOCUMENT_ROOT"] . '/includes/footer.php'; ?>

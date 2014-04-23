@@ -6,47 +6,48 @@ html, body {
   font-size: 16px; }
 
 body {
-  background-color: #737899;
-  font-family: 'HelveticaNeue', 'Helvetica Neue', helvetica, tahoma, arial, sans-serif;
+  background-color: white;
+  font-family: "HelveticaNeueLight", "HelveticaNeue-Light", "Helvetica Neue Light", "HelveticaNeue", "Helvetica Neue", 'TeXGyreHerosRegular', "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif;
+  font-weight: 300;
   font-size: 100%;
-  color: #444444;
+  color: #333333;
   min-height: 100%;
   width: 100%; }
 
 /***BIG CONTAINERS***/
-.colorBlock {
-  position: absolute;
-  z-index: 0;
-  width: 100%; }
+.containerXL, .contentContainer {
+  max-width: 100%; }
 
-.mainArea {
+.containerXL {
+  width: 1080px;
+  max-width: 100%;
   margin: 0 auto;
-  width: 776px;
+  position: relative; }
+
+.contentContainer {
+  overflow: hidden;
   position: relative;
   z-index: 999;
-  padding-left: 15px;
-  padding-right: 15px;
-  overflow: hidden; }
+  padding: 25px; }
 
 /***TEXT***/
-h1, h2 {
+h1, h2, h3, h4 {
   font-weight: normal;
+  font-weight: 300;
   margin: 0;
-  padding: 0;
-  position: absolute;
-  font-size: 3.5em;
-  bottom: 0.1em;
-  letter-spacing: -0.01em;
+  padding: 10px 0; }
+
+h1, h2 {
   text-transform: lowercase; }
 
 h1 {
-  color: white;
-  left: 0;
+  font-size: 3em;
+  color: #aaaaaa;
+  padding: 25px;
   /*-webkit-margin-before: 0;*/ }
 
 h2 {
-  color: #008299;
-  right: 0; }
+  color: #666666; }
 
 /*content head*/
 h4 {
@@ -94,6 +95,13 @@ a:visited {
   text-decoration: underline; }
 
 /*** ALIGNMENT ETC ***/
+.borderBox, .containerXL, .contentContainer {
+  -webkit-box-sizing: border-box;
+  /* Safari/Chrome, other WebKit */
+  -moz-box-sizing: border-box;
+  /* Firefox, other Gecko */
+  box-sizing: border-box; }
+
 .indented {
   margin-left: 40px; }
 
@@ -168,34 +176,28 @@ a:visited {
 /*******MEDIA QUERIES*******/
 /***************************/
 @media (max-width: 806px) {
-  .mainArea {
+  .contentContainer {
     width: auto; }
 
   #items {
     max-width: 102%; } }
-@media (max-width: 800px) {
+@media (max-width: 1080px) {
   #portfolio .item {
-    width: 50%; }
-
-  #head {
-    min-height: 8em; }
-
-  h1 {
-    top: -0.1em; }
-
-  h2 {
-    top: 1em;
-    left: 0; } }
+    width: 50%; } }
+@media (max-width: 848px) {
+  #portfolio .item {
+    width: 100%; } }
 @media only screen and (max-width: 780px) {
   #about .content {
     padding-bottom: 22px !important; } }
-@media only screen and (max-width: 544px) {
-  #portfolio .item {
+@media only screen and (max-width: 640px) {
+  .leftNavContainer {
+    width: 200px; } }
+@media only screen and (max-width: 600px) {
+  .leftNavContainer {
+    float: none;
     width: 100%; } }
 @media (max-width: 520px), only screen and (max-device-width: 720px) and (orientation: portrait) {
-  .miniNav div {
-    display: block; }
-
   .profile.web {
     display: none !important; }
 
@@ -212,22 +214,12 @@ a:visited {
     border: 0;
     float: none;
     width: 100%; } }
-@media (max-width: 480px), only screen and (max-device-width: 720px) {
-  #head {
-    font-size: 0.8em; } }
 @media only screen and (max-width: 430px) {
-  .contact .mainArea {
+  .contact .contentContainer {
     text-align: left; }
-    .contact .mainArea .left {
+    .contact .contentContainer .left {
       float: none; } }
 @media (max-width: 400px), only screen and (max-device-width: 720px) and (orientation: portrait) {
-  #head {
-    font-size: 0.7em; }
-
-  .halfNav {
-    min-width: 100%;
-    clear: both; }
-
   .tabContainer {
     width: 48.6%; }
     .tabContainer:nth-child(2) {

@@ -2,14 +2,13 @@
 	$title='Secular Student Alliance';
 	$bodyId='ssa';
 	$bodyClass='portfolioPage';
-	include '../includes/header.php';
+	include $_SERVER["DOCUMENT_ROOT"] . '/includes/header.php';
 ?>
 
 
 <div class="item">
   <div class="portfolioNav">
     <div class="prev"><a href="biwc.php" title="previous project"></a></div>
-    <?php include 'portfolio-mini-nav.php'; ?>
     <div class="next invisible"><a href="#" title="next project"></a></div>
       <!-- <div> -->
 <!--         <a href="myfive.php" title="myFIVE: a referral tracking app"><img class="myfive" src="images/myfive-mini.png" /></a>
@@ -38,4 +37,4 @@
 	</div>
 </div>
 
-<?php include '../includes/footer.php'; ?>
+<?php include $_SERVER["DOCUMENT_ROOT"] .  '/includes/footer.php'; ?>

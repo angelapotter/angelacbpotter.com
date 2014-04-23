@@ -6,47 +6,48 @@ html, body {
   font-size: 16px; }
 
 body {
-  background-color: #737899;
-  font-family: 'HelveticaNeue', 'Helvetica Neue', helvetica, tahoma, arial, sans-serif;
+  background-color: white;
+  font-family: "HelveticaNeueLight", "HelveticaNeue-Light", "Helvetica Neue Light", "HelveticaNeue", "Helvetica Neue", 'TeXGyreHerosRegular', "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif;
+  font-weight: 300;
   font-size: 100%;
-  color: #444444;
+  color: #333333;
   min-height: 100%;
   width: 100%; }
 
 /***BIG CONTAINERS***/
-.colorBlock {
-  position: absolute;
-  z-index: 0;
-  width: 100%; }
+.containerXL, .contentContainer {
+  max-width: 100%; }
 
-.mainArea {
+.containerXL {
+  width: 1080px;
+  max-width: 100%;
   margin: 0 auto;
-  width: 776px;
+  position: relative; }
+
+.contentContainer {
+  overflow: hidden;
   position: relative;
   z-index: 999;
-  padding-left: 15px;
-  padding-right: 15px;
-  overflow: hidden; }
+  padding: 25px; }
 
 /***TEXT***/
-h1, h2 {
+h1, h2, h3, h4 {
   font-weight: normal;
+  font-weight: 300;
   margin: 0;
-  padding: 0;
-  position: absolute;
-  font-size: 3.5em;
-  bottom: 0.1em;
-  letter-spacing: -0.01em;
+  padding: 10px 0; }
+
+h1, h2 {
   text-transform: lowercase; }
 
 h1 {
-  color: white;
-  left: 0;
+  font-size: 3em;
+  color: #aaaaaa;
+  padding: 25px;
   /*-webkit-margin-before: 0;*/ }
 
 h2 {
-  color: #008299;
-  right: 0; }
+  color: #666666; }
 
 /*content head*/
 h4 {
@@ -94,6 +95,13 @@ a:visited {
   text-decoration: underline; }
 
 /*** ALIGNMENT ETC ***/
+.borderBox, .containerXL, .contentContainer, #portfolio .item .itemLink {
+  -webkit-box-sizing: border-box;
+  /* Safari/Chrome, other WebKit */
+  -moz-box-sizing: border-box;
+  /* Firefox, other Gecko */
+  box-sizing: border-box; }
+
 .indented {
   margin-left: 40px; }
 
@@ -168,34 +176,28 @@ a:visited {
 /*******MEDIA QUERIES*******/
 /***************************/
 @media (max-width: 806px) {
-  .mainArea {
+  .contentContainer {
     width: auto; }
 
   #items {
     max-width: 102%; } }
-@media (max-width: 800px) {
+@media (max-width: 1080px) {
   #portfolio .item {
-    width: 50%; }
-
-  #head {
-    min-height: 8em; }
-
-  h1 {
-    top: -0.1em; }
-
-  h2 {
-    top: 1em;
-    left: 0; } }
+    width: 50%; } }
+@media (max-width: 848px) {
+  #portfolio .item {
+    width: 100%; } }
 @media only screen and (max-width: 780px) {
   #about .content {
     padding-bottom: 22px !important; } }
-@media only screen and (max-width: 544px) {
-  #portfolio .item {
+@media only screen and (max-width: 640px) {
+  .leftNavContainer {
+    width: 200px; } }
+@media only screen and (max-width: 600px) {
+  .leftNavContainer {
+    float: none;
     width: 100%; } }
 @media (max-width: 520px), only screen and (max-device-width: 720px) and (orientation: portrait) {
-  .miniNav div {
-    display: block; }
-
   .profile.web {
     display: none !important; }
 
@@ -212,22 +214,12 @@ a:visited {
     border: 0;
     float: none;
     width: 100%; } }
-@media (max-width: 480px), only screen and (max-device-width: 720px) {
-  #head {
-    font-size: 0.8em; } }
 @media only screen and (max-width: 430px) {
-  .contact .mainArea {
+  .contact .contentContainer {
     text-align: left; }
-    .contact .mainArea .left {
+    .contact .contentContainer .left {
       float: none; } }
 @media (max-width: 400px), only screen and (max-device-width: 720px) and (orientation: portrait) {
-  #head {
-    font-size: 0.7em; }
-
-  .halfNav {
-    min-width: 100%;
-    clear: both; }
-
   .tabContainer {
     width: 48.6%; }
     .tabContainer:nth-child(2) {
@@ -267,6 +259,34 @@ a:visited {
   margin: 20px 0 10px; }
 
 /***NAV***/
+.leftNavContainer {
+  width: 254px;
+  float: left;
+  position: relative;
+  left: 0;
+  top: 0;
+  border-top: 0; }
+  .leftNavContainer .leftNav {
+    margin-right: 10px;
+    padding: 25px 0; }
+    .leftNavContainer .leftNav a {
+      display: block;
+      padding: 5px 25px;
+      margin: 0;
+      cursor: pointer; }
+      .leftNavContainer .leftNav a:hover {
+        text-decoration: underline; }
+      .leftNavContainer .leftNav a.mainTab {
+        font-weight: bold;
+        text-transform: lowercase;
+        color: #333333; }
+      .leftNavContainer .leftNav a.subTab {
+        color: #666666;
+        font-size: 0.9em;
+        padding-left: 40px; }
+      .leftNavContainer .leftNav a.active {
+        color: #008299; }
+
 #nav {
   margin: 0 0 10px;
   width: 100%;
@@ -287,7 +307,7 @@ a:visited {
   width: 47.9%; }
 
 #nav .tab {
-  color: #cccccc;
+  color: #aaaaaa;
   display: block;
   font-size: 1.3em;
   text-align: center;
@@ -301,12 +321,9 @@ a:visited {
 
 /***CONTENT***/
 .colorBlock.top {
-  background-color: #444444;
+  background-color: #666666;
   height: 400px;
   top: 0; }
-
-.content {
-  padding: 22px 30px; }
 
 .profile {
   float: left;
@@ -341,35 +358,12 @@ a:visited {
 #portfolio #items, #portfolio .portfolioSidebarContainer {
   display: inline-block;
   vertical-align: top; }
-#portfolio .portfolioSidebarContainer {
-  width: 33.3333%; }
-  #portfolio .portfolioSidebarContainer .portfolioSidebar {
-    background: white;
-    margin-right: 10px;
-    padding: 15px 0; }
-    #portfolio .portfolioSidebarContainer .portfolioSidebar .active, #portfolio .portfolioSidebarContainer .portfolioSidebar h4:hover, #portfolio .portfolioSidebarContainer .portfolioSidebar h5:hover, #portfolio .portfolioSidebarContainer .portfolioSidebar span:hover {
-      background-color: #008299;
-      color: white; }
-    #portfolio .portfolioSidebarContainer .portfolioSidebar h4, #portfolio .portfolioSidebarContainer .portfolioSidebar h5, #portfolio .portfolioSidebarContainer .portfolioSidebar span {
-      display: block;
-      padding: 5px 20px;
-      margin: 0;
-      cursor: pointer; }
-    #portfolio .portfolioSidebarContainer .portfolioSidebar h5 {
-      color: #444444;
-      font-size: 1.7em;
-      font-weight: bold;
-      text-transform: lowercase; }
-    #portfolio .portfolioSidebarContainer .portfolioSidebar span {
-      font-size: 1.4em;
-      padding-left: 40px; }
 #portfolio .item {
   float: left;
-  width: 33.3333%; }
-  #portfolio .item img {
-    width: 252px;
-    height: 150px; }
+  width: 33.3333%;
+  margin-top: 0; }
   #portfolio .item .itemLink {
+    border: 1px solid #aaaaaa;
     height: 150px;
     display: block;
     width: auto;
@@ -378,8 +372,8 @@ a:visited {
     #portfolio .item .itemLink .itemImage {
       background: url("/portfolio/images/portfolio-thumbs.png") 0 0 no-repeat;
       background-size: 500px 2000px;
-      height: 150px;
-      width: 252px;
+      height: 100%;
+      max-width: 247px;
       margin: 0 auto; }
   #portfolio .item#ssa .itemLink {
     background: url("/portfolio/images/ssa-thumb-bg.png") 50% 0 no-repeat;
@@ -395,7 +389,7 @@ a:visited {
     #portfolio .item#snake .itemLink .itemImage {
       background-position: 0 -400px; }
   #portfolio .item#thirdLayerSoftware .itemLink {
-    background: #cccccc; }
+    background: #ccc; }
     #portfolio .item#thirdLayerSoftware .itemLink .itemImage {
       background-position: 0 -600px; }
   #portfolio .item#oldPersonApp .itemLink {
@@ -416,7 +410,6 @@ a:visited {
     #portfolio .item#olsetAnydo .itemLink .itemImage {
       background-position: 0 -1400px; }
 #portfolio .itemOverlay {
-  display: table;
   opacity: 0.95;
   filter: alpha(opacity=95);
   height: 100%;
@@ -454,7 +447,8 @@ a:visited {
   width: 786px; }
 
 .item {
-  display: block; }
+  display: block;
+  margin-top: 10px; }
   .item p {
     margin-top: 0;
     padding-top: 0;
@@ -480,7 +474,8 @@ hr {
 .portfolioNav {
   display: table;
   width: 100%;
-  margin: 16px auto; }
+  margin: 16px auto;
+  display: none; }
   .portfolioNav > div {
     display: table-cell;
     vertical-align: middle; }
@@ -543,32 +538,32 @@ hr {
   padding-bottom: 60px;
   margin-top: 4px;
   height: 100%; }
-  .contact .mainArea {
+  .contact .contentContainer {
     padding-top: 8px;
     padding-bottom: 8px;
     text-align: right; }
-    .contact .mainArea a {
+    .contact .contentContainer a {
       display: inline-block;
       margin: 6px 15px 6px 0;
       text-transform: lowercase;
       vertical-align: middle; }
-      .contact .mainArea a div {
+      .contact .contentContainer a div {
         display: block; }
-      .contact .mainArea a .socialIcon {
+      .contact .contentContainer a .socialIcon {
         background: url("/images/social-icons-retina.png") left top no-repeat;
         background-size: 280px 80px;
         display: inline-block;
         height: 40px;
         width: 40px; }
-        .contact .mainArea a .socialIcon.github {
+        .contact .contentContainer a .socialIcon.github {
           background-position: -40px 0; }
-        .contact .mainArea a .socialIcon.stackExchange {
+        .contact .contentContainer a .socialIcon.stackExchange {
           background-position: -80px 0; }
-        .contact .mainArea a .socialIcon.twitter {
+        .contact .contentContainer a .socialIcon.twitter {
           background-position: -120px 0; }
-        .contact .mainArea a .socialIcon.linkedIn {
+        .contact .contentContainer a .socialIcon.linkedIn {
           background-position: -160px 0; }
-        .contact .mainArea a .socialIcon.email {
+        .contact .contentContainer a .socialIcon.email {
           background-position: -200px 0; }
-        .contact .mainArea a .socialIcon.phone {
+        .contact .contentContainer a .socialIcon.phone {
           background-position: -240px 0; }

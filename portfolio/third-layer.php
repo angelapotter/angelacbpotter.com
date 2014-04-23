@@ -2,14 +2,13 @@
 	$title='Third Layer Software';
 	$bodyId='thirdLayer';
 	$bodyClass='portfolioPage';
-	include '../includes/header.php';
+	include $_SERVER["DOCUMENT_ROOT"] . '/includes/header.php';
 ?>
 
 
 <div class="item">
   <div class="portfolioNav">
     <div class="prev"><a href="old-person.php" title="previous project"></a></div>
-    <?php include 'portfolio-mini-nav.php'; ?>
     <div class="next"><a href="snake.php" title="next project"></a></div>
   </div>
   <a href="http://www.thirdlayersoftware.com" title="Third Layer Software" target="_blank"><img src="images/thirdlayer_about.png" /></a>
@@ -27,4 +26,4 @@
 	</div>
 </div>
 
-<?php include '../includes/footer.php'; ?>
+<?php include $_SERVER["DOCUMENT_ROOT"] .  '/includes/footer.php'; ?>

@@ -6,7 +6,7 @@
 ?>
 
 <div class="content whiteBG">
-  <h4 class="topMarg10">Professional Skills</h4>
+  <h4 class="noMargTop">Skills</h4>
   <div>
     <p>
       <strong>UX Design:</strong> 

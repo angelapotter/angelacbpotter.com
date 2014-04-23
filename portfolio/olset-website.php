@@ -2,13 +2,12 @@
 	$title='OLSET';
 	$bodyId='olsetWebsite';
 	$bodyClass='portfolioPage';
-	include '../includes/header.php';
+	include $_SERVER["DOCUMENT_ROOT"] . '/includes/header.php';
 ?>
 
 <div class="item">
   <div class="portfolioNav">
     <div class="prev"><a href="olset-anydo.php" title="previous project"></a></div>
-    <?php include 'portfolio-mini-nav.php'; ?>
     <div class="next"><a href="myfive.php" title="next project"></a></div>
   </div>
   <a href="https://www.olset.com" title="OLSET: Get personalized hotel recommendations in seconds" target="_blank"><img src="images/olset/landing-page.png" style="max-width: 100%;" /></a>
@@ -59,4 +58,4 @@
   <div class="clear"></div>
 </div>
 
-<?php include '../includes/footer.php'; ?>
+<?php include $_SERVER["DOCUMENT_ROOT"] .  '/includes/footer.php'; ?>

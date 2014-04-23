@@ -2,13 +2,12 @@
 	$title='myFIVE';
 	$bodyId='myfive';
 	$bodyClass='portfolioPage';
-	include '../includes/header.php';
+	include $_SERVER["DOCUMENT_ROOT"] .  '/includes/header.php';
 ?>
 <!--
 --><div class="item">
   <div class="portfolioNav">
     <div class="prev"><a href="olset-website.php" title="previous project"></a></div>
-    <?php include 'portfolio-mini-nav.php'; ?>
     <div class="next"><a href="old-person.php" title="next project"></a></div>
   </div>
   <a href="http://angelacbpotter.com/myfive-prototypes/prototype2/create-gig.php" title="myFIVE live prototype" target="_blank"><img src="images/myfive/tic1-newest.png" /></a>
@@ -34,4 +33,4 @@
   <div class="clear"></div>
 </div>
 
-<?php include '../includes/footer.php'; ?>
+<?php include $_SERVER["DOCUMENT_ROOT"] .  '/includes/footer.php'; ?>

@@ -2,14 +2,13 @@
 	$title='Snake';
 	$bodyId='snake';
 	$bodyClass='portfolioPage';
-	include '../includes/header.php';
+	include $_SERVER["DOCUMENT_ROOT"] . '/includes/header.php';
 ?>
 
 
 <div class="item">
   <div class="portfolioNav">
     <div class="prev"><a href="third-layer.php" title="previous project"></a></div>
-    <?php include 'portfolio-mini-nav.php'; ?>
     <div class="next"><a href="biwc.php" title="next project"></a></div>
   </div>
   <a href="../snake.html" title="Snake" target="_blank"><img src="images/snake_screenshot.png" /></a>
@@ -27,4 +26,4 @@
 	</div>
 </div>
 
-<?php include '../includes/footer.php'; ?>
+<?php include $_SERVER["DOCUMENT_ROOT"] .  '/includes/footer.php'; ?>
