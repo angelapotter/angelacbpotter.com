@@ -211,7 +211,10 @@ a:visited {
     padding: 16px 16px 0 16px; }
 
   .contentContainer {
-    padding: 16px; } }
+    padding: 16px; }
+
+  .headshot {
+    float: none; } }
 @media (max-width: 520px), only screen and (max-device-width: 720px) and (orientation: portrait) {
   .profile.web {
     display: none !important; }
