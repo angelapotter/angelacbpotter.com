@@ -25,9 +25,8 @@ body {
   position: relative; }
 
 .contentContainer {
+  max-width: 826px;
   overflow: hidden;
-  position: relative;
-  z-index: 999;
   padding: 25px; }
 
 /***TEXT***/
@@ -37,13 +36,14 @@ h1, h2, h3, h4 {
   margin: 0;
   padding: 10px 0; }
 
-h1, h2 {
+h1 {
   text-transform: lowercase; }
 
 h1 {
   font-size: 3em;
   color: #aaaaaa;
   padding: 25px;
+  line-height: 1;
   /*-webkit-margin-before: 0;*/ }
 
 h2 {
@@ -95,7 +95,7 @@ a:visited {
   text-decoration: underline; }
 
 /*** ALIGNMENT ETC ***/
-.borderBox, .containerXL, .contentContainer, #portfolio .item .itemLink {
+.borderBox, .containerXL, .contentContainer, .border, #portfolio .item .itemLink {
   -webkit-box-sizing: border-box;
   /* Safari/Chrome, other WebKit */
   -moz-box-sizing: border-box;
@@ -114,7 +114,7 @@ a:visited {
 .inline {
   display: inline; }
 
-.inlineBlock, #portfolio .item .itemLink, .portfolioNav .miniNav a {
+.inlineBlock, #portfolio .item .itemLink {
   display: inline-block; }
 
 .noMargTop {
@@ -159,6 +159,9 @@ a:visited {
 .clear {
   clear: both; }
 
+.overflowHidden {
+  overflow: hidden; }
+
 .center {
   margin: 0 auto;
   text-align: center; }
@@ -169,34 +172,38 @@ a:visited {
 .white {
   color: white; }
 
+.lightGray {
+  color: #aaaaaa; }
+
 .whiteBG {
   background-color: white; }
+
+.border, #portfolio .item .itemLink {
+  border: 1px solid #ccc; }
 
 /***************************/
 /*******MEDIA QUERIES*******/
 /***************************/
-@media (max-width: 806px) {
-  .contentContainer {
-    width: auto; }
-
-  #items {
-    max-width: 102%; } }
-@media (max-width: 1080px) {
-  #portfolio .item {
-    width: 50%; } }
-@media (max-width: 848px) {
-  #portfolio .item {
-    width: 100%; } }
+@media only screen and (max-width: 1094px) {
+  .leftNavContainer {
+    width: 190px; } }
 @media only screen and (max-width: 780px) {
   #about .content {
     padding-bottom: 22px !important; } }
-@media only screen and (max-width: 640px) {
-  .leftNavContainer {
-    width: 200px; } }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 645px) {
   .leftNavContainer {
     float: none;
-    width: 100%; } }
+    width: 100%; }
+    .leftNavContainer .leftNav {
+      padding-bottom: 6px; }
+      .leftNavContainer .leftNav a.subTab {
+        display: none; }
+      .leftNavContainer .leftNav .resumeLink {
+        margin-top: 0; }
+
+  h1 {
+    font-size: 2.5em;
+    padding-bottom: 0; } }
 @media (max-width: 520px), only screen and (max-device-width: 720px) and (orientation: portrait) {
   .profile.web {
     display: none !important; }
@@ -214,6 +221,14 @@ a:visited {
     border: 0;
     float: none;
     width: 100%; } }
+@media only screen and (max-width: 448px) {
+  #portfolio #items {
+    width: 100%; }
+    #portfolio #items .item .itemLink {
+      margin-right: 0 !important;
+      max-width: 100%; }
+    #portfolio #items .item .itemImage {
+      background-size: 100% auto; } }
 @media only screen and (max-width: 430px) {
   .contact .contentContainer {
     text-align: left; }
@@ -267,7 +282,6 @@ a:visited {
   top: 0;
   border-top: 0; }
   .leftNavContainer .leftNav {
-    margin-right: 10px;
     padding: 25px 0; }
     .leftNavContainer .leftNav a {
       display: block;
@@ -285,7 +299,11 @@ a:visited {
         font-size: 0.9em;
         padding-left: 40px; }
       .leftNavContainer .leftNav a.active {
+        background: url("/images/active-tab-marker-retina.png") 6px center no-repeat;
+        background-size: 12px 20px;
         color: #008299; }
+    .leftNavContainer .leftNav .resumeLink {
+      margin-top: 10px; }
 
 #nav {
   margin: 0 0 10px;
@@ -336,12 +354,17 @@ a:visited {
 .profile.mobile {
   display: none; }
 
+.headshot {
+  float: left;
+  margin: 10px 20px 0 0;
+  height: 218px;
+  width: 218px; }
+
 /* page specifics */
 #resume .content > div {
   margin-bottom: 5px; }
-#resume h4 {
-  margin-top: 24px;
-  margin-bottom: 6px; }
+#resume h2 {
+  margin-top: 30px; }
 #resume p {
   margin-top: 1em;
   margin-bottom: 0.1em; }
@@ -355,71 +378,61 @@ a:visited {
 /***PORTFOLIO***/
 #portfolio .content {
   overflow: hidden; }
-#portfolio #items, #portfolio .portfolioSidebarContainer {
-  display: inline-block;
-  vertical-align: top; }
+#portfolio #items {
+  width: 103%; }
 #portfolio .item {
   float: left;
-  width: 33.3333%;
-  margin-top: 0; }
+  margin-top: 0;
+  max-width: 100%; }
   #portfolio .item .itemLink {
-    border: 1px solid #aaaaaa;
-    height: 150px;
+    background: white;
     display: block;
-    width: auto;
-    margin: 0 10px 10px 0;
+    width: 378px;
+    max-width: 97%;
+    margin: 0 20px 20px 0;
     position: relative; }
     #portfolio .item .itemLink .itemImage {
-      background: url("/portfolio/images/portfolio-thumbs.png") 0 0 no-repeat;
-      background-size: 500px 2000px;
-      height: 100%;
-      max-width: 247px;
+      background: url("/portfolio/images/portfolio-covers.png") 0 0 no-repeat;
+      background-size: 378px 3000px;
+      height: 280px;
       margin: 0 auto; }
-  #portfolio .item#ssa .itemLink {
-    background: url("/portfolio/images/ssa-thumb-bg.png") 50% 0 no-repeat;
-    background-size: cover; }
-    #portfolio .item#ssa .itemLink .itemImage {
-      background-position: 0 0; }
-  #portfolio .item#beforeItWasCool .itemLink {
-    background: white; }
-    #portfolio .item#beforeItWasCool .itemLink .itemImage {
-      background-position: 0 -200px; }
-  #portfolio .item#snake .itemLink {
-    background: #539574; }
-    #portfolio .item#snake .itemLink .itemImage {
-      background-position: 0 -400px; }
-  #portfolio .item#thirdLayerSoftware .itemLink {
-    background: #ccc; }
-    #portfolio .item#thirdLayerSoftware .itemLink .itemImage {
-      background-position: 0 -600px; }
-  #portfolio .item#oldPersonApp .itemLink {
-    background: url("/portfolio/images/old-person-bg.png") 50% 40% no-repeat;
-    background-size: cover; }
-    #portfolio .item#oldPersonApp .itemLink .itemImage {
-      background-position: 0 -800px; }
-  #portfolio .item#myFive .itemLink {
-    background: white; }
-    #portfolio .item#myFive .itemLink .itemImage {
-      background-position: 0 -1000px; }
-  #portfolio .item#olsetWebsite .itemLink {
-    background: #00a0cc; }
-    #portfolio .item#olsetWebsite .itemLink .itemImage {
-      background-position: 0 -1200px; }
-  #portfolio .item#olsetAnydo .itemLink {
-    background: white; }
-    #portfolio .item#olsetAnydo .itemLink .itemImage {
-      background-position: 0 -1400px; }
+    #portfolio .item .itemLink .itemLabels {
+      background: #eeeeee;
+      text-align: center;
+      padding: 15px; }
+      #portfolio .item .itemLink .itemLabels .title {
+        color: #333333;
+        font-size: 1.1em; }
+      #portfolio .item .itemLink .itemLabels .role {
+        color: #666666;
+        font-size: 0.8em; }
+  #portfolio .item#ssa .itemLink .itemImage {
+    background-position: 0 -2100px; }
+  #portfolio .item#beforeItWasCool .itemLink .itemImage {
+    background-position: 0 -1500px; }
+  #portfolio .item#snake .itemLink .itemImage {
+    background-position: 0 -600px; }
+  #portfolio .item#thirdLayerSoftware .itemLink .itemImage {
+    background-position: 0 -1800px; }
+  #portfolio .item#oldPersonApp .itemLink .itemImage {
+    background-position: 0 -900px; }
+  #portfolio .item#myFive .itemLink .itemImage {
+    background-position: 0 -1200px; }
+  #portfolio .item#olsetWebsite .itemLink .itemImage {
+    background-position: 0 -300px; }
+  #portfolio .item#olsetAnydo .itemLink .itemImage {
+    background-position: 0 0; }
 #portfolio .itemOverlay {
-  opacity: 0.95;
-  filter: alpha(opacity=95);
-  height: 100%;
+  opacity: 0.2;
+  filter: alpha(opacity=20);
+  height: 280px;
   width: 100%;
   background-color: white;
   position: absolute;
   font-size: 1.2em; }
   #portfolio .itemOverlay div {
+    display: none;
     padding: 20px;
-    display: table-cell;
     vertical-align: top; }
     #portfolio .itemOverlay div strong {
       color: #999999;
@@ -438,6 +451,14 @@ a:visited {
 .portfolioPage h4, .date {
   display: inline-block; }
 
+.portfolioPage .content h2 {
+  display: inline-block;
+  padding-top: 0;
+  margin-bottom: 25px; }
+.portfolioPage .content .projectInfo {
+  float: right;
+  text-align: right;
+  color: #aaaaaa; }
 .portfolioPage img {
   max-width: 100%; }
 
@@ -447,21 +468,11 @@ a:visited {
   width: 786px; }
 
 .item {
-  display: block;
-  margin-top: 10px; }
+  display: block; }
   .item p {
     margin-top: 0;
     padding-top: 0;
     margin-bottom: 10px; }
-
-.date {
-  color: #666;
-  font-size: 0.8em;
-  margin-bottom: 10px;
-  margin-left: 10px; }
-
-.border {
-  border: 2px solid #919FAC; }
 
 hr {
   background-color: #9CA9B4;
@@ -472,52 +483,31 @@ hr {
   width: 100%; }
 
 .portfolioNav {
-  display: table;
   width: 100%;
-  margin: 16px auto;
-  display: none; }
-  .portfolioNav > div {
-    display: table-cell;
-    vertical-align: middle; }
-
-.portfolioNav .miniNav div {
-  display: inline-block; }
-.portfolioNav .miniNav a {
-  height: 30px;
-  width: 60px;
-  background: url("/portfolio/images/portfolio-mini-nav-thumbs.png") left top no-repeat;
-  background-size: 800px 30px;
-  margin: 10px 2px; }
-  .portfolioNav .miniNav a.biwc {
-    background-position: -75px 0; }
-  .portfolioNav .miniNav a.snake {
-    background-position: -150px 0; }
-  .portfolioNav .miniNav a.thirdLayer {
-    background-position: -225px 0; }
-  .portfolioNav .miniNav a.oldPerson {
-    background-position: -300px 0; }
-  .portfolioNav .miniNav a.myfive {
-    background-position: -375px 0; }
-  .portfolioNav .miniNav a.olsetWebsite {
-    background-position: -450px 0; }
-  .portfolioNav .miniNav a.olsetAnydo {
-    background-position: -525px 0; }
-  .portfolioNav .miniNav a.active, .portfolioNav .miniNav a:hover {
-    border-bottom: 2px solid white;
-    margin-bottom: 2px !important;
-    padding-bottom: 6px; }
-
-.portfolioNav .prev, .portfolioNav .next {
-  background: url("/images/arrows-retina.png") 0 0 no-repeat;
-  background-size: 80px 40px;
-  height: 40px;
-  width: 40px; }
-  .portfolioNav .prev a, .portfolioNav .next a {
-    display: block;
-    height: 100%;
-    width: 100%; }
-.portfolioNav .next {
-  background-position: -40px 0; }
+  margin: 0 auto 16px;
+  display: table !important;
+  text-align: center; }
+  .portfolioNav h2 {
+    display: inline-block;
+    padding: 4px 0 0; }
+  .portfolioNav .prev, .portfolioNav .next {
+    background: url("/images/arrows-retina.png") 0 0 no-repeat;
+    background-size: 80px 80px;
+    height: 40px;
+    width: 40px; }
+    .portfolioNav .prev a, .portfolioNav .next a {
+      display: block;
+      height: 100%;
+      width: 100%; }
+  .portfolioNav .prev {
+    float: left; }
+    .portfolioNav .prev:hover, .portfolioNav .prev:active {
+      background-position: 0 -40px; }
+  .portfolioNav .next {
+    float: right;
+    background-position: -40px 0; }
+    .portfolioNav .next:hover, .portfolioNav .next:active {
+      background-position: -40px -40px; }
 
 .portfolioNav .prev {
   text-align: left; }
@@ -536,11 +526,10 @@ hr {
   font-size: 1.2em;
   display: block;
   padding-bottom: 60px;
-  margin-top: 4px;
+  margin-top: 30px;
   height: 100%; }
   .contact .contentContainer {
-    padding-top: 8px;
-    padding-bottom: 8px;
+    padding: 8px 0;
     text-align: right; }
     .contact .contentContainer a {
       display: inline-block;
@@ -550,20 +539,34 @@ hr {
       .contact .contentContainer a div {
         display: block; }
       .contact .contentContainer a .socialIcon {
-        background: url("/images/social-icons-retina.png") left top no-repeat;
+        background: url("/images/social-icons-retina.png") 0 0 no-repeat;
         background-size: 280px 80px;
         display: inline-block;
         height: 40px;
         width: 40px; }
+        .contact .contentContainer a .socialIcon.behance:hover, .contact .contentContainer a .socialIcon.behance:active {
+          background-position: 0 -40px; }
         .contact .contentContainer a .socialIcon.github {
           background-position: -40px 0; }
+          .contact .contentContainer a .socialIcon.github:hover, .contact .contentContainer a .socialIcon.github:active {
+            background-position: -40px -40px; }
         .contact .contentContainer a .socialIcon.stackExchange {
           background-position: -80px 0; }
+          .contact .contentContainer a .socialIcon.stackExchange:hover, .contact .contentContainer a .socialIcon.stackExchange:active {
+            background-position: -80px -40px; }
         .contact .contentContainer a .socialIcon.twitter {
           background-position: -120px 0; }
+          .contact .contentContainer a .socialIcon.twitter:hover, .contact .contentContainer a .socialIcon.twitter:active {
+            background-position: -120px -40px; }
         .contact .contentContainer a .socialIcon.linkedIn {
           background-position: -160px 0; }
+          .contact .contentContainer a .socialIcon.linkedIn:hover, .contact .contentContainer a .socialIcon.linkedIn:active {
+            background-position: -160px -40px; }
         .contact .contentContainer a .socialIcon.email {
           background-position: -200px 0; }
+          .contact .contentContainer a .socialIcon.email:hover, .contact .contentContainer a .socialIcon.email:active {
+            background-position: -200px -40px; }
         .contact .contentContainer a .socialIcon.phone {
           background-position: -240px 0; }
+          .contact .contentContainer a .socialIcon.phone:hover, .contact .contentContainer a .socialIcon.phone:active {
+            background-position: -240px -40px; }

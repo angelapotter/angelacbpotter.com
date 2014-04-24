@@ -9,6 +9,7 @@
 <div class="item">
   <div class="portfolioNav">
     <div class="prev"><a href="biwc.php" title="previous project"></a></div>
+    <h2>Secular Student Alliance</h2>
     <div class="next invisible"><a href="#" title="next project"></a></div>
       <!-- <div> -->
 <!--         <a href="myfive.php" title="myFIVE: a referral tracking app"><img class="myfive" src="images/myfive-mini.png" /></a>
@@ -25,11 +26,15 @@
   </div>
   <a href="http://groups.northwestern.edu/ssa" title="Secular Student Alliance" target="_blank"><img src="images/ssa_screenshot.png" /></a>
   <div class="content whiteBG topMarg20">
-		<h4>Secular Student Alliance</h4>
-		<span class="date">(Apr 2012)</span>
+		<h2>Secular Student Alliance</h2>
+    <div class="projectInfo">
+      <div class="date">spring 2012</div>
+      <div class="role">solo project</div>
+    </div>
+		<!-- <span class="date">(Apr 2012)</span>
 		<br />
 		<p><strong>Solo project</strong></p>
-		<br />
+		<br /> -->
 		<p>I co-founded my university's chapter of the Secular Student Alliance a few years ago. The group took off, and before I graduated I made a simple website for it.</p>
 		<br />
 		<span class="right small inlineBlock"><a href="http://groups.northwestern.edu/ssa" title="Secular Student Alliance" target="_blank">Visit the site</a></span>

@@ -41,10 +41,11 @@ body {
   // max-width: auto;
   // width: auto;
   // float: left;
+  max-width: 826px;
   overflow: hidden;
   // display: inline-block;
-  position: relative;
-  z-index: 999;
+  // position: relative;
+  // z-index: 999;
   padding: $mainPadding;
   // padding-right: $mainPadding;
 }
@@ -61,7 +62,7 @@ h1, h2, h3, h4 {
   // letter-spacing: -0.01em;
   // text-transform: lowercase;
 }
-h1, h2 {
+h1 {
   text-transform: lowercase;
 }
 h1 {
@@ -69,6 +70,7 @@ h1 {
   // letter-spacing: 0.001em;
   color: $lightGray;
   padding: $mainPadding;
+  line-height: 1;
   // left: 0;
   /*-webkit-margin-before: 0;*/
 }
@@ -137,38 +139,40 @@ a:visited { color: inherit; text-decoration: none; }
 .left { float: left; }
 .right { float: right; }
 .clear { clear: both; }
+.overflowHidden { overflow: hidden; }
 
 .center { margin: 0 auto; text-align: center; }
 
 .invisible { visibility: hidden !important; }
 
 .white { color: white; }
+.lightGray {
+  color: $lightGray;
+}
 
 .whiteBG { background-color: white; }
+
+.border {
+  border: 1px solid #ccc;
+  @extend .borderBox;
+}
 
 /***************************/
 /*******MEDIA QUERIES*******/
 /***************************/
-@media (max-width: 806px) {
-  .contentContainer { width: auto; }
-  #items { max-width: 102%; }
-}
-@media (max-width: 1080px) {  
-  #portfolio .item {
-    width: 50%;
-  }
-  // #head {
-  //   min-height: 8em;
-  //   // font-size: 0.9em;
-  // }
-  // h1 { top: -0.1em; }
-  // h2 { top: 1em; left: 0; }
-}
-@media (max-width: 848px) {  
-  #portfolio .item {
-    width: 100%;
+
+@media only screen and (max-width: 1094px) {
+  .leftNavContainer {
+    width: 190px;
+    // padding-right: 0;
   }
 }
+// @media only screen and (max-width: 1056px) {
+//   .leftNavContainer {
+//     width: 200px;
+//   }
+// }
+
 @media only screen and (max-width: 780px) {
   #about .content { padding-bottom: 22px !important; }
 }
@@ -177,15 +181,24 @@ a:visited { color: inherit; text-decoration: none; }
 //     width: 100%;
 //   }
 // }
-@media only screen and (max-width: 640px) {
-  .leftNavContainer {
-    width: 200px;
-  }
-}
-@media only screen and (max-width: 600px) {
+
+@media only screen and (max-width: 645px) {
   .leftNavContainer {
     float: none;
     width: 100%;
+    .leftNav {
+      padding-bottom: 6px;
+      a.subTab {
+        display: none;
+      }
+      .resumeLink {
+        margin-top: 0;
+      }
+    }
+  }
+  h1 {
+    font-size: 2.5em;
+    padding-bottom: 0;
   }
 }
 @media (max-width: 520px), only screen and (max-device-width: 720px) and (orientation: portrait) {
@@ -209,6 +222,23 @@ a:visited { color: inherit; text-decoration: none; }
   // h1 { font-size: 4.1em !important; }
   // h2 { font-size: 3em !important; top: 1.4em; }
   
+}
+@media only screen and (max-width: 448px) {
+  #portfolio {
+    #items {
+      width: 100%;
+      .item {
+        .itemLink {
+          margin-right: 0 !important;
+          max-width: 100%;
+        }
+        .itemImage {
+          background-size: 100% auto;
+          // height: auto;
+        }
+      }
+    }
+  }
 }
 @media only screen and (max-width: 430px) {
   .contact .contentContainer {

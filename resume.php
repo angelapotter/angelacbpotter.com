@@ -1,12 +1,12 @@
 <?php
   $title='resume';
   $bodyId='resume';
-  include 'includes/header.php';
+  include $_SERVER["DOCUMENT_ROOT"] . '/includes/header.php';
 
 ?>
 
 <div class="content whiteBG">
-  <h4 class="noMargTop">Skills</h4>
+  <h2 class="noPadTop noMargTop">skills</h2>
   <div>
     <p>
       <strong>UX Design:</strong> 
@@ -24,7 +24,7 @@
     </p>
   </div>
 
-  <h4>Experience</h4>
+  <h2>experience</h2>
   <div>
     <p>
       <strong>UX Designer</strong> (July 2013 - present)<br />
@@ -38,7 +38,7 @@
 
     <p>
       <strong>Interaction Designer</strong> (Dec 2012 - June 2013)<br />
-      <a href="http://myfive.com" title="myFIVE: A web app for keeping track of your referrals">myFIVE</a>
+      <a href="http://myfive.com" title="myFIVE: A web app for keeping track of your referrals">myFIVE</a>, Seattle
     </p>
     <ul>
       <li>Designed and implemented the company's first ever user testing program.</li>
@@ -55,7 +55,7 @@
     </ul>
 
   </div>
-  <h4>Education</h4>
+  <h2>education</h2>
   <div>
     <p><strong>Bachelor of Music in Music Cognition &amp; Flute Performance</strong> (June 2012)<br />
       Northwestern University, Evanston, IL
@@ -70,4 +70,4 @@
   <div class="clear"></div>
 </div>
 
-<?php include 'includes/footer.php'; ?>
+<?php include $_SERVER["DOCUMENT_ROOT"] . '/includes/footer.php'; ?>

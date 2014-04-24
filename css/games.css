@@ -1,5 +1,5 @@
 body {
-  background-color: #444;
+  /*background-color: #444;*/
 }
 #snake .content {
 	background-color: #539574;
@@ -29,6 +29,6 @@ body {
 }
 .home {
   text-align: center;
-  position: relative;
-  top: 80px;
+  /*position: relative;*/
+  /*top: 80px;*/
 }

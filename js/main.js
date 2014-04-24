@@ -22,12 +22,12 @@ $(document).ready(function() {
   // $('#' + bodyID + 'Link, body.portfolioPage #portfolioLink').addClass('activeTab');
   $('.' + bodyID + 'Link').addClass('active');
   if (bodyID === 'portfolio') {
-    $('.itemOverlay').hide();
+    // $('.itemOverlay').hide();
     $('.itemLink').hover(function(e) {
         e.preventDefault();
-        $(this).find('.itemOverlay').show();
-    }, function() {
         $(this).find('.itemOverlay').hide();
+    }, function() {
+        $(this).find('.itemOverlay').show();
     });
   }
   // portfolio  mini nav
@@ -38,10 +38,10 @@ $(document).ready(function() {
   // sticky nav
   function stickyNav() {
     var $nav = $('.leftNavContainer');
-    if ($(window).width() > 530) {      
+    if ($(window).width() > 645) {      
       $nav.stickyfloat({
         startOffset: 107,
-        duration: 1000
+        duration: 10
         // delay: 100
         // easing: 'swing'
       });  
@@ -55,9 +55,39 @@ $(document).ready(function() {
       }
     }  
   }
+  function portfolioCoverHeight() {
+    var $itemImages = $('.itemImage');
+    if ($(window).width() <= 448) {      
+      var $bgWidth = $itemImages.width();
+      var $totalBgHeight = $bgWidth * (3000/378);
+      var $spriteSpacing = $totalBgHeight / 10;
+      var $spriteHeight = $spriteSpacing * (280/300);
+      $itemImages.css('background-size', '100% ' + $totalBgHeight + 'px');
+      $itemImages.add('.itemOverlay').height($spriteHeight);
+      var projectArray = [
+        'olsetAnydo',
+        'olsetWebsite',
+        'snake',
+        'oldPerson',
+        'myFive',
+        'beforeItWasCool',
+        'thirdLayerSoftware',
+        'ssa'
+      ]
+      $.each(projectArray, function(i, item) {
+        var newBgPosY = i * $spriteSpacing * -1;
+        $('#' + item).find('.itemImage').css('background-position', '0 ' + newBgPosY + 'px');
+      });
+    }
+    else {
+      $itemImages.add('.item').add('.itemOverlay').removeAttr('style');
+    }
+  }
   stickyNav();
+  portfolioCoverHeight();
   $(window).on('resize orientationchange', function() {
     stickyNav();
+    portfolioCoverHeight();
   });
   
   
