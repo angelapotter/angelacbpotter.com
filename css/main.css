@@ -25,7 +25,7 @@ body {
   position: relative; }
 
 .contentContainer {
-  max-width: 826px;
+  max-width: px;
   overflow: hidden;
   padding: 25px; }
 
@@ -195,11 +195,14 @@ a:visited {
     float: none;
     width: 100%; }
     .leftNavContainer .leftNav {
-      padding-bottom: 6px; }
-      .leftNavContainer .leftNav a.subTab {
-        display: none; }
-      .leftNavContainer .leftNav a.active {
-        background-position: 0 center; }
+      padding-bottom: 16px; }
+      .leftNavContainer .leftNav a {
+        padding-left: 16px;
+        padding-right: 16px; }
+        .leftNavContainer .leftNav a.subTab {
+          display: none; }
+        .leftNavContainer .leftNav a.active {
+          background-position: 0 center; }
       .leftNavContainer .leftNav .resumeLink {
         margin-top: 0; }
 
@@ -207,7 +210,7 @@ a:visited {
     font-size: 2.5em;
     padding: 16px 16px 0 16px; }
 
-  .containerXL, .contentContainer {
+  .contentContainer {
     padding: 16px; } }
 @media (max-width: 520px), only screen and (max-device-width: 720px) and (orientation: portrait) {
   .profile.web {
@@ -287,10 +290,10 @@ a:visited {
   top: 0;
   border-top: 0; }
   .leftNavContainer .leftNav {
-    padding: 16px 0; }
+    padding: 25px 0; }
     .leftNavContainer .leftNav a {
       display: block;
-      padding: 5px 16px;
+      padding: 5px 25px;
       margin: 0;
       cursor: pointer; }
       .leftNavContainer .leftNav a:hover {
