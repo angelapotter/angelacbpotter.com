@@ -198,6 +198,8 @@ a:visited {
       padding-bottom: 6px; }
       .leftNavContainer .leftNav a.subTab {
         display: none; }
+      .leftNavContainer .leftNav a.active {
+        background-position: 0 center; }
       .leftNavContainer .leftNav .resumeLink {
         margin-top: 0; }
 
@@ -282,10 +284,10 @@ a:visited {
   top: 0;
   border-top: 0; }
   .leftNavContainer .leftNav {
-    padding: 25px 0; }
+    padding: 18px 0; }
     .leftNavContainer .leftNav a {
       display: block;
-      padding: 5px 25px;
+      padding: 5px 18px;
       margin: 0;
       cursor: pointer; }
       .leftNavContainer .leftNav a:hover {

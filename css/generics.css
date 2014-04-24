@@ -198,6 +198,8 @@ a:visited {
       padding-bottom: 6px; }
       .leftNavContainer .leftNav a.subTab {
         display: none; }
+      .leftNavContainer .leftNav a.active {
+        background-position: 0 center; }
       .leftNavContainer .leftNav .resumeLink {
         margin-top: 0; }
 

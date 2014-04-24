@@ -183,13 +183,19 @@ a:visited { color: inherit; text-decoration: none; }
 // }
 
 @media only screen and (max-width: 645px) {
+  $mainPadding: 18px;
   .leftNavContainer {
     float: none;
     width: 100%;
     .leftNav {
       padding-bottom: 6px;
-      a.subTab {
-        display: none;
+      a {
+        &.subTab {
+          display: none;
+        }
+        &.active {
+          background-position: 0 center;
+        }
       }
       .resumeLink {
         margin-top: 0;
