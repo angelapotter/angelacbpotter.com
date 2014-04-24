@@ -214,6 +214,10 @@ a:visited { color: inherit; text-decoration: none; }
   }
   .headshot {
     float: none;
+    margin-right: 0;
+  }
+  .contactParagraph {
+    margin-top: 10px;
   }
 }
 @media (max-width: 520px), only screen and (max-device-width: 720px) and (orientation: portrait) {

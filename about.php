@@ -21,7 +21,7 @@
     	<a href="https://play.google.com/store/apps/details?id=com.thirdlayer.oldperson&feature=search_result#?t=W251bGwsMSwyLDEsImNvbS50aGlyZGxheWVyLm9sZHBlcnNvbiJd" 
     	   title="Old Person App for Android">in the Google Play store</a>.</p>
     <img src="/images/angela-headshot-circle.png" alt="Angela Potter headshot" class="headshot" />
-    <div class="topMarg50 overflowHidden">
+    <div class="contactParagraph">
       <p>Feel free to get in touch!</p>
       <!-- <div class="indented"> -->
         <p>

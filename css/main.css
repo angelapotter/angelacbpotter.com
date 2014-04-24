@@ -214,7 +214,11 @@ a:visited {
     padding: 16px; }
 
   .headshot {
-    float: none; } }
+    float: none;
+    margin-right: 0; }
+
+  .contactParagraph {
+    margin-top: 10px; } }
 @media (max-width: 520px), only screen and (max-device-width: 720px) and (orientation: portrait) {
   .profile.web {
     display: none !important; }
@@ -370,6 +374,10 @@ a:visited {
   margin: 10px 20px 0 0;
   height: 218px;
   width: 218px; }
+
+.contactParagraph {
+  margin-top: 50px;
+  overflow: hidden; }
 
 /* page specifics */
 #resume .content > div {
