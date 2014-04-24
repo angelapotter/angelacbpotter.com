@@ -7,19 +7,24 @@
 
 <div class="item">
   <div class="portfolioNav">
-    <div class="prev"><a href="olset-anydo.php" title="previous project"></a></div>
-    <div class="next"><a href="myfive.php" title="next project"></a></div>
+    <div class="invisible prev"><a href="olset-anydo.php" title="previous project"></a></div>
+    <h2>olset.com</h2>
+    <div class="next"><a href="olset-anydo.php" title="next project"></a></div>
   </div>
   <a href="https://www.olset.com" title="OLSET: Get personalized hotel recommendations in seconds" target="_blank"><img src="images/olset/landing-page.png" style="max-width: 100%;" /></a>
   <div class="content whiteBG topMarg20">
-    <h4>OLSET.com</h4>
-    <span class="date">(ongoing)</span>
+    <h2>olset.com</h2>
+    <div class="projectInfo">
+      <div class="date">spring 2014</div>
+      <div class="role">design &amp; front-end dev</div>
+    </div>
+<!--     <span class="date">(ongoing)</span>
     <br />
     <p><strong>Collaborators:</strong> 
       <a href="https://www.olset.com/ux/pages/about" title="OLSET About Us" target="_blank">the OLSET team</a>
-    </p>
-    <p><strong>My role:</strong> design &amp; front-end development</p>
-    <br />
+    </p> -->
+    <!-- <p><strong>My role:</strong> design &amp; front-end development</p> -->
+    <!-- <br /> -->
     <p>This is the website for my current company, OLSET. OLSET is a travel company that uses big data to personalized hotel bookings. 
       Our patented algorithm analyzes user reviews and can tell what travelers are saying about specific aspects of each hotel. We then come up with a customized match 
       rating for each of our users based on what features are important to them.</p>

@@ -25,7 +25,7 @@
     // z-index: 100;  
     border-top: 0;
     .leftNav {
-      margin-right: 10px;
+      // margin-right: 10px;
       padding: $mainPadding 0;      
       a {
         display: block;
@@ -47,10 +47,14 @@
           padding-left: 40px;
         }
         &.active {
+          background: url('/images/active-tab-marker-retina.png') 6px center no-repeat;
+          background-size: 12px 20px;
           color: $primaryColor;
         }        
       }
-      
+      .resumeLink {
+        margin-top: 10px;
+      }      
     }
   }
 
@@ -112,6 +116,12 @@
 .profile.mobile {
   display: none;
 }
+.headshot {
+  float: left;
+  margin: 10px 20px 0 0;
+  height: 218px;
+  width: 218px;
+}
 
 /* page specifics */
 #resume {
@@ -120,9 +130,9 @@
       margin-bottom: 5px;
     }
   }
-  h4 {
-    margin-top: 24px;
-    margin-bottom: 6px;
+  h2 {
+    margin-top: 30px;
+    // margin-bottom: 2px;
   }
   p {
     margin-top: 1em;
@@ -143,95 +153,113 @@
 
 #portfolio {
   .content { overflow: hidden; }
-  #items, .portfolioSidebarContainer {
-    display: inline-block;
-    vertical-align: top;
-    // width: 33.3333%;
-  }
-  
+  // #items, .portfolioSidebarContainer {
+  //   display: inline-block;
+  //   vertical-align: top;
+  //   // width: 33.3333%;
+  // }  
   #items {
     // width: 66.6667%;
+    width: 103%;
   }
   .item {
     float: left;
-    width: 33.3333%;
+    // width: 378px;
     margin-top: 0;
     // img {
     //   width: 252px;
     //   height: 150px;
+    max-width: 100%;
     // }
     .itemLink {
       @extend .inlineBlock;
-      @extend .borderBox;
-      border: 1px solid $lightGray;
-      height: 150px;
+      background: white;
+      // @extend .borderBox;
+      @extend .border;
+      // border: 1px solid $lightGray;
+      // height: 150px;
       display: block;
-      width: auto;
-      // width: 100%;
+      // width: auto;
+      width: 378px;
+      max-width: 97%;
       // width: 252px;
-      margin: 0 10px 10px 0;
+      margin: 0 20px 20px 0;
       position: relative;
       
       // background-size: cover;
       // float: left;
       // @include box-shadow($standardBoxShadow);
       .itemImage {
-        background: url('/portfolio/images/portfolio-thumbs.png') 0 0 no-repeat;
-        background-size: 500px 2000px;
-        height: 100%;
-        max-width: 247px;
+        background: url('/portfolio/images/portfolio-covers.png') 0 0 no-repeat;
+        background-size: 378px 3000px;
+        height: 280px;
+        // max-width: 2px;
         // width: auto;
         margin: 0 auto;
       }
+      .itemLabels {
+        background: $lightestGray;
+        // background: white;
+        text-align: center;
+        padding: 15px;
+        .title {
+          color: $darkestGray;
+          font-size: 1.1em;
+        }
+        .role {
+          color: $darkGray;
+          font-size: 0.8em;
+        }
+      }
     }
     &#ssa .itemLink {
-      background: url('/portfolio/images/ssa-thumb-bg.png') 50% 0 no-repeat;
-      background-size: cover;
+      // background: url('/portfolio/images/ssa-thumb-bg.png') 50% 0 no-repeat;
+      // background-size: cover;
       .itemImage {
-        background-position: 0 0; 
+        background-position: 0 -2100px; 
       }
     }
     &#beforeItWasCool .itemLink {
-      background: white;
+      // background: white;
       .itemImage {
-        background-position: 0 -200px; 
+        background-position: 0 -1500px; 
       }
     }
     &#snake .itemLink {
-      background: #539574;
-      .itemImage {
-        background-position: 0 -400px; 
-      }
-    }
-    &#thirdLayerSoftware .itemLink {
-      background: #ccc;
+      // background: #539574;
       .itemImage {
         background-position: 0 -600px; 
       }
     }
-    &#oldPersonApp .itemLink {
-      background: url('/portfolio/images/old-person-bg.png') 50% 40% no-repeat;
-      background-size: cover;
+    &#thirdLayerSoftware .itemLink {
+      // background: #ccc;
       .itemImage {
-        background-position: 0 -800px; 
+        background-position: 0 -1800px; 
+      }
+    }
+    &#oldPersonApp .itemLink {
+      // background: url('/portfolio/images/old-person-bg.png') 50% 40% no-repeat;
+      // background-size: cover;
+      .itemImage {
+        background-position: 0 -900px; 
       }
     }
     &#myFive .itemLink {
-      background: white;
-      .itemImage {
-        background-position: 0 -1000px; 
-      }
-    }
-    &#olsetWebsite .itemLink {
-      background: #00a0cc;
+      // background: white;
       .itemImage {
         background-position: 0 -1200px; 
       }
     }
-    &#olsetAnydo .itemLink {
-      background: white;
+    &#olsetWebsite .itemLink {
+      // background: #00a0cc;
       .itemImage {
-        background-position: 0 -1400px; 
+        background-position: 0 -300px; 
+      }
+    }
+    &#olsetAnydo .itemLink {
+      // background: white;
+      .itemImage {
+        background-position: 0 0; 
       }
     }
   }
@@ -239,8 +267,9 @@
   .itemOverlay {
     // display: table;
     // vertical-align: middle;
-    @include opacity(0.95);
-    height: 100%;
+    // display: none;
+    @include opacity(0.2);
+    height: 280px;
     width: 100%;
     background-color: white;
     position: absolute;
@@ -252,8 +281,9 @@
     // font-weight: bold;
     // color: $mediumGray;
     div {
+      display: none;
       padding: 20px;
-      display: table-cell;
+      // display: table-cell;
       vertical-align: top;
       // font-weight: bold;
       strong {
@@ -281,6 +311,18 @@
 	display: inline-block;
 }
 .portfolioPage {
+  .content {
+    h2 {
+      display: inline-block;
+      padding-top: 0;
+      margin-bottom: 25px;
+    }
+    .projectInfo {
+      float: right;
+      text-align: right;
+      color: $lightGray;
+    }
+  }
   img {
     max-width: 100%;
   }
@@ -293,7 +335,7 @@
 }
 .item {
 	display: block;
-  margin-top: 10px;
+  // margin-top: 10px;
 	// width: 262px;
  //  height: 160px;
   // float: left;
@@ -306,13 +348,13 @@
   }
 }
 
-.date {
-	color: #666;
-	font-size: 0.8em;
-	margin-bottom: 10px;
-	margin-left: 10px;
-}
-.border { border:2px solid #919FAC; }
+// .date {
+// 	color: #666;
+// 	font-size: 0.8em;
+// 	margin-bottom: 10px;
+// 	margin-left: 10px;
+// }
+// .border { border:2px solid #919FAC; }
 
 hr {
 	background-color: #9CA9B4;
@@ -322,69 +364,68 @@ hr {
 	margin: 50px 0;
 	width: 100%;
 }
-.portfolioNav {
-  display: table;
-  width: 100%;
-  margin: 16px auto;
-  display: none;
-  > div {
-    display: table-cell;
-    vertical-align: middle;
-  }
-}
-.portfolioNav .miniNav {
-  div {
-    display: inline-block;
-  }
-  a {
-    @extend .inlineBlock;
-    height: 30px;
-    width: 60px;
-    background: url('/portfolio/images/portfolio-mini-nav-thumbs.png') left top no-repeat;
-    background-size: 800px 30px;
-    margin: 10px 2px;
-    &.biwc {
-      background-position: -75px 0;
-    }
-    &.snake {
-      background-position: -150px 0;
-    }
-    &.thirdLayer {
-      background-position: -225px 0;
-    }
-    &.oldPerson {
-      background-position: -300px 0;
-    }
-    &.myfive {
-      background-position: -375px 0;
-    }
-    &.olsetWebsite {
-      background-position: -450px 0;
-    }
-    &.olsetAnydo {
-      background-position: -525px 0;
-    }
-    &.active, &:hover {
-      border-bottom: 2px solid white;
-      margin-bottom: 2px !important;
-      padding-bottom: 6px;
-    }
-  }
+// .portfolioNav .miniNav {
+//   div {
+//     display: inline-block;
+//   }
+//   a {
+//     @extend .inlineBlock;
+//     height: 30px;
+//     width: 60px;
+//     background: url('/portfolio/images/portfolio-mini-nav-thumbs.png') left top no-repeat;
+//     background-size: 800px 30px;
+//     margin: 10px 2px;
+//     &.biwc {
+//       background-position: -75px 0;
+//     }
+//     &.snake {
+//       background-position: -150px 0;
+//     }
+//     &.thirdLayer {
+//       background-position: -225px 0;
+//     }
+//     &.oldPerson {
+//       background-position: -300px 0;
+//     }
+//     &.myfive {
+//       background-position: -375px 0;
+//     }
+//     &.olsetWebsite {
+//       background-position: -450px 0;
+//     }
+//     &.olsetAnydo {
+//       background-position: -525px 0;
+//     }
+//     &.active, &:hover {
+//       border-bottom: 2px solid white;
+//       margin-bottom: 2px !important;
+//       padding-bottom: 6px;
+//     }
+//   }
   // img {
   //   margin: 10px 2px;
   //   height: 30px;
   //   width: 60px;
   // }   
-}
+// }
 // portfolioNav .miniNav a.active, .portfolioNav .miniNav a:hover {
 //   border-bottom: 2px solid white;
 //   margin-bottom: 2px !important;
 //   padding-bottom: 6px;
 // }
 .portfolioNav {
+  width: 100%;
+  margin: 0 auto 16px;
+  display: table !important;
+  text-align: center;
+  h2 {
+    display: inline-block;
+    padding: 4px 0 0;
+    // text-align: center;
+  }
   .prev, .next {
     background: url('/images/arrows-retina.png') 0 0 no-repeat;
-    background-size: 80px 40px;
+    background-size: 80px 80px;
     height: 40px;
     width: 40px;
     a {
@@ -393,8 +434,18 @@ hr {
       width: 100%;
     }
   }
+  .prev {
+    float: left;
+    &:hover, &:active {
+      background-position: 0 -40px;
+    }
+  }
   .next {
+    float: right;
     background-position: -40px 0;
+    &:hover, &:active {
+      background-position: -40px -40px;
+    }
   }
 }
 .portfolioNav .prev { text-align: left; }
@@ -410,11 +461,10 @@ hr {
   font-size: 1.2em;
   display: block;
   padding-bottom: 60px;
-  margin-top: 4px;
+  margin-top: 30px;
   height: 100%;
   .contentContainer {
-    padding-top: 8px;
-    padding-bottom: 8px;
+    padding: 8px 0;
     text-align: right;
     a {
       display: inline-block;
@@ -427,46 +477,52 @@ hr {
         // vertical-align: middle;
       }
       .socialIcon {
-        background: url('/images/social-icons-retina.png') left top no-repeat;
+        background: url('/images/social-icons-retina.png') 0 0 no-repeat;
         background-size: 280px 80px;
         display: inline-block;
         height: 40px;
         width: 40px;
         // margin-right: 8px;
         &.behance {
-          // &:hover, &:active {
-          //   background-position: 0 -40px;
-          // }
+          &:hover, &:active {
+            background-position: 0 -40px;
+          }
         }
         &.github {
           background-position: -40px 0;
-          // &:hover, &:active {
-          //   background-position: -40px -40px;
-          // }
+          &:hover, &:active {
+            background-position: -40px -40px;
+          }
         }
         &.stackExchange {
           background-position: -80px 0;
-          // &:hover, &:active {
-          //   background-position: -80px -40px;
-          // }
+          &:hover, &:active {
+            background-position: -80px -40px;
+          }
         }
         &.twitter {
           background-position: -120px 0;
-          // &:hover, &:active {
-          //   background-position: -120px -40px;
-          // }
+          &:hover, &:active {
+            background-position: -120px -40px;
+          }
         }
         &.linkedIn {
           background-position: -160px 0;
-          // &:hover, &:active {
-          //   background-position: -160px -40px;
-          // }
+          &:hover, &:active {
+            background-position: -160px -40px;
+          }
         }
         &.email {
           background-position: -200px 0;
+          &:hover, &:active {
+            background-position: -200px -40px;
+          }
         }
         &.phone {
           background-position: -240px 0;
+          &:hover, &:active {
+            background-position: -240px -40px;
+          }
         }
         
       }

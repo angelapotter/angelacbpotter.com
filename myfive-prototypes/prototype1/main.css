@@ -1,0 +1,494 @@
+/**************** HEADER - biggest wrappers & gray bar ****************/
+
+#all { width: 100%; }
+#grayBar {
+  width: 99%;
+  background-color: #555;
+  height: 24px;
+  color: white;
+  padding: 0;
+  margin: 0 auto;
+}
+#grayBar div {
+  display: inline;
+  margin: 3px 12px 0 12px;
+}
+#grayBar div img { margin-top: 2px; }
+
+/**************** HEADER - main wrappers & nav ****************/
+
+#main {
+  width: 980px;
+  margin: 0 auto;
+}
+#navBar {
+  background-color: #ddd;
+  cursor: pointer;
+  display: table;
+  font-weight: bold;
+  height: 42px;
+  margin: 10px 0 14px;
+  overflow: hidden;
+  text-align: center;
+  width: 100%;
+}
+.tab {
+  display: table-cell;
+  vertical-align: middle;
+  padding: 0 10px;
+  border-right: 1px solid #bbb;
+}
+#elephant {
+  vertical-align: bottom;
+  padding: 0 4px 2px 8px;
+}
+
+#track {
+  background-color: #ec681f;
+  color: white;
+  border-right: none;
+}
+
+/**************** HEADER - content wrappers ****************/
+
+#content {
+  width: 950px;
+  padding: 15px;
+}
+#instructions { margin: 0 10px 10px; }
+
+
+/**************** FOOTER ****************/
+#resetGig {
+  margin: 20px auto;
+  text-align: center;
+  display: block;
+  border: 2px solid #ccc;
+  color: #999;
+}
+
+/******************************************************/
+/**************** STEPS - big wrappers ****************/
+/******************************************************/
+
+.mainContentFrame {
+  width: 645px;
+  float: left;
+}
+.mainContent {
+  width: 615px;
+  padding: 15px;
+}
+.grayHeader {
+  background-color: #eee;
+  border-radius: 4px 4px 0 0;
+  width: 100%;
+  height: 50px;
+  border-bottom: 1px solid #ccc;
+}
+h2 {
+  font-size: 1.4em;
+  font-weight: normal;
+  margin: 0;
+}
+.grayHeader h2 {
+  position: relative;
+  top: 50%;
+  margin-left: 15px;
+  margin-top: -0.6em;
+  display: inline;
+}
+.grayHeader p {
+  position: relative;
+  top: 50%;
+  right: 15px;
+  margin-top: -0.6em;
+}
+.grayHeader #allChanges {
+  color: #999;
+  font-style: italic;
+  float: right;
+}
+.grayHeader img {
+  margin-left: 15px;
+  padding-top: 3px;
+  max-width: 41px;
+}
+
+/*******************************************/
+/**************** RIGHT NAV ****************/
+/*******************************************/
+
+.stepsRight {
+  width: 290px;
+  float: right;
+  overflow: hidden;
+}
+.stepsRight a:link,
+.stepsRight a:hover,
+.stepsRight a:visited {
+  color: inherit;
+}
+.stepsRight .step {
+  height: 10px;
+  width: 260px;
+  border-bottom: 1px solid #ddd;
+  padding: 11px 15px 10px;
+  font-weight: bold;
+}
+.step .number { width: 40px; }
+
+.stepNow {
+  background-color: #3686a5 !important;
+  color: white !important;
+}
+
+/**************** STEP 1 -- text & contact input ****************/
+
+h3 {
+  font-size: 1.1em;
+  font-weight: normal;
+  margin: 0;
+  padding: 0;
+}
+.contactTile {
+  background-color: #3686a5;
+  color: black;
+  height: 30px;
+  display: inline-table;
+  margin: 10px 0;
+  padding: 0 4px;
+  cursor: move;
+}
+.contactTile div {
+  display: table-cell;
+  vertical-align: middle;
+  margin: 0 10px;
+}
+.contactTile .profile {
+  height: 14px;
+  width: 14px;
+  margin: 4px 6px 0;
+}
+#contactInput { min-width: 180px; }
+
+/**************** STEP 1 -- jQuery styling ALL ****************/
+
+/*generic widgets*/
+.ui-widget-content {
+  font-size: 0.9em;
+  /*border: 1px solid #ccc;*/
+  color: #333;
+  font-family: "arial",sans-serif !important;
+}
+/*autocomplete*/
+.ui-menu-item,
+.ui-widget-content {
+  color: #333 !important;
+  border: 1p
+}
+.ui-widget-content {
+  border: 1px solid #bbb;
+}
+.ui-menu {
+  padding: 1px;
+}
+.ui-autocomplete {
+  overflow: hidden;
+  border-top-left-radius: 0 !important;
+  border-top-right-radius: 0 !important;
+  box-shadow: none !important;
+}
+.ui-dialog {
+  overflow: hidden;
+  box-shadow: 0px 0px 6px #bbb;
+}
+#dialog, .ui-dialog-buttonpane {
+  box-shadow: none !important;
+}
+/*.ui-widget-content .ui-state-hover,
+.ui-widget-header .ui-state-hover,*/
+.ui-state-focus,
+.ui-widget-content .ui-state-focus,
+.ui-widget-header .ui-state-focus {
+  background-image: none !important;
+  background-color: #b0dcdf;
+  border: none;
+  border-radius: 0;
+  overflow: hidden !important;
+}
+/*dialog*/
+.ui-widget-header,
+.ui-datepicker-header {
+  background-image: none;
+  background-color: #b0dcdf;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  border-bottom: 1px solid #bbb;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+.ui-state-default,
+.ui-widget-content .ui-state-default,
+.ui-widget-header .ui-state-default {
+  background-image: none;
+  background-color: #eee;
+  overflow: hidden !important;
+}
+.ui-dialog,
+.ui-datepicker,
+.ui-dialog-buttonpane {
+  margin-top: 0 !important;
+  padding: 0;
+}
+.ui-dialog-buttonpane {
+  border-width: 0 !important;
+}
+.ui-dialog-title {
+  font-size: 1.2em;
+}
+.ui-dialog .ui-dialog-titlebar-close { /*adjusts close button for title font size*/
+  margin: -12px 0 0 0 !important;
+}
+.ui-datepicker table { /*for table*/
+  margin: 0 0 2px 0 !important;
+}
+
+/**************** STEP 1 -- contact cards ****************/
+
+.contactCard {
+  width: 300px;
+  margin-top: 10px;
+}
+.contactCard .grayHeader h2 {
+  color: #3686a5;
+  margin-left: 6px;
+}
+.contactCardSubhead {
+  font-size: 0.7em;
+  color: #666;
+  padding: 4px 15px;
+  border-bottom: 1px solid #ccc;
+}
+.contactContentFrame { min-height: 80px; }
+.contactContent { margin: 12px; }
+
+.contactContent .profile {
+  float: left;
+  margin: 0 12px 4px 0;
+}
+.contactContent h3 {
+  font-weight: bold;
+  font-size: 1.4em;
+}
+.contactContent { font-size: 0.8em; }
+
+.contactContent p, .contactInfo div {
+  margin-top: 5px;
+  margin-bottom: 8px;
+}
+.contactContent .jobTitle { color: #999; }
+.contactInfo .infoType {
+  color: #999;
+  text-align: right;
+  float: right;
+}
+h3.hint {
+  color: #ccc;
+  font-weight: normal;
+  margin-top: 50px;
+  text-align: center;
+}
+.dropHere h3.hint {
+  color: #3686a5 !important;
+  font-weight: bold;
+}
+
+/****************************************/
+/**************** STEP 2 ****************/
+/****************************************/
+
+#gigTitle{ min-width: 320px; }
+textarea {  font-family: arial,sans-serif; }
+.yourEyesTitle {  text-align: center; }
+
+.yourEyesTitle img {
+  margin-bottom: -3px;
+  margin-right: 10px;
+}
+.yourEyesTitle h2 {
+  color: #c24d4a;
+  display: inline;
+}
+.grayArea {
+  background-color: #eee;
+  padding: 25px;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  margin-top: 20px;
+}
+#dollarValue {
+  width: 70px;
+  font-size: 1.1em;
+}
+#yourEyesOnly .noteFrame {
+  margin: 10px 25px 0;
+}
+
+/****************************************/
+/**************** STEP 3 ****************/
+/***************************************/
+
+.step3Content h3 {  display: inline-block; }
+.step3Content .when { margin: 10px 0 20px 30px; }
+
+.step3Content .when div {
+  margin-left: 6px;
+  display: inline-block;
+}
+input.date { width: 54px; }
+.ui-datepicker-trigger { margin: 0 0 -7px 6px; }
+.step3Content .when .notYet { margin-left: 40px; }
+
+.resetPage {
+  margin: 8px auto 0;
+  text-align: center;
+  font-size: 0.75em;
+  display: none;
+}
+
+/****************************************/
+/**************** STEP 4 ****************/
+/***************************************/
+
+.previewContent { padding: 15px; }
+
+.previewContent h2 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+#rightFrame {
+  width: 290px;
+  margin: 0;
+  padding: 0;
+  float: right;
+}
+#publishButton {
+  font-size: 2em;
+  height: 62px;
+  width: 250px;
+  /*margin-bottom: 10px;*/
+  /*border: 1px solid #999;*/
+}
+.disc { margin: 20px 30px; }
+.disc .header { margin-bottom: 15px; }
+
+.disc .header img {
+  margin-bottom: -5px;
+  margin-right: 10px;
+}
+.disc .header h2 {
+  display: inline-block;
+  color: #3686a5;
+}
+#cantSubmit {
+  display: none;
+  color: #999;
+  margin-right: 6px;
+}
+.editLink, .selectContactInfo {
+  font-size: 0.75em;
+ }
+.editLink {
+  display: inline-block;
+}
+.selectContactInfo {
+  margin: 10px auto;
+  text-align: center;
+}
+.grayHeader .editLink {
+  position: relative;
+  top: 50%;
+  margin-top: -0.45em;
+}
+
+/*********************************************/
+/**************** VIEW TICKET ****************/
+/*********************************************/
+
+/*right box*/
+
+.notificationGreen {
+  font-weight: bold;
+  color: #009933;
+  text-align: center;
+  padding: 12px 0;
+  margin: 4px 0 26px 0;
+  border: 2px solid #009933;
+}
+#creationDate {
+  color: #999;
+  font-size: 0.8em;
+  margin-top: 6px;
+}
+#shareSidebar .item {
+  margin: 10px 0;
+}
+.sharePerson .small {
+  font-size: 0.79em;
+}
+.mainLine {
+  display: table;
+}
+.shh {
+  float: right;
+  cursor: pointer;
+}
+.sharePerson .mainLine .middle {
+  padding: 0 2px;
+  display: table-cell;
+  vertical-align: middle;
+}
+.sharePerson input {
+  padding-right: 4px;
+}
+.shareOptions {
+  margin: 6px 0 0 18px;
+}
+.thisIsPrivate {
+  margin: 20px 0 14px;
+  display: inline-block;
+}
+#shareButton {
+  height: 40px;
+  width: 100px;
+  margin-bottom: 10px;
+}
+#gigLink {
+  width: 280px;
+}
+
+/*left side*/
+.userCommentFrame { display: none; }
+.userComment {
+  color: #333;
+  border-radius: 4px;
+  padding: 15px;
+  margin-right: 1px;
+  margin-bottom: 15px;
+  float: right;
+  width: 70%;
+}
+.userCommentFrame .author {
+  float: right;
+  margin-left: 10px;
+  text-align: center;
+  font-size: 0.8em;
+}
+/* .userComment .tail img {
+  position: relative;
+  right: 0;
+  top: 0;
+} */
+

@@ -1,0 +1,203 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  width: 100%;
+  height: 100%;
+}
+body {
+  background-color: white;
+  font-size: 90%;
+  font-family: arial, sans-serif;
+}
+h1 {
+  font-size: 2em;
+  font-weight: normal;
+  color: black;
+  margin-top: 10px;
+}
+
+/*** TEXT ***/
+
+/*colors*/
+.black { color: black; }
+.darkGray { color: #555; }
+.gray { color: #999; }
+.lightGray { color: #ccc; }
+.teal { color: #3686a5; }
+.green { color: #009933; }
+.red { color: #c24d4a; }
+
+.grayedOut { opacity: 0.6; }
+
+.bold { font-weight: bold; }
+.italic { font-style: italic; }
+
+/*.border { border: 1px solid #ccc; }*/
+
+/*alignment etc*/
+.noMargL { margin-left:0; }
+.noMargR { margin-right:0; }
+.sidePad {
+  padding-left:10px;
+  padding-right:10px;
+}
+.sideMarg {
+  margin-left:10px;
+  margin-right:10px;
+}
+
+.right { float:right; }
+.left { float:left; }
+.clear { clear:both; }
+
+.inline { display:inline; }
+.inlineBlock { display: inline-block; }
+
+.alignL { text-align:left !important; }
+.alignR { text-align:right !important; }
+
+.small { font-size: 0.8em; }
+.big { font-size: 1.3em; }
+
+.topPad20 { padding-top:20px !important; }
+.botPad20 { padding-bottom:20px !important; }
+
+.topMarg10 { margin-top:10px !important; }
+.topMarg20 { margin-top:20px !important; }
+.topMarg50 { margin-top:50px !important; }
+.botMarg10 { margin-bottom:10px !important; }
+.botMarg20 { margin-bottom:20px !important; }
+
+.indent10 { margin-left: 10px !important; }
+.indent15 { margin-left: 15px !important; }
+.indent20 { margin-left: 20px !important; }
+.indent30 { margin-left: 30px !important; }
+.indent50 { margin-left: 50px !important; }
+.indent70 { margin-left: 70px !important; }
+
+.regMarg { margin-left: 15px; margin-right: 15px; }
+
+.twoColumn { width:48% }
+.singleSpaced { line-height:100%; margin:0; }
+.doubleSpaced { line-height:200%; }
+
+.center { margin-left:auto; margin-right:auto; text-align:center; }
+.vertMid {
+  display:table;
+}
+.vertMid div {
+  display:table-cell;
+  vertical-align:middle;
+}
+
+/*** LINKS ***/
+a:link, a:hover, a:visited { text-decoration: none; }
+a:link {  color: #3b4edc; }
+a:hover { color: #6073ff; }
+a:visited { color: #7564bc; }
+
+/*** HR ***/
+hr {
+  color: #ccc;
+  background-color: #ccc;
+  height: 1px;
+  border: 0;
+  width: 100%;
+  margin: 0;
+}
+
+/*** FORMS & BUTTONS ***/
+input {
+  margin: 4px 0;
+  padding-left: 4px;
+  padding-right: 4px;
+  font-family: arial,sans-serif;
+}
+button {
+  font-weight: bold;
+  min-height: 22px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  color: white;
+}
+button span { padding: 2px 4px; }
+.submitButton { background-color: #496300; }
+.submitButton:hover { background-color: #647a26; }
+
+.tealButton {
+  box-shadow: 2px 2px 2px 0 #999;
+  background-color: #3686a5;
+}
+.tealButton:hover { background-color: #5498b2; }
+
+.disabledButton {
+  background-color: #ccc !important;
+  color: #999 !important;
+}
+.disabledButton:hover {
+  background-color: #ccc !important;
+  cursor: default;
+}
+.inheritColor { color: inherit; }
+
+/*** IMAGES (MOSTLY) ***/
+.iconInline {
+  display: inline;
+  margin-right: 4px;
+  margin-left: 4px;
+}
+.iconStartLine {
+  display: inline;
+  margin-right: 4px;
+}
+
+/*** NEXT STEP BUTTONS ***/
+.nextStepFrame, #publishFrame {
+  position: fixed;
+  top: 464px;
+  text-align: center;
+  margin-bottom: 10px;
+  width: 290px;
+  padding: 0;
+}
+.nextStepFrame a {
+  display: inline-block;  
+}
+.nextStep {
+  height: 40px;
+  width: 180px;
+  font-weight: bold;
+  display: table;
+  font-size: 1.2em;
+  background-image: url('images/teal-button.png');
+  color: white;
+}
+.nextStep:hover {
+  background-image: url('images/teal-button-hov.png');
+  color: white;
+}
+.nextStep div {
+  display: table-cell;
+  vertical-align: middle;
+  padding-right: 18px;
+}
+
+/*** COMMONLY APPLIED TO ELEMENTS ***/
+
+#navBar, #content {
+  border: 1px solid #bbb;
+  border-radius: 12px;
+  box-shadow: 0px 0px 6px #bbb;
+}
+.mainContentFrame, .stepsRight,
+.contactTile, .contactCard {
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+/* light teal bg */
+#elephant, .stepsRight .step:hover,
+.userComment {
+  background-color: #b0dcdf;
+}
