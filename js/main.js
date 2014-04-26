@@ -20,29 +20,35 @@ function bindOpenMenuTrigger() {
       $nav.hide();  
     }
     else {
-      $nav.show();  
+      var newNavHeight = $(window).height() - 54;
+      $nav.show().css({
+        'max-height': newNavHeight + 'px',
+        'overflow-y': 'auto'
+      }).scroll(function(e) {
+        e.preventDefault();
+      });
+      // $nav.attr('style') = 'overflow-y: scroll; height: ' + newNavHeight 
     }
         
   });
   $('.contentContainer').click(function() {
-    $nav.hide();
+    $nav.removeAttr('style').hide();
   });
 }
 var lastScrollTop = 0;
 function bindTopNavTriggers() {
   $(window).scroll(function(e) {
     var st = $(this).scrollTop();
-    if (st > lastScrollTop + 5 || st < 8){
+    if (st > lastScrollTop + 2 || st < 8){
         // downscroll code
         $('.header').removeClass('fixed');
-        $('.leftNavContainer').hide();
+        // $('.leftNavContainer').hide();
     }
-    else if (st < lastScrollTop - 5) {
+    else if (st < lastScrollTop - 280) {
        // upscroll code       
        $('.header').addClass('fixed');
     }
-   lastScrollTop = st;
-    
+   lastScrollTop = st;    
     // something
   });
 }
@@ -84,7 +90,8 @@ $(document).ready(function() {
           duration: 10
           // delay: 100
           // easing: 'swing'
-        }); 
+        });
+        previousWindowWidth = $(window).width(); 
       }
       else if ($(window).width() === previousWindowWidth) {
         $nav.show().stickyfloat({
@@ -99,6 +106,7 @@ $(document).ready(function() {
       if (previousWindowWidth > 645) {
         bindTopNavTriggers();
         $nav.hide().stickyfloat('destroy');
+        previousWindowWidth = $(window).width();
       }
       else if (previousWindowWidth === $(window).width()) {
         bindTopNavTriggers();
