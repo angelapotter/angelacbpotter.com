@@ -196,16 +196,16 @@ a:visited {
     width: 100%;
     top: -8px;
     background: white;
-    background: rgba(255, 255, 255, 0.9);
+    background: rgba(255, 255, 255, 0.95);
     border-bottom: 1px solid #ccc;
     z-index: 7; }
 
 .menuIcon {
-  background: url("/images/menu-icon-retina.png") 16px 18px no-repeat;
+  background: url("/images/menu-icon-retina.png") 16px 14px no-repeat;
   background-size: 32px;
   height: 32px;
   width: 32px;
-  padding: 18px 16px 8px;
+  padding: 14px 16px 8px;
   float: right;
   display: none;
   cursor: pointer; }

@@ -1,7 +1,7 @@
 3.2.10 (Media Mark)
-9eec69b564f94bef75b37409eb6cc03d5858f57a
+11d944fc75153f54107edd9ec4e47a1b1d4e039e
 o:Sass::Tree::RootNode
-:@template"*.@import "modules";
+:@template"+.@import "modules";
 @import "generics";
 
 /***HEAD***/
@@ -26,7 +26,7 @@
     width: 100%;
     top: -8px;
     background: white;
-    background: rgba(255,255,255, 0.9);
+    background: rgba(255,255,255, 0.95);
     border-bottom: 1px solid #ccc;
     z-index: 7;
   }
@@ -37,11 +37,11 @@
   //   }
 }
 .menuIcon {
-  background: url('/images/menu-icon-retina.png') 16px 18px no-repeat;
+  background: url('/images/menu-icon-retina.png') 16px 14px no-repeat;
   background-size: 32px;
   height: 32px;
   width: 32px;
-  padding: 18px 16px 8px;
+  padding: 14px 16px 8px;
   float: right;
   display: none;
   cursor: pointer;
@@ -697,9 +697,9 @@ white;
 @
 ;."255;i;/@po;,;-[ ;iÿ;
 @
-;."255;i;/@po;,;-[ ;f0.90000000000000002 ÌÍ;
+;."255;i;/@po;,;-[ ;f0.94999999999999996 ff;
 @
-;."0.9;i;/@p;
+;."	0.95;i;/@p;
 @
 ;i;;o;;i ;["border-bottom;[ ;o;;;;"1px solid #ccc;
 @
@@ -729,9 +729,9 @@ fixed;@…;i;'To;
 @
 ;i*o;,;-["px;i;
 @
-;."	16px;i*;/[ o;,;-["px;i;
+;."	16px;i*;/[ o;,;-["px;i;
 @
-;."	18px;i*;/[ o;	;;;"no-repeat;
+;."	14px;i*;/[ o;	;;;"no-repeat;
 @
 ;i*;
 @
@@ -751,7 +751,7 @@ width;[ ;o;;;;"	32px;
 @
 ;
 @
-;i-;;o;;i ;["padding;[ ;o;;;;"18px 16px 8px;
+;i-;;o;;i ;["padding;[ ;o;;;;"14px 16px 8px;
 @
 ;
 @

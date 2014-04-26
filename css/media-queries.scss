@@ -31,7 +31,7 @@
     position: fixed;
     top: 50px;
     left: 40%;
-    background: rgba(255,255,255, 0.9);
+    background: rgba(255,255,255, 0.95);
     z-index: 7;
     border-left: 1px solid $lightestGray;
     border-bottom: 1px solid $lightestGray;
@@ -57,7 +57,7 @@
     }
   }
   h1 {
-    font-size: 1.9em;
+    font-size: 1.4em;
     padding: 16px 0 0 16px;    
     // display: inline-block;
   }

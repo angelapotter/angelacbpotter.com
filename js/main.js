@@ -14,14 +14,18 @@
 //   };
 // }
 function bindOpenMenuTrigger() {
+  var $nav = $('.leftNavContainer');
   $('.menuIcon').click(function() {
-    if ($('.leftNavContainer').is(':visible')) {
-      $('.leftNavContainer').hide();  
+    if ($nav.is(':visible')) {
+      $nav.hide();  
     }
     else {
-      $('.leftNavContainer').show();  
+      $nav.show();  
     }
         
+  });
+  $('.contentContainer').click(function() {
+    $nav.hide();
   });
 }
 var lastScrollTop = 0;
@@ -68,27 +72,39 @@ $(document).ready(function() {
   // if (bodyClass === 'portfolioPage') {
   //   $('a.' + bodyID).addClass('active');
   // }
-
+  var previousWindowWidth = $(window).width();
   // sticky nav
   function stickyNav() {
     var $nav = $('.leftNavContainer');
-    if ($(window).width() > 645) {     
-      $nav.show().stickyfloat({
-        startOffset: 107,
-        duration: 10
-        // delay: 100
-        // easing: 'swing'
-      });  
+    if ($(window).width() > 645) {
+      if (previousWindowWidth <= 645) {
+        $(window).off('scroll');     
+        $nav.show().stickyfloat({
+          startOffset: 107,
+          duration: 10
+          // delay: 100
+          // easing: 'swing'
+        }); 
+      }
+      else if ($(window).width() === previousWindowWidth) {
+        $nav.show().stickyfloat({
+          startOffset: 107,
+          duration: 10
+          // delay: 100
+          // easing: 'swing'
+        });
+      }
+    } 
+    else if ($(window).width() <= 645) {
+      if (previousWindowWidth > 645) {
+        bindTopNavTriggers();
+        $nav.hide().stickyfloat('destroy');
+      }
+      else if (previousWindowWidth === $(window).width()) {
+        bindTopNavTriggers();
+      }  
     }
-    else {
-      bindTopNavTriggers();
-      try {
-        $nav.stickyfloat('destroy');
-      }
-      catch(e) {
-        console.log('e: ' + e);
-      }
-    }  
+    previousWindowWidth = $(window).width();  
   }
   function portfolioCoverHeight() {
     var $itemImages = $('.itemImage');
