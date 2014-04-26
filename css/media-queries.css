@@ -239,6 +239,8 @@ a:visited {
         color: #666666;
         font-size: 0.9em;
         padding-left: 38px; }
+        .leftNavContainer .leftNav a.subTab:visited {
+          color: #aaaaaa; }
       .leftNavContainer .leftNav a.active {
         background: url("/images/active-tab-marker-retina.png") 6px center no-repeat;
         background-size: 12px 20px;

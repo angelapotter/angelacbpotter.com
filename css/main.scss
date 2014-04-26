@@ -84,6 +84,9 @@
           color: $darkGray;
           font-size: 0.9em;
           padding-left: 38px;
+          &:visited {
+            color: $lightGray;
+          }
         }
         &.active {
           background: url('/images/active-tab-marker-retina.png') 6px center no-repeat;
