@@ -42,9 +42,9 @@ function bindTopNavTriggers() {
     if (st > lastScrollTop + 2 || st < 8){
         // downscroll code
         $('.header').removeClass('fixed');
-        // $('.leftNavContainer').hide();
+        $('.leftNavContainer').hide();
     }
-    else if (st < lastScrollTop - 280) {
+    else if (st < lastScrollTop - 2) {
        // upscroll code       
        $('.header').addClass('fixed');
     }
