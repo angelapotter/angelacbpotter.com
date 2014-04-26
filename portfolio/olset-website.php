@@ -1,5 +1,5 @@
 <?php
-	$title='OLSET';
+	$title='olset.com';
 	$bodyId='olsetWebsite';
 	$bodyClass='portfolioPage';
 	include $_SERVER["DOCUMENT_ROOT"] . '/includes/header.php';
@@ -41,7 +41,7 @@
     </ul><br />
     <p>Changes based on user testing:</p>
     <ul>
-      <li><strong>Adding default preferences based on 4 traveler types.</strong> We all the user to select to control the weightings of
+      <li><strong>Adding default preferences based on 4 traveler types.</strong> We allow the user to control the weightings of
         their preferences so they can truly find that perfect hotel &mdash; e.g. they can say that WiFi is mandatory, but continental breakfast is a nice-to-have. Although users liked all these controls in 
         theory, in practice they found them overwhelming. We added four different traveler profiles that set default preferences based on our hypotheses about those groups. After that, users are free 
         to edit preferences in detail, but this gives them somewhere to start.</li>

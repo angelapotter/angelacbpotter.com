@@ -19,7 +19,7 @@ body {
   max-width: 100%; }
 
 .containerXL {
-  width: 1080px;
+  width: 1030px;
   max-width: 100%;
   margin: 0 auto;
   position: relative; }
@@ -27,6 +27,8 @@ body {
 .contentContainer {
   max-width: px;
   overflow: hidden;
+  position: relative;
+  z-index: 1;
   padding: 25px; }
 
 /***TEXT***/
@@ -42,9 +44,9 @@ h1 {
 h1 {
   font-size: 3em;
   color: #aaaaaa;
-  padding: 25px;
-  line-height: 1;
-  /*-webkit-margin-before: 0;*/ }
+  line-height: 1.15;
+  padding: 25px 0 25px 25px;
+  /*-webkit-margin-before:  0;*/ }
 
 h2 {
   color: #666666; }
@@ -180,104 +182,3 @@ a:visited {
 
 .border {
   border: 1px solid #ccc; }
-
-/***************************/
-/*******MEDIA QUERIES*******/
-/***************************/
-@media only screen and (max-width: 1094px) {
-  .leftNavContainer {
-    width: 190px; } }
-@media only screen and (max-width: 780px) {
-  #about .content {
-    padding-bottom: 22px !important; } }
-@media only screen and (max-width: 645px) {
-  .leftNavContainer {
-    float: none;
-    width: 100%; }
-    .leftNavContainer .leftNav {
-      padding-bottom: 16px; }
-      .leftNavContainer .leftNav a {
-        padding-left: 16px;
-        padding-right: 16px; }
-        .leftNavContainer .leftNav a.subTab {
-          display: none; }
-        .leftNavContainer .leftNav a.active {
-          background-position: 0 center; }
-      .leftNavContainer .leftNav .resumeLink {
-        margin-top: 0; }
-
-  h1 {
-    font-size: 2.5em;
-    padding: 16px 16px 0 16px; }
-
-  .contentContainer {
-    padding: 16px; }
-
-  .headshot {
-    float: none;
-    margin-right: 0; }
-
-  .contactParagraph {
-    margin-top: 10px; } }
-@media (max-width: 520px), only screen and (max-device-width: 720px) and (orientation: portrait) {
-  .profile.web {
-    display: none !important; }
-
-  .profile.mobile {
-    display: block; }
-
-  #about .content {
-    min-height: 0;
-    margin-top: -4px; }
-
-  .profile {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    float: none;
-    width: 100%; } }
-@media only screen and (max-width: 448px) {
-  #portfolio #items {
-    width: 100%; }
-    #portfolio #items .item .itemLink {
-      margin-right: 0 !important;
-      max-width: 100%; }
-    #portfolio #items .item .itemImage {
-      background-size: 100% auto; } }
-@media only screen and (max-width: 430px) {
-  .contact .contentContainer {
-    text-align: left; }
-    .contact .contentContainer .left {
-      float: none; } }
-@media (max-width: 400px), only screen and (max-device-width: 720px) and (orientation: portrait) {
-  .tabContainer {
-    width: 48.6%; }
-    .tabContainer:nth-child(2) {
-      margin-right: 0 !important; }
-
-  .tabContainer:first-child {
-    margin-left: 0 !important; }
-
-  body .indented {
-    margin-left: 24px !important; } }
-@media (max-width: 340px), only screen and (max-device-width: 720px) and (orientation: portrait) {
-  #head {
-    font-size: 0.6em; } }
-/***mobile***/
-@media only screen and (max-device-width: 720px) {
-  body {
-    font-size: 110%; }
-
-  hr {
-    margin: 30px 0; } }
-@media only screen and (max-device-width: 720px) and (orientation: portrait) {
-  h4 {
-    font-size: 1.8em; }
-
-  .item .date {
-    font-size: 1.1em;
-    margin-left: 0; }
-
-  #items {
-    margin-left: auto;
-    margin-right: auto; } }

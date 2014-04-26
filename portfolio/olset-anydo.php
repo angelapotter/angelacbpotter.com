@@ -1,5 +1,5 @@
 <?php
-	$title='Any.do travel, powered by OLSET';
+	$title='Any.do travel';
 	$bodyId='olsetAnydo';
 	$bodyClass='portfolioPage';
 	include $_SERVER["DOCUMENT_ROOT"] . '/includes/header.php';
@@ -9,9 +9,9 @@
   <div class="portfolioNav">
     <div class="prev"><a href="olset-website.php" title="previous project"></a></div>
     <h2>Any.do travel</h2>
-    <div class="next"><a href="myfive.php" title="next project"></a></div>
+    <div class="next"><a href="olset-biz-cards.php" title="next project"></a></div>
   </div>
-  <a href="https://play.google.com/store/apps/details?id=com.anydo" title="Any.do To-Do List for Android" target="_blank"><img src="images/anydo-screenshots.png" style="max-width: 100%;" /></a>
+  <a href="https://play.google.com/store/apps/details?id=com.anydo" title="Any.do To-Do List for Android" target="_blank"><img src="images/anydo-screenshots.png" /></a>
   <div class="content whiteBG topMarg20">
     <h2>Any.do travel</h2>
     <!-- <span class="date">(ongoing)</span> -->

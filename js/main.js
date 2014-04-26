@@ -13,6 +13,37 @@
 //     }
 //   };
 // }
+function bindOpenMenuTrigger() {
+  $('.menuIcon').click(function() {
+    if ($('.leftNavContainer').is(':visible')) {
+      $('.leftNavContainer').hide();  
+    }
+    else {
+      $('.leftNavContainer').show();  
+    }
+        
+  });
+}
+var lastScrollTop = 0;
+function bindTopNavTriggers() {
+  $(window).scroll(function(e) {
+    var st = $(this).scrollTop();
+    if (st > lastScrollTop + 5 || st < 8){
+        // downscroll code
+        $('.header').removeClass('fixed');
+        $('.leftNavContainer').hide();
+    }
+    else if (st < lastScrollTop - 5) {
+       // upscroll code       
+       $('.header').addClass('fixed');
+    }
+   lastScrollTop = st;
+    
+    // something
+  });
+}
+
+
 $(document).ready(function() {
   // 'use strict';
   // resizeColorBlock();
@@ -30,6 +61,9 @@ $(document).ready(function() {
         $(this).find('.itemOverlay').show();
     });
   }
+
+  bindOpenMenuTrigger();
+  
   // portfolio  mini nav
   // if (bodyClass === 'portfolioPage') {
   //   $('a.' + bodyID).addClass('active');
@@ -38,8 +72,8 @@ $(document).ready(function() {
   // sticky nav
   function stickyNav() {
     var $nav = $('.leftNavContainer');
-    if ($(window).width() > 645) {      
-      $nav.stickyfloat({
+    if ($(window).width() > 645) {     
+      $nav.show().stickyfloat({
         startOffset: 107,
         duration: 10
         // delay: 100
@@ -47,6 +81,7 @@ $(document).ready(function() {
       });  
     }
     else {
+      bindTopNavTriggers();
       try {
         $nav.stickyfloat('destroy');
       }
@@ -72,7 +107,8 @@ $(document).ready(function() {
         'myFive',
         'beforeItWasCool',
         'thirdLayerSoftware',
-        'ssa'
+        'ssa',
+        'olsetBizCards'
       ]
       $.each(projectArray, function(i, item) {
         var newBgPosY = i * $spriteSpacing * -1;

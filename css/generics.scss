@@ -24,7 +24,7 @@ body {
   // padding-right: $mainPadding;
 }
 .containerXL {
-  width: 1080px;
+  width: 1030px;
   max-width: 100%;
   margin: 0 auto;
   position: relative;
@@ -44,8 +44,8 @@ body {
   max-width: px;
   overflow: hidden;
   // display: inline-block;
-  // position: relative;
-  // z-index: 999;
+  position: relative;
+  z-index: 1;
   padding: $mainPadding;
   // padding-right: $mainPadding;
 }
@@ -68,11 +68,11 @@ h1 {
 h1 {
   font-size: 3em;
   // letter-spacing: 0.001em;
-  color: $lightGray;
-  padding: $mainPadding;
-  line-height: 1;
+  color: $lightGray;  
+  line-height: 1.15;
+  padding: $mainPadding 0 $mainPadding $mainPadding;
   // left: 0;
-  /*-webkit-margin-before: 0;*/
+  /*-webkit-margin-before:  0;*/
 }
 h2 {
   color: $darkGray;
@@ -157,156 +157,3 @@ a:visited { color: inherit; text-decoration: none; }
   @extend .borderBox;
 }
 
-/***************************/
-/*******MEDIA QUERIES*******/
-/***************************/
-
-@media only screen and (max-width: 1094px) {
-  .leftNavContainer {
-    width: 190px;
-    // padding-right: 0;
-  }
-}
-// @media only screen and (max-width: 1056px) {
-//   .leftNavContainer {
-//     width: 200px;
-//   }
-// }
-
-@media only screen and (max-width: 780px) {
-  #about .content { padding-bottom: 22px !important; }
-}
-// @media only screen and (max-width: 544px) {
-//   #portfolio .item {
-//     width: 100%;
-//   }
-// }
-
-@media only screen and (max-width: 645px) {
-  // $mainPadding: 16px;
-  .leftNavContainer {
-    float: none;
-    width: 100%;
-    .leftNav {
-      padding-bottom: 16px;
-      a {
-        padding-left: 16px;
-        padding-right: 16px;
-        &.subTab {
-          // padding-left: 31px;
-          display: none;
-        }
-        &.active {
-          background-position: 0 center;
-        }
-      }
-      .resumeLink {
-        margin-top: 0;
-      }
-    }
-  }
-  h1 {
-    font-size: 2.5em;
-    padding: 16px 16px 0 16px;
-  }
-  .contentContainer {
-    padding: 16px;
-  }
-  .headshot {
-    float: none;
-    margin-right: 0;
-  }
-  .contactParagraph {
-    margin-top: 10px;
-  }
-}
-@media (max-width: 520px), only screen and (max-device-width: 720px) and (orientation: portrait) {
-  // .miniNav div { display: block; }
-  .profile.web { display: none !important; }
-  .profile.mobile { display: block; }
-    #about .content {
-    min-height: 0;
-    margin-top: -4px;
-  }
-  .profile {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    float: none;
-    width: 100%;
-  }
-}
-@media (max-width: 480px), only screen and (max-device-width: 720px) {
-  // #head { font-size: 0.8em;}
-  // h1 { font-size: 4.1em !important; }
-  // h2 { font-size: 3em !important; top: 1.4em; }
-  
-}
-@media only screen and (max-width: 448px) {
-  #portfolio {
-    #items {
-      width: 100%;
-      .item {
-        .itemLink {
-          margin-right: 0 !important;
-          max-width: 100%;
-        }
-        .itemImage {
-          background-size: 100% auto;
-          // height: auto;
-        }
-      }
-    }
-  }
-}
-@media only screen and (max-width: 430px) {
-  .contact .contentContainer {
-    text-align: left;
-    .left {
-      float: none;
-    }
-  }
-}
-@media (max-width: 400px), only screen and (max-device-width: 720px) and (orientation: portrait) {
-  // #head {
-  //   font-size: 0.7em;
-  // }
-  // .halfNav {
-  //   min-width: 100%;
-  //   clear: both;
-  // }
-  .tabContainer {
-    width: 48.6%;
-    &:nth-child(2) {
-      margin-right: 0 !important;
-    }
-  }
-  .tabContainer:first-child {
-    margin-left: 0 !important;
-  }
-
-  body .indented { margin-left: 24px !important; }
-}
-@media (max-width: 340px), only screen and (max-device-width: 720px) and (orientation: portrait) {
-  #head {
-    font-size: 0.6em;
-  }
-}
-@media (max-width: 300px), only screen and (max-device-width: 720px) and (orientation: portrait) {
-  // #head {
-  //   font-size: 0.6em;
-  // }
-}
-
-/***mobile***/
-@media only screen and (max-device-width:720px) {
-  body { font-size: 110%; }
-  hr { margin: 30px 0;	}
-}
-@media only screen and (max-device-width:720px) and (orientation:portrait) {
-	h4 { font-size: 1.8em;	}
-	.item .date { font-size: 1.1em; margin-left: 0; }
-  #items { margin-left: auto; margin-right: auto; }
-}
-@media only screen and (max-device-width:720px) and (orientation:landscape) {
-}

@@ -7,7 +7,7 @@
 <!--
 --><div class="item">
   <div class="portfolioNav">
-    <div class="prev"><a href="olset-anydo.php" title="previous project"></a></div>
+    <div class="prev"><a href="olset-biz-cards.php" title="previous project"></a></div>
     <h2>myFive</h2>
     <div class="next"><a href="old-person.php" title="next project"></a></div>
   </div>

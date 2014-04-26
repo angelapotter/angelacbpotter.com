@@ -34,6 +34,16 @@
         <!-- <img src="images/olset-website-thumb.png" /> -->
       </a>
     </div>
+    <div id="olsetBizCards" class="item">
+      <a class="itemLink" href="olset-biz-cards.php" title="OLSET business cards">
+        <div class="itemOverlay"></div>
+        <div class="itemImage"></div>
+        <div class="itemLabels">
+          <div class="title">OLSET business cards</div>
+          <div class="role">design</div>
+        </div>
+      </a>
+    </div>
     <div id="myFive" class="item">
       <a class="itemLink" href="myfive.php" title="myFIVE">
         <div class="itemOverlay">
@@ -99,7 +109,7 @@
         <!-- <img src="images/biwc-thumb.png" /> -->
       </a>
 		</div>
-    <div id="ssa" class="item">
+    <!-- <div id="ssa" class="item">
       <a class="itemLink" href="ssa.php">
         <div class="itemOverlay">
           <div><strong>SSA</strong>A website for a Northwestern University student group</div>
@@ -109,9 +119,8 @@
           <div class="title">Secular Student Alliance</div>
           <div class="role">solo project</div>
         </div>
-        <!-- <img src="images/ssa-thumb.png" /> -->
       </a>
-    </div>
+    </div> -->
     <div class="clear"></div>		
 	</div>
   <div class="clear"></div>

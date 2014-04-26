@@ -3,16 +3,53 @@
 
 /***HEAD***/
 
-#head {
-  height: 5em;
+// #head {
+//   height: 5em;
+//   overflow: hidden;
+//   position: relative;
+//   margin: 20px 0 10px;
+// }
+.header {
+  // padding: $mainPadding;
   overflow: hidden;
-  position: relative;
-  margin: 20px 0 10px;
+  height: auto;
+  a {
+    display: block;
+    width: auto;
+    overflow: hidden;
+  }
+  &.fixed {
+    position: fixed;
+    width: 100%;
+    top: -8px;
+    background: white;
+    background: rgba(255,255,255, 0.9);
+    border-bottom: 1px solid #ccc;
+    z-index: 7;
+  }
+  // .h1Container {
+  //     // display: inline-block;
+  //     width: auto;
+  //     overflow: hidden;
+  //   }
+}
+.menuIcon {
+  background: url('/images/menu-icon-retina.png') 16px 18px no-repeat;
+  background-size: 32px;
+  height: 32px;
+  width: 32px;
+  padding: 18px 16px 8px;
+  float: right;
+  display: none;
+  cursor: pointer;
+  &:hover, &:active, &:focus {
+    background-color: $lightestGray;  
+  }
 }
 
 /***NAV***/
 .leftNavContainer {
-    width: 254px;
+    width: 204px;
     float: left;
     // overflow: hidden;
     position: relative;
@@ -21,7 +58,9 @@
     // position: fixed;  
     // width: 100%;  
     left: 0;  
-    top: 0;  
+    top: 0;
+    display: block; 
+    background: white; 
     // z-index: 100;  
     border-top: 0;
     .leftNav {
@@ -44,7 +83,7 @@
         &.subTab {
           color: $darkGray;
           font-size: 0.9em;
-          padding-left: 40px;
+          padding-left: 38px;
         }
         &.active {
           background: url('/images/active-tab-marker-retina.png') 6px center no-repeat;
@@ -266,6 +305,12 @@
         background-position: 0 0; 
       }
     }
+    &#olsetBizCards .itemLink {
+      // background: white;
+      .itemImage {
+        background-position: 0 -2400px; 
+      }
+    }
   }
 
   .itemOverlay {
@@ -418,9 +463,10 @@ hr {
 //   padding-bottom: 6px;
 // }
 .portfolioNav {
+  display: none;
   width: 100%;
   margin: 0 auto 16px;
-  display: table !important;
+  // display: table !important;
   text-align: center;
   h2 {
     display: inline-block;
