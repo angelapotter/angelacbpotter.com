@@ -48,7 +48,7 @@ function bindTopNavTriggers() {
        // upscroll code       
        $('.header').addClass('fixed');
     }
-   lastScrollTop = st;    
+    lastScrollTop = st;    
     // something
   });
 }
