@@ -12,9 +12,9 @@
     <h2>Snake</h2>
     <div class="next"><a href="biwc.php" title="next project"></a></div>
   </div>
-  <a href="../snake.html" title="Snake" target="_blank">
+  <!-- <a href="../snake.html" title="Snake" target="_blank"> -->
   	<img src="/portfolio/images/snake-screenshot.png" class="border" />
-  </a>
+  <!-- </a> -->
     <div class="content whiteBG topMarg20">
 		<h2>Snake</h2>
 		<div class="projectInfo">
@@ -28,7 +28,7 @@
 		<br /> -->
 		<p>I wanted to try out animation in HTML5, so I decided to create a JavaScript game. I made my own version of the classic snake game using the HTML5 canvas element.</p>
 		<br />
-		<span class="right small inlineBlock"><a href="../snake.html" title="Snake" target="_blank">Play Snake</a></span>
+		<span class="right small inlineBlock"><a href="/snake.html" title="Snake" target="_blank">Play Snake</a></span>
 		<div class="clear"></div>
 	</div>
 </div>

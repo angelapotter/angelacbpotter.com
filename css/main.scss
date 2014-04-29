@@ -34,11 +34,11 @@
   //   }
 }
 .menuIcon {
-  background: url('/images/menu-icon-retina.png') 16px 14px no-repeat;
+  background: url('/images/menu-icon-retina.png') 16px 18px no-repeat;
   background-size: 32px;
   height: 32px;
   width: 32px;
-  padding: 14px 16px 8px;
+  padding: 18px 16px 8px;
   float: right;
   display: none;
   cursor: pointer;
@@ -197,6 +197,27 @@
 
 /***PORTFOLIO***/
 
+.filtersContainer {
+  display: table;
+  border-collapse: collapse;
+  margin: 10px 0 20px;
+  // float: right;
+  // @extend .border;
+  div {
+    color: $mediumGray;
+    text-transform: lowercase;
+    // background: $lightestGray;
+    display: table-cell;
+    @extend .border;
+    cursor: pointer;
+    padding: 6px 15px;
+    &.active, &:hover {
+      color: white;
+      background: $mediumGray;
+    }
+  }
+}
+
 #portfolio {
   .content { overflow: hidden; }
   // #items, .portfolioSidebarContainer {
@@ -231,7 +252,12 @@
       // width: 252px;
       margin: 0 20px 20px 0;
       position: relative;
-      
+      &:hover, &:active {
+        border: 1px solid $lightGray;
+        .itemOverlay {
+          display: none;
+        }
+      }      
       // background-size: cover;
       // float: left;
       // @include box-shadow($standardBoxShadow);
@@ -317,9 +343,6 @@
   }
 
   .itemOverlay {
-    // display: table;
-    // vertical-align: middle;
-    // display: none;
     @include opacity(0.25);
     height: 280px;
     width: 100%;

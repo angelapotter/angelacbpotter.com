@@ -6,11 +6,12 @@ $darkestGray: #333;
 $darkGray: #666;
 $mediumGray: #999;
 $lightGray: #aaa;
+$borderGray: #ccc;
 $lightestGray: #eee;
 
 $standardBoxShadow: 0 1px 2px rgba(0, 0, 0, 0.3);
-
 $mainPadding: 25px;
+$standardBorder: 1px solid $borderGray;
 
 @mixin border-radius($pixels) {
   border-radius: $pixels;

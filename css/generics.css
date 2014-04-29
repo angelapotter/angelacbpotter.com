@@ -44,12 +44,13 @@ h1 {
 h1 {
   font-size: 3em;
   color: #aaaaaa;
-  line-height: 1.15;
+  line-height: 1.2;
   padding: 25px 0 25px 25px;
   /*-webkit-margin-before:  0;*/ }
 
 h2 {
-  color: #666666; }
+  color: #666666;
+  font-size: 1.7em; }
 
 /*content head*/
 h4 {
@@ -181,4 +182,4 @@ a:visited {
   background-color: white; }
 
 .border {
-  border: 1px solid #ccc; }
+  border: 1px solid #cccccc; }

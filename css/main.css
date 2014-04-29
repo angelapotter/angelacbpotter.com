@@ -44,12 +44,13 @@ h1 {
 h1 {
   font-size: 3em;
   color: #aaaaaa;
-  line-height: 1.15;
+  line-height: 1.2;
   padding: 25px 0 25px 25px;
   /*-webkit-margin-before:  0;*/ }
 
 h2 {
-  color: #666666; }
+  color: #666666;
+  font-size: 1.7em; }
 
 /*content head*/
 h4 {
@@ -97,7 +98,7 @@ a:visited {
   text-decoration: underline; }
 
 /*** ALIGNMENT ETC ***/
-.borderBox, .containerXL, .contentContainer, .border, #portfolio .item .itemLink {
+.borderBox, .containerXL, .contentContainer, .border, .filtersContainer div, #portfolio .item .itemLink {
   -webkit-box-sizing: border-box;
   /* Safari/Chrome, other WebKit */
   -moz-box-sizing: border-box;
@@ -180,8 +181,8 @@ a:visited {
 .whiteBG {
   background-color: white; }
 
-.border, #portfolio .item .itemLink {
-  border: 1px solid #ccc; }
+.border, .filtersContainer div, #portfolio .item .itemLink {
+  border: 1px solid #cccccc; }
 
 /***HEAD***/
 .header {
@@ -201,11 +202,11 @@ a:visited {
     z-index: 7; }
 
 .menuIcon {
-  background: url("/images/menu-icon-retina.png") 16px 14px no-repeat;
+  background: url("/images/menu-icon-retina.png") 16px 18px no-repeat;
   background-size: 32px;
   height: 32px;
   width: 32px;
-  padding: 14px 16px 8px;
+  padding: 18px 16px 8px;
   float: right;
   display: none;
   cursor: pointer; }
@@ -323,6 +324,20 @@ a:visited {
   min-height: 378px; }
 
 /***PORTFOLIO***/
+.filtersContainer {
+  display: table;
+  border-collapse: collapse;
+  margin: 10px 0 20px; }
+  .filtersContainer div {
+    color: #999999;
+    text-transform: lowercase;
+    display: table-cell;
+    cursor: pointer;
+    padding: 6px 15px; }
+    .filtersContainer div.active, .filtersContainer div:hover {
+      color: white;
+      background: #999999; }
+
 #portfolio .content {
   overflow: hidden; }
 #portfolio #items {
@@ -338,6 +353,10 @@ a:visited {
     max-width: 97%;
     margin: 0 20px 20px 0;
     position: relative; }
+    #portfolio .item .itemLink:hover, #portfolio .item .itemLink:active {
+      border: 1px solid #aaaaaa; }
+      #portfolio .item .itemLink:hover .itemOverlay, #portfolio .item .itemLink:active .itemOverlay {
+        display: none; }
     #portfolio .item .itemLink .itemImage {
       background: url("/portfolio/images/portfolio-covers.png") 0 0 no-repeat;
       background-size: 378px 3000px;
@@ -372,8 +391,8 @@ a:visited {
   #portfolio .item#olsetBizCards .itemLink .itemImage {
     background-position: 0 -2400px; }
 #portfolio .itemOverlay {
-  opacity: 0.2;
-  filter: alpha(opacity=20);
+  opacity: 0.25;
+  filter: alpha(opacity=25);
   height: 280px;
   width: 100%;
   background-color: white;

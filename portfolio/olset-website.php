@@ -11,7 +11,9 @@
     <h2>olset.com</h2>
     <div class="next"><a href="olset-anydo.php" title="next project"></a></div>
   </div>
-  <a href="https://www.olset.com" title="OLSET: Get personalized hotel recommendations in seconds" target="_blank"><img src="images/olset/landing-page.png" style="max-width: 100%;" /></a>
+  <!-- <a href="https://www.olset.com" title="OLSET: Get personalized hotel recommendations in seconds" target="_blank"> -->
+    <img src="images/olset/landing-page.png" style="max-width: 100%;" />
+  <!-- </a> -->
   <div class="content whiteBG topMarg20">
     <h2>olset.com</h2>
     <div class="projectInfo">
@@ -29,7 +31,8 @@
       Our patented algorithm analyzes user reviews and can tell what travelers are saying about specific aspects of each hotel. We then come up with a customized match 
       rating for each of our users based on what features are important to them.</p>
     <p>Here are some of the design changes I made since joining the OLSET team 10 months ago.</p><br />
-    <p>Changes based on intuition / general usability principles:</p> 
+    <!-- <p>Changes based on intuition / general usability principles:</p>  -->
+    <p>Major changes I made to the site:</p>
     <ul>
       <li><strong>Removing the registration barrier.</strong> When I started at OLSET, users had to sign up before they could do anything on the site. 
         I changed this so the user can search for hotels, customize their preferences, and get all the way up to the checkout page before requiring registration. 
@@ -37,10 +40,10 @@
       <li><strong>Putting preferences on the same page as the hotel search results.</strong> One of OLSET's value propositions is that you only have to build your
         profile once, and after that we'll know what kind of hotels you want and you won't have to spend time tweaking search filters. However, users generally want 
         to see the results of a search before refining it. This way they can use an iterative process to narrow down the results, e.g. "I like these results, except 
-        they're too expensive. I'll lower my price point.</li>
-    </ul><br />
-    <p>Changes based on user testing:</p>
-    <ul>
+        they're too expensive. I'll lower my price point."</li>
+    <!-- </ul><br /> -->
+    <!-- <p>Changes based on user testing:</p> -->
+    <!-- <ul> -->
       <li><strong>Adding default preferences based on 4 traveler types.</strong> We allow the user to control the weightings of
         their preferences so they can truly find that perfect hotel &mdash; e.g. they can say that WiFi is mandatory, but continental breakfast is a nice-to-have. Although users liked all these controls in 
         theory, in practice they found them overwhelming. We added four different traveler profiles that set default preferences based on our hypotheses about those groups. After that, users are free 
@@ -50,16 +53,16 @@
         we found in testing that users' first reaction was to assume that that's all the results we found. Users have such a strong schema for how travel
         booking usually works, that they're extremely thrown off when we deviate from the normal flow found on sites like Expedia and Priceline. We also found that users don't trust us from 
         the beginning, and in order to build that trust we need to let them investigate and see for themselves that we really recommended the right hotel.</li>
-      <li><strong>Adding a map view.</strong> I knew we'd want to add this eventually, but had no idea how important it was until we got requests from almost every user we tested 
-        to add it. Users love map views! It really helps them orient themselves, especially if they're unfamiliar with the city they're traveling to.</li>
+      <li><strong>Adding a map view.</strong> We all knew that we'd want to add this eventually, but had no idea how important it was until we got requests from almost every user we tested 
+        to add it. Users love map views! It really helps them orient them, especially if they're unfamiliar with the city they're traveling to.</li>
     </ul>
     <!-- <p>MyFIVE is a brand new referral tracking application that we're working on. It keeps independent business owners on top of the referrals they send and receive. Users can track their gigs, look at analytics, and get custom recommendations for thank you gifts to send to their referral sources. Right now we're in the user testing stage before our first release. I designed and implemented much of the testing process, and I built the working prototypes that we're testing users on.</p>
     <p>Above is a sample of the most recent prototype of myFIVE. Right now we're testing the process the user goes through to record a new job opportunity into the application. Below are some wireframes of the rest of the application.</p> -->
     <span class="right small inlineBlock topMarg20"><a href="https://www.olset.com" title="olset.com">View live site</a></span>
     <div class="clear"></div>
   </div>
-  <a href="https://olset.com" title="OLSET: Get personalized hotel recommendations in seconds" target="_blank"><img class="topMarg20" src="images/olset/hotel-results.png" style="max-width: 100%;"/></a>
-  <a href="https://olset.com" title="OLSET: Get personalized hotel recommendations in seconds" target="_blank"><img class="topMarg20" src="images/olset/mobile-screenshots.png" style="max-width: 100%;"/></a>
+  <img class="topMarg20" src="images/olset/hotel-results.png" style="max-width: 100%;"/>
+  <img class="topMarg20" src="images/olset/mobile-screenshots.png" style="max-width: 100%;"/>
   <div class="clear"></div>
 </div>
 

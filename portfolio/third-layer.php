@@ -12,7 +12,9 @@
     <h2>Third Layer Software</h2>
     <div class="next"><a href="snake.php" title="next project"></a></div>
   </div>
-  <a href="http://www.thirdlayersoftware.com" title="Third Layer Software" target="_blank"><img src="images/thirdlayer_about.png" /></a>
+  <!-- <a href="http://www.thirdlayersoftware.com" title="Third Layer Software" target="_blank"> -->
+  	<img src="images/thirdlayer_about.png" />
+  <!-- </a> -->
   <div class="content whiteBG topMarg20">
 	<h2>Third Layer Software</h2>
 	<div class="projectInfo">
@@ -26,7 +28,9 @@
 	<br /> -->
 	<p>To go along with the release of Old Person App, I built a company website. I wanted it to be elegant and easy to navigate.</p>
 	<br />
-	<span class="right small inlineBlock"><a href="http://www.thirdlayersoftware.com" title="Third Layer Software" target="_blank">Visit the site</a></span>
+	<span class="right small inlineBlock">
+		<a href="http://www.thirdlayersoftware.com" title="Third Layer Software" target="_blank">Visit the site</a>
+	</span>
 	<div class="clear"></div>
   </div>
 </div>

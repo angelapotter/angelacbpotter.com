@@ -11,7 +11,9 @@
     <h2>myFive</h2>
     <div class="next"><a href="old-person.php" title="next project"></a></div>
   </div>
-  <a href="/myfive-prototypes/prototype2/create-gig.php" title="myFIVE live prototype" target="_blank"><img src="images/myfive/tic1-newest.png" /></a>
+  <!-- <a href="/myfive-prototypes/prototype2/create-gig.php" title="myFIVE live prototype" target="_blank"> -->
+    <img src="images/myfive/tic1-newest.png" />
+  <!-- </a> -->
   <div class="content whiteBG topMarg20">
     <h2>myFive</h2>
     <div class="projectInfo">
@@ -33,8 +35,8 @@
          title="myFIVE live prototype" target="_blank">View live prototype</a></span>
     <div class="clear"></div>
   </div>
-  <a href="http://myfive.com" title="myFIVE homepage"><img class="topMarg20" src="images/myfive/g1-newest.png" /></a>
-  <a href="http://myfive.com" title="myFIVE homepage"><img class="topMarg20" src="images/myfive/a1.png" /></a>
+  <img class="topMarg20" src="images/myfive/g1-newest.png" />
+  <img class="topMarg20" src="images/myfive/a1.png" />
   <div class="clear"></div>
 </div>
 
