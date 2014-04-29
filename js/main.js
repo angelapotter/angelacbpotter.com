@@ -15,7 +15,7 @@
 // }
 function bindOpenMenuTrigger() {
   var $nav = $('.leftNavContainer');
-  $('.menuIcon').click(function() {
+  $('.menuIcon').off('click').click(function() {
     if ($nav.is(':visible')) {
       $nav.hide();  
     }
