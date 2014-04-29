@@ -211,7 +211,7 @@ a:visited {
   display: none;
   cursor: pointer; }
   .menuIcon:hover, .menuIcon:active, .menuIcon:focus {
-    background-color: #eeeeee; }
+    background-color: #f1f1f5; }
 
 /***NAV***/
 .leftNavContainer {
@@ -363,7 +363,7 @@ a:visited {
       height: 280px;
       margin: 0 auto; }
     #portfolio .item .itemLink .itemLabels {
-      background: #eeeeee;
+      background: #f1f1f5;
       text-align: center;
       padding: 15px; }
       #portfolio .item .itemLink .itemLabels .title {

@@ -211,7 +211,7 @@ a:visited {
   display: none;
   cursor: pointer; }
   .menuIcon:hover, .menuIcon:active, .menuIcon:focus {
-    background-color: #eeeeee; }
+    background-color: #f1f1f5; }
 
 /***NAV***/
 .leftNavContainer {
@@ -363,7 +363,7 @@ a:visited {
       height: 280px;
       margin: 0 auto; }
     #portfolio .item .itemLink .itemLabels {
-      background: #eeeeee;
+      background: #f1f1f5;
       text-align: center;
       padding: 15px; }
       #portfolio .item .itemLink .itemLabels .title {
@@ -737,12 +737,12 @@ a:visited {
     width: 60%;
     display: none;
     position: fixed;
-    top: 47px;
+    top: 59px;
     left: 40%;
     z-index: 7;
-    border-left: 1px solid #eeeeee;
-    border-bottom: 1px solid #eeeeee;
-    border-top: 1px solid #eeeeee; }
+    border-left: 1px solid #f1f1f5;
+    border-bottom: 1px solid #f1f1f5;
+    border-top: 1px solid #f1f1f5; }
     .leftNavContainer .leftNav {
       padding-bottom: 16px;
       padding-top: 10px; }

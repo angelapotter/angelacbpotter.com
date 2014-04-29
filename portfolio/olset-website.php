@@ -12,7 +12,7 @@
     <div class="next"><a href="olset-anydo.php" title="next project"></a></div>
   </div>
   <!-- <a href="https://www.olset.com" title="OLSET: Get personalized hotel recommendations in seconds" target="_blank"> -->
-    <img src="images/olset/landing-page.png" style="max-width: 100%;" />
+    <img src="images/olset/landing-page.png" alt="OLSET landing page screenshot" />
   <!-- </a> -->
   <div class="content whiteBG topMarg20">
     <h2>olset.com</h2>
@@ -61,8 +61,10 @@
     <span class="right small inlineBlock topMarg20"><a href="https://www.olset.com" title="olset.com">View live site</a></span>
     <div class="clear"></div>
   </div>
-  <img class="topMarg20" src="images/olset/hotel-results.png" style="max-width: 100%;"/>
-  <img class="topMarg20" src="images/olset/mobile-screenshots.png" style="max-width: 100%;"/>
+  <img class="topMarg20" src="images/olset/hotel-results.png" alt="OLSET hotel results screenshot" />
+  <img class="topMarg20" src="images/olset/mobile-screenshots.png" alt="mobile OLSET screenshots" />
+  <div class="topMarg50">Below is a sample of what the site looked like when I joined the team.</p>
+  <img class="topMarg20" src="images/olset/old-preferences-page.png" alt="old OLSET screenshot" />
   <div class="clear"></div>
 </div>
 
