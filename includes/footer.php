@@ -15,6 +15,7 @@
         </div>
       </div>
     </div>
+    <div id="smallWidth" class="mediaQuery"></div>
     <!-- <div class="colorBlock top"></div> -->
     <script type="text/javascript">
       setTimeout(function(){var a=document.createElement("script");

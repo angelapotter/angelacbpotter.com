@@ -44,8 +44,9 @@ function bindTopNavTriggers() {
   var $header = $('.header');
   $(window).scroll(function(e) {
     var st = $(this).scrollTop();
+    var bodyHeight = $('body').height();
+    // downscroll or reached top of page
     if (st > lastScrollTop + 3 || st < 8) {
-        // downscroll code
         if ($header.hasClass('fixed')) {
           $header.removeClass('fixed');
           $('.leftNavContainer').hide();
@@ -58,8 +59,8 @@ function bindTopNavTriggers() {
           // $('.contentContainer').css('padding-top', '16px');  
         }       
     }
-    else if (st < lastScrollTop - 3 || st >= $(window).height() - 3) {
-       // upscroll code
+    // upscroll or reached bottom of page
+    else if (st < lastScrollTop - 3 || st >= bodyHeight - 3) {
       if (!$header.hasClass('fixed')) {
         $header.hide().addClass('fixed').show();
         // $('.contentContainer').css('padding-top', 55 + 16 + 'px'); 
@@ -124,6 +125,10 @@ function portfolioFilters() {
   });
 }
 
+function windowWidthIsSmall() {
+  return ($('#smallWidth').height() > 0);
+}
+
 
 $(document).ready(function() {
   // 'use strict';
@@ -152,12 +157,16 @@ $(document).ready(function() {
   // if (bodyClass === 'portfolioPage') {
   //   $('a.' + bodyID).addClass('active');
   // }
-  var previousWindowWidth = $(window).width();
+  // var previousWindowWidth = $(window).width();
+  windowWidthIsSmall();
+  var previousWindowWidthIsSmall = windowWidthIsSmall();
   // sticky nav
   function stickyNav() {
     var $nav = $('.leftNavContainer');
-    if ($(window).width() > 645) {
-      if (previousWindowWidth <= 645) {
+    // var windowWidth = $(window).width();
+    // var windowWidth = window.outerWidth;
+    if (!windowWidthIsSmall()) {
+      if (previousWindowWidthIsSmall) {
         $(window).off('scroll');     
         $nav.show().stickyfloat({
           startOffset: 107,
@@ -167,9 +176,10 @@ $(document).ready(function() {
         });
         $('.contentContainer').off('click');
         $('.header').removeClass('fixed');
-        previousWindowWidth = $(window).width(); 
+        // previousWindowWidth = $(window).width();
+        previousWindowWidthIsSmall = windowWidthIsSmall(); 
       }
-      else if ($(window).width() === previousWindowWidth) {
+      else if (windowWidthIsSmall() === previousWindowWidthIsSmall) {
         $nav.show().stickyfloat({
           startOffset: 107,
           duration: 10
@@ -178,20 +188,22 @@ $(document).ready(function() {
         });
       }
     } 
-    else if ($(window).width() <= 645) {
-      if (previousWindowWidth > 645) {
+    else if (windowWidthIsSmall()) {
+      if (!previousWindowWidthIsSmall) {
         bindTopNavTriggers();
         bindOpenMenuTrigger();
         $nav.hide().stickyfloat('destroy');
-        previousWindowWidth = $(window).width();
+        // previousWindowWidth = windowWidth;
+        previousWindowWidthIsSmall = windowWidthIsSmall();
         $('.header').show();
       }
-      else if (previousWindowWidth === $(window).width()) {
+      else if (previousWindowWidthIsSmall === windowWidthIsSmall()) {
         bindTopNavTriggers();
         bindOpenMenuTrigger();
       }  
     }
-    previousWindowWidth = $(window).width();  
+    // previousWindowWidth = $(window).width();
+    previousWindowWidthIsSmall = windowWidthIsSmall();  
   }
   stickyNav();
   $(window).on('resize orientationchange', function() {

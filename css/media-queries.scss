@@ -23,6 +23,9 @@
 // }
 
 @media only screen and (max-width: 645px) {
+  #smallWidth {
+    height: 1px;
+  }
   // $mainPadding: 16px;
   .leftNavContainer {
     float: none;

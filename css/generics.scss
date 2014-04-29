@@ -49,6 +49,11 @@ body {
   padding: $mainPadding;
   // padding-right: $mainPadding;
 }
+.mediaQuery {
+  width: 0;
+  height: 0;
+  display: none;
+}
 
 /***TEXT***/
 h1, h2, h3, h4 {

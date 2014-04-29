@@ -31,6 +31,11 @@ body {
   z-index: 1;
   padding: 25px; }
 
+.mediaQuery {
+  width: 0;
+  height: 0;
+  display: none; }
+
 /***TEXT***/
 h1, h2, h3, h4 {
   font-weight: normal;
@@ -572,6 +577,11 @@ body {
   z-index: 1;
   padding: 25px; }
 
+.mediaQuery {
+  width: 0;
+  height: 0;
+  display: none; }
+
 /***TEXT***/
 h1, h2, h3, h4 {
   font-weight: normal;
@@ -732,6 +742,9 @@ a:visited {
   #about .content {
     padding-bottom: 22px !important; } }
 @media only screen and (max-width: 645px) {
+  #smallWidth {
+    height: 1px; }
+
   .leftNavContainer {
     float: none;
     width: 60%;
