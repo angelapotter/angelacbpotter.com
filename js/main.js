@@ -15,15 +15,16 @@
 // }
 function bindOpenMenuTrigger() {
   var $nav = $('.leftNavContainer');
+  $nav.removeAttr('style');
   $('.menuIcon').off('click').click(function() {
     if ($nav.is(':visible')) {
       $nav.hide();  
     }
     else {
-      var newNavHeight = $(window).height() - 54;
+      var newNavHeight = $(window).height() - 59;
       $nav.show().css({
         'max-height': newNavHeight + 'px',
-        'overflow-y': 'auto'
+        'overflow-y': 'auto',
       }).scroll(function(e) {
         e.preventDefault();
       });
