@@ -46,6 +46,7 @@ function bindTopNavTriggers() {
   $(window).scroll(function(e) {
     var st = $(this).scrollTop();
     var bodyHeight = $('body').height();
+    var windowHeight = $(window).height();
     // downscroll or reached top of page
     if (st > lastScrollTop + 3 || st < 8) {
         if ($header.hasClass('fixed')) {
@@ -61,7 +62,7 @@ function bindTopNavTriggers() {
         }       
     }
     // upscroll or reached bottom of page
-    else if (st < lastScrollTop - 3 || st >= bodyHeight - 3) {
+    else if (st < lastScrollTop - 3 || st >= bodyHeight - 2 - windowHeight) {
       if (!$header.hasClass('fixed')) {
         $header.hide().addClass('fixed').show();
         // $('.contentContainer').css('padding-top', 55 + 16 + 'px'); 
