@@ -32,7 +32,7 @@
     width: 60%;
     display: none;
     position: fixed;
-    top: 59px;
+    top: $headerHeight;
     left: 40%;
     // background: rgba(255,255,255, 0.95);
     z-index: 7;
@@ -62,7 +62,7 @@
   }
   h1 {
     font-size: 1.6em;
-    padding: 16px 0 2px 16px;    
+    padding: 10px 6px 2px 16px;    
     // display: inline-block;
   }
   h2 {
@@ -72,7 +72,7 @@
     display: block;
   }
   .contentContainer {
-    padding: 16px;
+    padding: 75px 16px 16px;
   }
   .headshot {
     float: none;
@@ -159,8 +159,11 @@
   body .indented { margin-left: 24px !important; }
 }
 @media (max-width: 340px), only screen and (max-device-width: 720px) and (orientation: portrait) {
-  #head {
-    font-size: 0.6em;
+  // #head {
+  //   font-size: 0.6em;
+  // }
+  h1 {
+    font-size: 1.3em;
   }
 }
 @media (max-width: 300px), only screen and (max-device-width: 720px) and (orientation: portrait) {

@@ -5,11 +5,13 @@
     <meta name="description" content="Interaction designer in the Bay Area.">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta name="viewport" content="width=device-width" />
+    
     <link rel="stylesheet" href="/css/main.css" />
     <!-- <link rel="stylesheet" href="/css/generics.css" /> -->
     <link rel="stylesheet" href="/css/media-queries.css" />
     <script src="//code.jquery.com/jquery-1.9.1.js"></script>
     <script src="/js/stickyfloat.js"></script>
+    <script src="/js/jquery.scrollupformenu.js"></script>
     <script src="/js/main.js"></script>
   </head>
   <body id="<?php echo $bodyId ?>" class="<?php echo $bodyClass ?>">

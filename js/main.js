@@ -21,7 +21,7 @@ function bindOpenMenuTrigger() {
       $nav.hide();  
     }
     else {
-      var newNavHeight = $(window).height() - 59;
+      var newNavHeight = $(window).height() - $('.header').height();
       $nav.show().css({
         'max-height': newNavHeight + 'px',
         'overflow-y': 'auto',
@@ -42,35 +42,47 @@ function bindOpenMenuTrigger() {
 var lastScrollTop = 0;
 // hide/show header on scroll (mobile)
 function bindTopNavTriggers() {
-  var $header = $('.header');
-  $(window).scroll(function(e) {
-    var st = $(this).scrollTop();
-    var bodyHeight = $('body').height();
-    var windowHeight = $(window).height();
-    // downscroll or reached top of page
-    if (st > lastScrollTop + 3 || st < 8) {
-        if ($header.hasClass('fixed')) {
-          $header.removeClass('fixed');
-          $('.leftNavContainer').hide();
-          // at top of page
-          // if (st < 8) {
-          //   if ($header.hasClass('fixed')) {
-          //     $(this).removeClass('fixed').hide().slideDown();
-          //   }     
-          // }
-          // $('.contentContainer').css('padding-top', '16px');  
-        }       
+  $('.header').scrollUpMenu({
+    waitTime: 20,
+    transitionTime: 150,
+    menuCss: { 
+      'position': 'fixed',
+      // 'top': '-8px',
+      'width': '100%',
+      'border-bottom': '1px solid #ccc',
+      'z-index': 7
     }
-    // upscroll or reached bottom of page
-    else if (st < lastScrollTop - 3 || st >= bodyHeight - 2 - windowHeight) {
-      if (!$header.hasClass('fixed')) {
-        $header.hide().addClass('fixed').show();
-        // $('.contentContainer').css('padding-top', 55 + 16 + 'px'); 
-      }     
-    }
-    lastScrollTop = st;    
-    // something
   });
+
+  // var $header = $('.header');
+  // $(window).scroll(function(e) {
+  //   var st = $(this).scrollTop();
+  //   var bodyHeight = $('body').height();
+  //   var windowHeight = $(window).height();
+  //   // downscroll or reached top of page
+  //   if (st > lastScrollTop + 3 || st < 8) {
+  //       if ($header.hasClass('fixed')) {
+  //         $header.removeClass('fixed');
+  //         $('.leftNavContainer').hide();
+  //         // at top of page
+  //         // if (st < 8) {
+  //         //   if ($header.hasClass('fixed')) {
+  //         //     $(this).removeClass('fixed').hide().slideDown();
+  //         //   }     
+  //         // }
+  //         // $('.contentContainer').css('padding-top', '16px');  
+  //       }       
+  //   }
+  //   // upscroll or reached bottom of page
+  //   else if (st < lastScrollTop - 3 || st >= bodyHeight - 2 - windowHeight) {
+  //     if (!$header.hasClass('fixed')) {
+  //       $header.hide().addClass('fixed').show();
+  //       // $('.contentContainer').css('padding-top', 55 + 16 + 'px'); 
+  //     }     
+  //   }
+  //   lastScrollTop = st;    
+  //   // something
+  // });
 }
 
 function portfolioCoverHeight() {
@@ -177,7 +189,8 @@ $(document).ready(function() {
           // easing: 'swing'
         });
         $('.contentContainer').off('click');
-        $('.header').removeClass('fixed');
+        $('.header').removeAttr('style');
+        // $(window).off('scroll');
         // previousWindowWidth = $(window).width();
         previousWindowWidthIsSmall = windowWidthIsSmall(); 
       }
@@ -192,6 +205,7 @@ $(document).ready(function() {
     } 
     else if (windowWidthIsSmall()) {
       if (!previousWindowWidthIsSmall) {
+        $(window).off('scroll');
         bindTopNavTriggers();
         bindOpenMenuTrigger();
         $nav.hide().stickyfloat('destroy');

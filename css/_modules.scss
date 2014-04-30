@@ -13,6 +13,8 @@ $standardBoxShadow: 0 1px 2px rgba(0, 0, 0, 0.3);
 $mainPadding: 25px;
 $standardBorder: 1px solid $borderGray;
 
+$headerHeight: 51px;
+
 @mixin border-radius($pixels) {
   border-radius: $pixels;
   -webkit-border-radius: $pixels;

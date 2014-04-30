@@ -192,26 +192,26 @@ a:visited {
 /***HEAD***/
 .header {
   overflow: hidden;
-  height: auto; }
+  width: 100%;
+  height: auto;
+  background: white;
+  background: rgba(255, 255, 255, 0.9); }
   .header a {
     display: block;
     width: auto;
     overflow: hidden; }
   .header.fixed {
     position: fixed;
-    width: 100%;
     top: -8px;
-    background: white;
-    background: rgba(255, 255, 255, 0.9);
     border-bottom: 1px solid #ccc;
     z-index: 7; }
 
 .menuIcon {
-  background: url("/images/menu-icon-retina.png") 16px 18px no-repeat;
+  background: url("/images/menu-icon-retina.png") 16px 10px no-repeat;
   background-size: 32px;
   height: 32px;
   width: 32px;
-  padding: 18px 16px 8px;
+  padding: 10px 16px 8px;
   float: right;
   display: none;
   cursor: pointer; }
@@ -498,7 +498,7 @@ hr {
   clear: both;
   font-size: 1.2em;
   display: block;
-  padding-bottom: 60px;
+  padding-bottom: 40px;
   margin-top: 30px;
   height: 100%; }
   .contact .contentContainer {
