@@ -29,10 +29,10 @@
     <p>This is a mobile app I built (with one other person). We set out to build something simple for Android, and decided on a toolkit for the elderly. It combines a magnifying glass, flashlight, and large-print notebook. We wanted it to be extremely comprehendive even for people who aren't tech savvy.</p>
     <br />
     <div class="right">
-      <span class="small inlineBlock">
+      <!-- <span class="small inlineBlock">
         <a href="http://www.thirdlayersoftware.com/oldperson.php" title="Third Layer: Old Person App" target="_blank">
           Learn more</a>
-      </span>
+      </span> -->
       <span class="small indented inlineBlock">
         <a href="https://play.google.com/store/apps/details?id=com.thirdlayer.oldperson&feature=search_result#?t=W251bGwsMSwxLDEsImNvbS50aGlyZGxheWVyLm9sZHBlcnNvbiJd" 
            title="Google Play: Old Person App" target="_blank">Download Old Person App</a>

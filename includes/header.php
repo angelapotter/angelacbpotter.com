@@ -28,10 +28,13 @@
           <a href="/portfolio" title="portfolio" class="mainTab portfolioLink">Portfolio</a>
             <a href="/portfolio/olset-website.php" title="olset.com" class="subTab olsetWebsiteLink">olset.com</a>
             <a href="/portfolio/olset-anydo.php" title="Any.do travel" class="subTab olsetAnydoLink">Any.do travel</a>
-            <a href="/portfolio/olset-biz-cards.php" title="OLSET business cards" class="subTab olsetBizCardsLink">OLSET business cards</a>
+            <a href="/portfolio/olset-biz-cards.php" title="OLSET business cards" class="subTab olsetBizCardsLink">
+              OLSET business cards</a>
+            <a href="/portfolio/music-notation-app.php" title="music notation app mockup" class="subTab musicNotationLink">
+              music notation app mockup</a>
             <a href="/portfolio/myfive.php" title="myFIVE" class="subTab myfiveLink">myFive</a>
             <a href="/portfolio/old-person.php" title="Old Person App" class="subTab oldPersonLink">Old Person App</a>
-            <a href="/portfolio/third-layer.php" title="Third Layer Software" class="subTab thirdLayerLink">Third Layer Software</a>
+            <!-- <a href="/portfolio/third-layer.php" title="Third Layer Software" class="subTab thirdLayerLink">Third Layer Software</a> -->
             <a href="/portfolio/snake.php" title="Snake" class="subTab snakeLink">Snake</a>
             <a href="/portfolio/biwc.php" title="Before it was cool" class="subTab biwcLink">Before it was cool</a>
             <!-- <a href="/portfolio/ssa.php" title="Secular Student Alliance" class="subTab ssaLink">Secular Student Alliance</a> -->

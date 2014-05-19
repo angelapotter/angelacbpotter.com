@@ -103,7 +103,8 @@ function portfolioCoverHeight() {
       'beforeItWasCool',
       'thirdLayerSoftware',
       'ssa',
-      'olsetBizCards'
+      'olsetBizCards',
+      'musicNotation'
     ]
     $.each(projectArray, function(i, item) {
       var newBgPosY = i * $spriteSpacing * -1;

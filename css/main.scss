@@ -255,7 +255,8 @@
       &:hover, &:active {
         border: 1px solid $lightGray;
         .itemOverlay {
-          display: none;
+          // display: none;
+          display: block;
         }
       }      
       // background-size: cover;
@@ -340,10 +341,17 @@
         background-position: 0 -2400px; 
       }
     }
+    &#musicNotation .itemLink {
+      // background: white;
+      .itemImage {
+        background-position: 0 -2700px; 
+      }
+    }
   }
 
   .itemOverlay {
-    @include opacity(0.25);
+    @include opacity(0.6);
+    display: none;
     height: 280px;
     width: 100%;
     background-color: white;

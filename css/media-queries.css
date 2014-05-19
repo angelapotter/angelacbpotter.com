@@ -361,7 +361,7 @@ a:visited {
     #portfolio .item .itemLink:hover, #portfolio .item .itemLink:active {
       border: 1px solid #aaaaaa; }
       #portfolio .item .itemLink:hover .itemOverlay, #portfolio .item .itemLink:active .itemOverlay {
-        display: none; }
+        display: block; }
     #portfolio .item .itemLink .itemImage {
       background: url("/portfolio/images/portfolio-covers.png") 0 0 no-repeat;
       background-size: 378px 3000px;
@@ -395,9 +395,12 @@ a:visited {
     background-position: 0 0; }
   #portfolio .item#olsetBizCards .itemLink .itemImage {
     background-position: 0 -2400px; }
+  #portfolio .item#musicNotation .itemLink .itemImage {
+    background-position: 0 -2700px; }
 #portfolio .itemOverlay {
-  opacity: 0.25;
-  filter: alpha(opacity=25);
+  opacity: 0.6;
+  filter: alpha(opacity=60);
+  display: none;
   height: 280px;
   width: 100%;
   background-color: white;

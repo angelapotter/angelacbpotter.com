@@ -50,6 +50,18 @@
         </div>
       </a>
     </div>
+    <div id="musicNotation" class="item mobile">
+      <a class="itemLink" href="music-notation-app.php" title="music notation app mockup">
+        <div class="itemOverlay">
+        </div>
+        <div class="itemImage"></div>
+        <div class="itemLabels">
+          <div class="title">music notation app mockup</div>
+          <div class="role">design</div>
+        </div>
+        <!-- <img src="images/myfive-thumb.png" /> -->
+      </a>
+    </div>
     <div id="myFive" class="item web">
       <a class="itemLink" href="myfive.php" title="myFIVE">
         <div class="itemOverlay">
@@ -76,7 +88,7 @@
         <!-- <img src="images/old-person-thumb.png" /> -->
       </a>
 		</div>
-    <div id="thirdLayerSoftware" class="item web">
+    <!-- <div id="thirdLayerSoftware" class="item web">
 			<a class="itemLink" href="third-layer.php" title="Third Layer Software">
         <div class="itemOverlay">
           <div><strong>Third Layer Software</strong>A responsive website for a mobile app company</div>
@@ -86,9 +98,8 @@
           <div class="title">Third Layer Software</div>
           <div class="role">solo project</div>
         </div>
-        <!-- <img src="images/third-layer-thumb.png" /> -->
       </a>
-		</div>    
+		</div>    --> 
     <div id="snake" class="item web">
       <a class="itemLink" href="snake.php" title="Snake">
         <div class="itemOverlay">

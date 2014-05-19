@@ -47,7 +47,7 @@
       <li><strong>Adding default preferences based on 4 traveler types.</strong> We allow the user to control the weightings of
         their preferences so they can truly find that perfect hotel &mdash; e.g. they can say that WiFi is mandatory, but continental breakfast is a nice-to-have. Although users liked all these controls in 
         theory, in practice they found them overwhelming. We added four different traveler profiles that set default preferences based on our hypotheses about those groups. After that, users are free 
-        to edit preferences in detail, but this gives them somewhere to start.</li>
+        to edit preferences in detail, but this gives them somewhere to start. (See initial sketches of this feature below.)</li>
       <li><strong>Showing more than 3 results.</strong> Originally we only showed the top 3 hotel recommendations for a given search by default. Our whole value is that we have such a great recommendation 
         algorithm that you shouldn't need to look through a bunch of hotels to find the perfect one. Although we still gave the option for users to view more hotels from their search, 
         we found in testing that users' first reaction was to assume that that's all the results we found. Users have such a strong schema for how travel
@@ -63,7 +63,10 @@
   </div>
   <img class="topMarg20" src="images/olset/hotel-results.png" alt="OLSET hotel results screenshot" />
   <img class="topMarg20" src="images/olset/mobile-screenshots.png" alt="mobile OLSET screenshots" />
-  <div class="topMarg50">Below is a sample of what the site looked like when I joined the team.</p>
+  <!-- <div class="topMarg50">Below is a sketch for a new user onboarding flow that I started a few months back, 
+    including a walkthrough and traveler type selection:</div>
+  <img class="topMarg20" src="images/olset/olset-new-user-onboarding-angled.png" alt="OLSET sketch" /> -->
+  <div class="topMarg50">Below is a sample of what the site looked like when I joined the team.</div>
   <img class="topMarg20" src="images/olset/old-preferences-page.png" alt="old OLSET screenshot" />
   <div class="clear"></div>
 </div>
