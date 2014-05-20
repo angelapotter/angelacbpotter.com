@@ -1,5 +1,5 @@
 3.2.10 (Media Mark)
-efa32ebe3826b6517180488815de9159409982fc
+7c0ea3b1e3ee7572d2aa25d14534f390f9d8a202
 o:Sass::Tree::RootNode
 :@template"ð0@import "modules";
 @import "generics";
@@ -355,7 +355,7 @@ efa32ebe3826b6517180488815de9159409982fc
   .itemOverlay {
     @include opacity(0.6);
     display: none;
-    height: 280px;
+    height: 281px;
     width: 100%;
     background-color: white;
     position: absolute;
@@ -1734,7 +1734,7 @@ snake;%@©;i-o;(
 ;
 @
 ;ib;;o;;i ;["height;[ ;o;;;;"
-280px;
+281px;
 @
 ;
 @
