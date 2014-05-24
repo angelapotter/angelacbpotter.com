@@ -11,11 +11,11 @@
             <a href="https://twitter.com/takehypotenuses" title="Twitter" target="_blank">
               <div class="socialIcon twitter"></div><!-- <div>Twitter</div> -->
             </a>
+            <a href="https://dribbble.com/angelapotter" title="Dribbble" target="_blank">
+              <div class="socialIcon dribbble"></div>
+            </a>
             <a href="http://ux.stackexchange.com/users/27505/angelapotter" title="UX StackExchange" target="_blank">
               <div class="socialIcon stackExchange"></div><!-- <div>UX.StackExchange</div> -->
-            </a>
-            <a href="http://www.behance.net/angelapotter" title="Behance" target="_blank">
-              <div class="socialIcon behance"></div><!-- <div>Behance</div> -->
             </a>
             <a class="noMargR" href="https://github.com/angelapotter" title="Github" target="_blank">
               <div class="socialIcon github"></div><!-- <div>Github</div> -->

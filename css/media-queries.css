@@ -494,22 +494,22 @@ hr {
 .portfolioNav .miniNav {
   text-align: center; }
 
-/***FOOTER***/
+/*** FOOTER ***/
 .contact {
   color: white;
   width: 100%;
   clear: both;
   font-size: 1.2em;
   display: block;
-  padding-bottom: 40px;
+  padding-bottom: 0;
   margin-top: 30px;
   height: 100%; }
   .contact .contentContainer {
-    padding: 8px 0;
+    padding: 0;
     text-align: right; }
     .contact .contentContainer a {
       display: inline-block;
-      margin: 6px 15px 6px 0;
+      margin: 0 15px 0 0;
       text-transform: lowercase;
       vertical-align: middle; }
       .contact .contentContainer a div {
@@ -520,7 +520,7 @@ hr {
         display: inline-block;
         height: 40px;
         width: 40px; }
-        .contact .contentContainer a .socialIcon.behance:hover, .contact .contentContainer a .socialIcon.behance:active {
+        .contact .contentContainer a .socialIcon.dribbble:hover, .contact .contentContainer a .socialIcon.dribbble:active {
           background-position: 0 -40px; }
         .contact .contentContainer a .socialIcon.github {
           background-position: -40px 0; }

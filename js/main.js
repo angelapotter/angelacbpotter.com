@@ -90,6 +90,7 @@ function portfolioCoverHeight() {
   if ($(window).width() <= 448) {      
     var $bgWidth = $itemImages.width();
     var $totalBgHeight = $bgWidth * (3000/378);
+    // wtf sometimes $totalBgHeight gets set to 0
     if ($totalBgHeight > 1) {
       var $spriteSpacing = $totalBgHeight / 10;
       var $spriteHeight = $spriteSpacing * (280/300);    

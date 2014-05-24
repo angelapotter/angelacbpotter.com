@@ -536,7 +536,7 @@ hr {
 .portfolioNav .next { text-align: right; }
 .portfolioNav .miniNav { text-align: center; }
 
-/***FOOTER***/
+/*** FOOTER ***/
 
 .contact {
   color: white;
@@ -544,15 +544,15 @@ hr {
   clear: both;
   font-size: 1.2em;
   display: block;
-  padding-bottom: 40px;
+  padding-bottom: 0;
   margin-top: 30px;
   height: 100%;
   .contentContainer {
-    padding: 8px 0;
+    padding: 0;
     text-align: right;
     a {
       display: inline-block;
-      margin: 6px 15px 6px 0;
+      margin: 0 15px 0 0;
       text-transform: lowercase;
       vertical-align: middle;
       div {
@@ -567,7 +567,7 @@ hr {
         height: 40px;
         width: 40px;
         // margin-right: 8px;
-        &.behance {
+        &.dribbble {
           &:hover, &:active {
             background-position: 0 -40px;
           }
