@@ -63,11 +63,9 @@
   </div>
   <img class="topMarg20" src="images/olset/hotel-results.png" alt="OLSET hotel results screenshot" />
   <img class="topMarg20" src="images/olset/mobile-screenshots.png" alt="mobile OLSET screenshots" />
-  <!-- <div class="topMarg50">Below is a sketch for a new user onboarding flow that I started a few months back, 
-    including a walkthrough and traveler type selection:</div>
-  <img class="topMarg20" src="images/olset/olset-new-user-onboarding-angled.png" alt="OLSET sketch" /> -->
-  <div class="topMarg50">Below is a sample of what the site looked like when I joined the team.</div>
-  <img class="topMarg20" src="images/olset/old-preferences-page.png" alt="old OLSET screenshot" />
+  
+  <!-- <div class="topMarg50">Below is a sample of what the site looked like when I joined the team.</div>
+  <img class="topMarg20" src="images/olset/old-preferences-page.png" alt="old OLSET screenshot" /> -->
   <div class="clear"></div>
 </div>
 
