@@ -5,7 +5,7 @@
               <a href="malto:angelacbpotter@gmail.com" title="email me"><div class="socialIcon email"></div></a>
               <a href="tel:2069498204" title="call me"><div class="socialIcon phone"></div></a>            
             </div>
-            <a href="http://www.linkedin.com/pub/angela-potter/35/77b/779" title="LinkedIn" target="_blank">
+            <a href="http://www.linkedin.com/in/angelacbpotter/" title="LinkedIn" target="_blank">
               <div class="socialIcon linkedIn"></div><!-- <div>LinkedIn</div> -->
             </a>
             <a href="https://twitter.com/takehypotenuses" title="Twitter" target="_blank">
