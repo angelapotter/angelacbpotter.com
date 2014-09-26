@@ -44,14 +44,11 @@ h1, h2, h3, h4 {
   padding: 10px 0; }
 
 h1 {
-  text-transform: lowercase; }
-
-h1 {
+  text-transform: lowercase;
   font-size: 3em;
   color: #aaaaaa;
   line-height: 1.2;
-  padding: 25px 0 25px 25px;
-  /*-webkit-margin-before:  0; */ }
+  padding: 25px 0 25px 25px; }
 
 h2 {
   color: #666666;
@@ -105,9 +102,7 @@ a:visited {
 /** ALIGNMENT ETC ** */
 .borderBox, .containerXL, .contentContainer, .border {
   -webkit-box-sizing: border-box;
-  /* Safari/Chrome, other WebKit */
   -moz-box-sizing: border-box;
-  /* Firefox, other Gecko */
   box-sizing: border-box; }
 
 .indented {
