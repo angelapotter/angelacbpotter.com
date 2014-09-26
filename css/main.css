@@ -7,14 +7,14 @@ html, body {
 
 body {
   background-color: white;
-  font-family: "HelveticaNeueLight", "HelveticaNeue-Light", "Helvetica Neue Light", "HelveticaNeue", "Helvetica Neue", 'TeXGyreHerosRegular', "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif;
+  font-family: "HelveticaNeueLight", "HelveticaNeue-Light", "Helvetica Neue Light", "HelveticaNeue", "Helvetica Neue", "TeXGyreHerosRegular", "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif;
   font-weight: 300;
   font-size: 100%;
   color: #333333;
   min-height: 100%;
   width: 100%; }
 
-/***BIG CONTAINERS***/
+/**BIG CONTAINERS* */
 .containerXL, .contentContainer {
   max-width: 100%; }
 
@@ -36,7 +36,7 @@ body {
   height: 0;
   display: none; }
 
-/***TEXT***/
+/**TEXT** */
 h1, h2, h3, h4 {
   font-weight: normal;
   font-weight: 300;
@@ -51,13 +51,13 @@ h1 {
   color: #aaaaaa;
   line-height: 1.2;
   padding: 25px 0 25px 25px;
-  /*-webkit-margin-before:  0;*/ }
+  /*-webkit-margin-before:  0; */ }
 
 h2 {
   color: #666666;
   font-size: 1.7em; }
 
-/*content head*/
+/*content head */
 h4 {
   color: #999999;
   text-transform: uppercase;
@@ -68,7 +68,7 @@ h4 {
   letter-spacing: 0.02em; }
 
 p, ul, ol {
-  color: #333;
+  color: #333333;
   font-size: 1em;
   line-height: 1.45; }
 
@@ -81,7 +81,7 @@ p {
 .small {
   font-size: 0.8em; }
 
-/*** LINKS ***/
+/** LINKS ** */
 a, img {
   border: none; }
 
@@ -102,7 +102,7 @@ a:visited {
 .content a:hover {
   text-decoration: underline; }
 
-/*** ALIGNMENT ETC ***/
+/** ALIGNMENT ETC ** */
 .borderBox, .containerXL, .contentContainer, .border, .filtersContainer div, #portfolio .item .itemLink {
   -webkit-box-sizing: border-box;
   /* Safari/Chrome, other WebKit */
@@ -189,7 +189,7 @@ a:visited {
 .border, .filtersContainer div, #portfolio .item .itemLink {
   border: 1px solid #cccccc; }
 
-/***HEAD***/
+/**HEAD** */
 .header {
   overflow: hidden;
   width: 100%;
@@ -203,7 +203,7 @@ a:visited {
   .header.fixed {
     position: fixed;
     top: -8px;
-    border-bottom: 1px solid #ccc;
+    border-bottom: 1px solid #cccccc;
     z-index: 7; }
 
 .menuIcon {
@@ -218,7 +218,7 @@ a:visited {
   .menuIcon:hover, .menuIcon:active, .menuIcon:focus {
     background-color: #f1f1f5; }
 
-/***NAV***/
+/**NAV** */
 .leftNavContainer {
   width: 204px;
   float: left;
@@ -286,7 +286,7 @@ a:visited {
   background-color: white !important;
   color: #008299 !important; }
 
-/***CONTENT***/
+/**CONTENT** */
 .colorBlock.top {
   background-color: #666666;
   height: 400px;
@@ -328,7 +328,7 @@ a:visited {
 .profileContainer {
   min-height: 378px; }
 
-/***PORTFOLIO***/
+/**PORTFOLIO** */
 .filtersContainer {
   display: table;
   border-collapse: collapse;
@@ -415,14 +415,14 @@ a:visited {
       display: block;
       padding-bottom: 8px; }
 
-/***TWITTER FEED***/
+/**TWITTER FEED** */
 #twitterFeed .content {
   min-height: 700px; }
 
 .twitter-timeline {
   width: 100%; }
 
-/*applied to multiple*/
+/*applied to multiple */
 #portfolio h4,
 .portfolioPage h4, .date {
   display: inline-block; }
@@ -451,9 +451,9 @@ a:visited {
     margin-bottom: 10px; }
 
 hr {
-  background-color: #9CA9B4;
+  background-color: #9ca9b4;
   border: 0;
-  color: #9CA9B4;
+  color: #9ca9b4;
   height: 1px;
   margin: 50px 0;
   width: 100%; }
@@ -494,7 +494,7 @@ hr {
 .portfolioNav .miniNav {
   text-align: center; }
 
-/*** FOOTER ***/
+/** FOOTER ** */
 .contact {
   color: white;
   width: 100%;
