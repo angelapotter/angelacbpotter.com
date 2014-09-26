@@ -1,0 +1,531 @@
+@import modules
+@import generics
+
+/***HEAD***/
+
+// #head {
+//   height: 5em;
+//   overflow: hidden;
+//   position: relative;
+//   margin: 20px 0 10px;
+// }
+.header
+  // padding: $mainPadding;
+  overflow: hidden
+  width: 100%
+  height: auto
+  background: white
+  background: rgba(255, 255, 255, 0.9)
+  a
+    display: block
+    width: auto
+    overflow: hidden
+  &.fixed
+    position: fixed
+    top: -8px
+    border-bottom: 1px solid #ccc
+    z-index: 7
+  // .h1Container {
+  //     // display: inline-block;
+  //     width: auto;
+  //     overflow: hidden;
+  //   }
+
+.menuIcon
+  background: url("/images/menu-icon-retina.png") 16px 10px no-repeat
+  background-size: 32px
+  height: 32px
+  width: 32px
+  padding: 10px 16px 8px
+  float: right
+  display: none
+  cursor: pointer
+  &:hover, &:active, &:focus
+    background-color: $lightestGray
+
+/***NAV***/
+.leftNavContainer
+  width: 204px
+  float: left
+  // overflow: hidden;
+  position: relative
+  // position: fixed;
+  // top: 107px;
+  // position: fixed;
+  // width: 100%;
+  left: 0
+  top: 0
+  display: block
+  background: white
+  // z-index: 100;
+  border-top: 0
+  .leftNav
+    // margin-right: 10px;
+    padding: $mainPadding 0
+    a
+      display: block
+      padding: 5px $mainPadding
+      margin: 0
+      cursor: pointer
+      &:hover
+        text-decoration: underline
+        // @extend .active;
+      &.mainTab
+        font-weight: bold
+        text-transform: lowercase
+        color: $darkestGray
+      &.subTab
+        color: $darkGray
+        font-size: 0.9em
+        padding-left: 38px
+        &:visited
+          color: $lightGray
+      &.active
+        background: url("/images/active-tab-marker-retina.png") 6px center no-repeat
+        background-size: 12px 20px
+        color: $primaryColor
+    .resumeLink
+      margin-top: 10px
+
+#nav
+  margin: 0 0 10px
+  width: 100%
+  display: table
+
+.halfNav, .tabContainer
+  border: 0
+  margin: 6px 0 0
+  padding: 0
+  display: block
+  float: left
+
+.halfNav
+  width: 50%
+
+.tabContainer
+  margin: 0 1.4%
+  width: 47.9%
+  // @include box-shadow($standardBoxShadow);
+
+#nav .tab
+  color: $lightGray
+  display: block
+  font-size: 1.3em
+  text-align: center
+  width: 100%
+  padding: 0.5em 0 0.6em
+
+#nav .tab:hover,
+.activeTab
+  background-color: white !important
+  color: $primaryColor !important
+  // @include box-shadow($standardBoxShadow);
+
+/***CONTENT***/
+.colorBlock.top
+  background-color: $darkGray
+  height: 400px
+  top: 0
+
+.content
+  // padding: 22px 30px;
+  // @include box-shadow($standardBoxShadow);
+
+.profile
+  float: left
+  margin: 0 30px 0 0
+  // height: 150px;
+
+.profile.web
+  height: 400px
+  width: 230px
+
+.profile.mobile
+  display: none
+
+.headshot
+  float: left
+  margin: 10px 20px 0 0
+  height: 218px
+  width: 218px
+
+.contactParagraph
+  margin-top: 50px
+  overflow: hidden
+
+/* page specifics*/
+#resume
+  .content
+    > div
+      margin-bottom: 5px
+  h2
+    margin-top: 30px
+    // margin-bottom: 2px;
+  p
+    margin-top: 1em
+    margin-bottom: 0.1em
+  ul, li
+    margin-top: 0
+    margin-bottom: 0
+
+.profileContainer
+  @extend .noPadBot
+  min-height: 378px
+
+/***PORTFOLIO***/
+
+.filtersContainer
+  display: table
+  border-collapse: collapse
+  margin: 10px 0 20px
+  // float: right;
+  // @extend .border;
+  div
+    color: $mediumGray
+    text-transform: lowercase
+    // background: $lightestGray;
+    display: table-cell
+    @extend .border
+    cursor: pointer
+    padding: 6px 15px
+    &.active, &:hover
+      color: white
+      background: $mediumGray
+
+#portfolio
+  .content
+    overflow: hidden
+  // #items, .portfolioSidebarContainer {
+  //   display: inline-block;
+  //   vertical-align: top;
+  //   // width: 33.3333%;
+  // }
+  #items
+    // width: 66.6667%;
+    width: 103%
+  .item
+    float: left
+    // width: 378px;
+    margin-top: 0
+    // img {
+    //   width: 252px;
+    //   height: 150px;
+    max-width: 100%
+    // }
+    .itemLink
+      @extend .inlineBlock
+      background: white
+      // @extend .borderBox;
+      @extend .border
+      // border: 1px solid $lightGray;
+      // height: 150px;
+      display: block
+      // width: auto;
+      width: 378px
+      max-width: 97%
+      // width: 252px;
+      margin: 0 20px 20px 0
+      position: relative
+      &:hover, &:active
+        border: 1px solid $lightGray
+        .itemOverlay
+          // display: none;
+          display: block
+      // background-size: cover;
+      // float: left;
+      // @include box-shadow($standardBoxShadow);
+      .itemImage
+        background: url("/portfolio/images/portfolio-covers.png") 0 0 no-repeat
+        background-size: 378px 3000px
+        height: 280px
+        // max-width: 2px;
+        // width: auto;
+        margin: 0 auto
+      .itemLabels
+        background: $lightestGray
+        // background: white;
+        text-align: center
+        padding: 15px
+        .title
+          color: $darkestGray
+          font-size: 1.1em
+        .role
+          color: $darkGray
+          font-size: 0.8em
+    &#ssa .itemLink
+      // background: url('/portfolio/images/ssa-thumb-bg.png') 50% 0 no-repeat;
+      // background-size: cover;
+      .itemImage
+        background-position: 0 -2100px
+    &#beforeItWasCool .itemLink
+      // background: white;
+      .itemImage
+        background-position: 0 -1500px
+    &#snake .itemLink
+      // background: #539574;
+      .itemImage
+        background-position: 0 -600px
+    &#thirdLayerSoftware .itemLink
+      // background: #ccc;
+      .itemImage
+        background-position: 0 -1800px
+    &#oldPersonApp .itemLink
+      // background: url('/portfolio/images/old-person-bg.png') 50% 40% no-repeat;
+      // background-size: cover;
+      .itemImage
+        background-position: 0 -900px
+    &#myFive .itemLink
+      // background: white;
+      .itemImage
+        background-position: 0 -1200px
+    &#olsetWebsite .itemLink
+      // background: #00a0cc;
+      .itemImage
+        background-position: 0 -300px
+    &#olsetAnydo .itemLink
+      // background: white;
+      .itemImage
+        background-position: 0 0
+    &#olsetBizCards .itemLink
+      // background: white;
+      .itemImage
+        background-position: 0 -2400px
+    &#musicNotation .itemLink
+      // background: white;
+      .itemImage
+        background-position: 0 -2700px
+  .itemOverlay
+    +opacity(0.6)
+    display: none
+    height: 281px
+    width: 100%
+    background-color: white
+    position: absolute
+    // left: 1px;
+    // padding: 20px;
+    // text-align: center;
+    font-size: 1.2em
+    // text-transform: uppercase;
+    // font-weight: bold;
+    // color: $mediumGray;
+    div
+      display: none
+      padding: 20px
+      // display: table-cell;
+      vertical-align: top
+      // font-weight: bold;
+      strong
+        color: $mediumGray
+        display: block
+        padding-bottom: 8px
+
+/***TWITTER FEED***/
+#twitterFeed .content
+  min-height: 700px
+
+.twitter-timeline
+  width: 100%
+  // height: auto;
+  // min-height: 100%;
+
+/*applied to multiple*/
+
+#portfolio h4,
+.portfolioPage h4, .date
+  display: inline-block
+
+.portfolioPage
+  .content
+    h2
+      display: inline-block
+      padding-top: 0
+      margin-bottom: 25px
+    .projectInfo
+      float: right
+      text-align: right
+      color: $lightGray
+  img
+    max-width: 100%
+
+#items
+  position: relative
+  clear: both
+  width: 786px
+
+.item
+  display: block
+  // margin-top: 10px;
+  // width: 262px;
+  //  height: 160px;
+  // float: left;
+  // margin: 0 auto;
+  p
+    margin-top: 0
+    padding-top: 0
+    margin-bottom: 10px
+    // font-size: 1.4em;
+
+// .date {
+//  color: #666;
+//  font-size: 0.8em;
+//  margin-bottom: 10px;
+//  margin-left: 10px;
+// }
+// .border { border:2px solid #919FAC; }
+
+hr
+  background-color: #9CA9B4
+  border: 0
+  color: #9CA9B4
+  height: 1px
+  margin: 50px 0
+  width: 100%
+
+// .portfolioNav .miniNav {
+//   div {
+//     display: inline-block;
+//   }
+//   a {
+//     @extend .inlineBlock;
+//     height: 30px;
+//     width: 60px;
+//     background: url('/portfolio/images/portfolio-mini-nav-thumbs.png') left top no-repeat;
+//     background-size: 800px 30px;
+//     margin: 10px 2px;
+//     &.biwc {
+//       background-position: -75px 0;
+//     }
+//     &.snake {
+//       background-position: -150px 0;
+//     }
+//     &.thirdLayer {
+//       background-position: -225px 0;
+//     }
+//     &.oldPerson {
+//       background-position: -300px 0;
+//     }
+//     &.myfive {
+//       background-position: -375px 0;
+//     }
+//     &.olsetWebsite {
+//       background-position: -450px 0;
+//     }
+//     &.olsetAnydo {
+//       background-position: -525px 0;
+//     }
+//     &.active, &:hover {
+//       border-bottom: 2px solid white;
+//       margin-bottom: 2px !important;
+//       padding-bottom: 6px;
+//     }
+//   }
+// img {
+//   margin: 10px 2px;
+//   height: 30px;
+//   width: 60px;
+// }
+// }
+// portfolioNav .miniNav a.active, .portfolioNav .miniNav a:hover {
+//   border-bottom: 2px solid white;
+//   margin-bottom: 2px !important;
+//   padding-bottom: 6px;
+// }
+.portfolioNav
+  display: none
+  width: 100%
+  margin: 0 auto 16px
+  // display: table !important;
+  text-align: center
+  h2
+    display: inline-block
+    padding: 4px 0 0
+    // text-align: center;
+  .prev, .next
+    background: url("/images/arrows-retina.png") 0 0 no-repeat
+    background-size: 80px 80px
+    height: 40px
+    width: 40px
+    a
+      display: block
+      height: 100%
+      width: 100%
+  .prev
+    float: left
+    &:hover, &:active
+      background-position: 0 -40px
+  .next
+    float: right
+    background-position: -40px 0
+    &:hover, &:active
+      background-position: -40px -40px
+
+.portfolioNav .prev
+  text-align: left
+
+.portfolioNav .next
+  text-align: right
+
+.portfolioNav .miniNav
+  text-align: center
+
+/*** FOOTER ***/
+
+.contact
+  color: white
+  width: 100%
+  clear: both
+  font-size: 1.2em
+  display: block
+  padding-bottom: 0
+  margin-top: 30px
+  height: 100%
+  .contentContainer
+    padding: 0
+    text-align: right
+    a
+      display: inline-block
+      margin: 0 15px 0 0
+      text-transform: lowercase
+      vertical-align: middle
+      div
+        display: block
+        // text-align: center;
+        // vertical-align: middle;
+      .socialIcon
+        background: url("/images/social-icons-retina.png") 0 0 no-repeat
+        background-size: 280px 80px
+        display: inline-block
+        height: 40px
+        width: 40px
+        // margin-right: 8px;
+        &.dribbble
+          &:hover, &:active
+            background-position: 0 -40px
+        &.github
+          background-position: -40px 0
+          &:hover, &:active
+            background-position: -40px -40px
+        &.stackExchange
+          background-position: -80px 0
+          &:hover, &:active
+            background-position: -80px -40px
+        &.twitter
+          background-position: -120px 0
+          &:hover, &:active
+            background-position: -120px -40px
+        &.linkedIn
+          background-position: -160px 0
+          &:hover, &:active
+            background-position: -160px -40px
+        &.email
+          background-position: -200px 0
+          &:hover, &:active
+            background-position: -200px -40px
+        &.phone
+          background-position: -240px 0
+          &:hover, &:active
+            background-position: -240px -40px
+
+// .contact img {
+//   margin: 0 6px -10px 0;
+// }
