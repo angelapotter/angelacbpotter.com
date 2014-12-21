@@ -1,3 +1,4 @@
+
 <?php
 	$title='portfolio';
 	$bodyId='portfolio';
@@ -13,7 +14,7 @@
 
   <!--
 	--><div id="items" class="topMarg10">
-    
+
     <div id="olsetWebsite" class="item web">
       <a class="itemLink" href="olset-website.php" title="OLSET">
         <div class="itemOverlay">
@@ -99,7 +100,7 @@
           <div class="role">solo project</div>
         </div>
       </a>
-		</div>    --> 
+		</div>    -->
     <div id="snake" class="item web">
       <a class="itemLink" href="snake.php" title="Snake">
         <div class="itemOverlay">
@@ -138,7 +139,7 @@
         </div>
       </a>
     </div> -->
-    <div class="clear"></div>		
+    <div class="clear"></div>
 	</div>
   <div class="clear"></div>
 
