@@ -1,7 +1,7 @@
 <?php
 	$title='Before It Was Cool';
-	$bodyId='biwc';
-	$bodyClass='portfolioPage';
+	$body_id='biwc';
+	$body_class='portfolioPage';
 	include $_SERVER["DOCUMENT_ROOT"] . '/includes/header.php';
 ?>
 

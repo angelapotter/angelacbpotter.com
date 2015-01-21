@@ -1,7 +1,7 @@
 <?php
 	$title='Secular Student Alliance';
-	$bodyId='ssa';
-	$bodyClass='portfolioPage';
+	$body_id='ssa';
+	$body_class='portfolioPage';
 	include $_SERVER["DOCUMENT_ROOT"] . '/includes/header.php';
 ?>
 

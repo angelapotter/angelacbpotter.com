@@ -1,7 +1,7 @@
 <?php
 	$title='Snake';
-	$bodyId='snake';
-	$bodyClass='portfolioPage';
+	$body_id='snake';
+	$body_class='portfolioPage';
 	include $_SERVER["DOCUMENT_ROOT"] . '/includes/header.php';
 ?>
 
@@ -22,7 +22,7 @@
 	      <div class="role">solo project</div>
 	    </div>
 		<!-- <span class="date">(Aug 2012, updated Mar 2013)</span>
-		
+
 		<br />
 		<p><strong>Solo project</strong></p>
 		<br /> -->

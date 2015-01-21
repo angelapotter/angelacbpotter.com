@@ -1,6 +1,6 @@
 <?php
     $title='contact';
-    $bodyId='contact';
+    $body_id='contact';
     include 'includes/header.php';
 ?>
 

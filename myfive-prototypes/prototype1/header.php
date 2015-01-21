@@ -12,9 +12,9 @@
     <script src="main.js"></script>
     <?php include 'class-lib.php'; ?>
   </head>
-  <body id="<?php echo $bodyId; ?>">
-    <?php   
-    
+  <body id="<?php echo $body_id; ?>">
+    <?php
+
       $dateInTitle = date("dMy");
       $user = new Person("Test","User");
       // $user->set_jobTitle("Your Job Title");
@@ -22,7 +22,7 @@
       // $user->set_workEmail("you@yourcompany.com");
       // $user->set_linkedIn("yourname/555");
       // $user->set_linkedIn("yourtwitterhandle");
-      
+
       $claire = new Person("Claire","Smith");
       // $claire->set_jobTitle("Web Designer");
       // $claire->set_orgName("Claire Smith Web Design");
@@ -40,7 +40,7 @@
     ?>
     <script type="text/javascript"> // have to put php variables here to pass to js
       var dateInTitle = '<?php echo $dateInTitle; ?>';
-      var bodyID = '<?php echo $bodyId; ?>';
+      var bodyID = '<?php echo $body_id; ?>';
     </script>
     <!--dialog-->
     <div id="alert" title="Oops!" style="max-height: 100px !important;"></div>

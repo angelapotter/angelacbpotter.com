@@ -1,6 +1,6 @@
 <?php
 $title='View Ticket &amp; Share';
-$bodyId='viewTicket';
+$body_id='viewTicket';
 include 'header.php';
 ?>
 
@@ -31,9 +31,9 @@ include 'header.php';
           <div class="small onExpand emailForSharing"><!-- fill recipient email --></div>
         </div>
       </div>
-      
+
       <?php include 'share-options.php'; ?>
-      
+
     </div>
     <!-- share with CONNECTOR -->
     <div id="connectorShare" class="item sharePerson">
@@ -47,9 +47,9 @@ include 'header.php';
           <div class="small onExpand emailForSharing"><!-- fill connector email --></div>
         </div>
       </div>
-      
+
       <?php include 'share-options.php'; ?>
-      
+
     </div>
     <!-- share with CLIENT -->
     <div id="clientShare" class="item sharePerson">
@@ -63,9 +63,9 @@ include 'header.php';
           <div class="small onExpand emailForSharing"><!-- fill client email --></div>
         </div>
       </div>
-      
+
       <?php include 'share-options.php'; ?>
-      
+
     </div>
     <div class="item right">
       <button id="shareButton" class="tealButton" type="button"><div>Share now</div></button>
@@ -79,7 +79,7 @@ include 'header.php';
     </div>
   </div>
 </div>
-        
+
 <!--LEFT BOX-->
 <div class="mainContentFrame">
   <div class="grayHeader">
@@ -87,15 +87,15 @@ include 'header.php';
     <div class="clear"></div>
   </div>
   <div class="mainContent">
-    
+
     <?php include 'progress-bar.php'; ?>
-    
+
     <h2 class="teal topMarg20 botMarg10">Description</h2>
     <div id="gigDescription" class="botMarg20 inlineBlock"><!-- fill description --></div><div class="editLink indent15"><a href="#">edit</a></div>
 
     <?php include 'contact-cards.php'; ?>
     <?php include 'group-discussion.php'; ?>
-    
+
   </div>
 </div>
 

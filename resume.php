@@ -1,30 +1,30 @@
 <?php
   $title='resume';
-  $bodyId='resume';
+  $body_id='resume';
   include $_SERVER["DOCUMENT_ROOT"] . '/includes/header.php';
 
 ?>
 
 <div class="content whiteBG">
-  <h2 class="noPadTop noMargTop">skills</h2>
+  <h2 class="noPadTop noMargTop">Skills</h2>
   <div>
     <p>
-      <strong>UX Design:</strong> 
-      Efficient at creating wireframes and site maps. 
+      <strong>UX Design:</strong>
+      Efficient at creating wireframes and site maps.
       Experienced with user testing and iterative design.
-      Skilled at writing personas and user stories.  
+      Skilled at writing personas and user stories.
       Proficient with Adobe Creative Suite.
     </p>
     <p>
-      <strong>Front-End Development:</strong>       
+      <strong>Front-End Development:</strong>
       Excellent with HTML, CSS, SASS, Bootstrap, JavaScript, and JQuery.
-      Adept at coding functional prototypes. 
-      Proficient with Python and Django. 
+      Adept at coding functional prototypes.
+      Proficient with Python and Django.
       Experienced with Git.
     </p>
   </div>
 
-  <h2>experience</h2>
+  <h2>Experience</h2>
   <div>
     <p>
       <strong>UX Designer</strong> (July 2013 - present)<br />
@@ -55,7 +55,7 @@
     </ul>
 
   </div>
-  <h2>education</h2>
+  <h2>Education</h2>
   <div>
     <p><strong>Bachelor of Music in Music Cognition &amp; Flute Performance</strong> (June 2012)<br />
       Northwestern University, Evanston, IL

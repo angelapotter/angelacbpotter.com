@@ -1,6 +1,6 @@
 <?php
 $title='Step 2: Enter Details';
-$bodyId='step2';
+$body_id='step2';
 include 'header.php';
 ?>
 
@@ -13,7 +13,7 @@ include 'header.php';
       <div class="nextStep"><div>Step 3</div></div>
     </a>
   </div>
-  
+
 </div>
 
 <!--LEFT BOX-->
@@ -58,5 +58,5 @@ include 'header.php';
     </div>
   </div>
 </div>
-          
+
 <?php include 'footer.php'; ?>

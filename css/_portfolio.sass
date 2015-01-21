@@ -1,23 +1,29 @@
 .filtersContainer
   display: table
   border-collapse: collapse
-  margin: 10px 0 20px
+  margin: 0 0 20px
+  float: right
 
   div
     color: $mediumGray
-    text-transform: lowercase
     display: inline-block
     cursor: pointer
-    padding: 6px 15px
     margin: 0 4px
+
+    span
+      display: block
+      padding: 6px 13px
+      margin: 0 2px
+
 
     &:after
       content: ''
       display: block
       height: 2px
       width: 0
+      margin: 0 auto
       background: $primaryColor
-      +transition( width 0.3s )
+      +transition( width $standardTransition )
 
     &.active,
     &:hover
@@ -118,7 +124,7 @@
 
   .itemOverlay
     +opacity(0)
-    +transition( opacity 0.3s )
+    +transition( opacity $standardTransition )
     height: 281px
     width: 100%
     background-color: white

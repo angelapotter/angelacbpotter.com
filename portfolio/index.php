@@ -1,31 +1,36 @@
 
 <?php
 	$title='portfolio';
-	$bodyId='portfolio';
-	$bodyClass='portfolioPage';
+	$body_id='portfolio';
+	$body_class='portfolioPage';
 	include $_SERVER["DOCUMENT_ROOT"] . '/includes/header.php';
 ?>
   <div class="filtersContainer">
-    <div class="all active">All</div><!--
-    --><div class="web">Web</div><!--
-    --><div class="mobile">Mobile</div><!--
-    --><div class="print">Print</div>
+    <div class="all active">
+      <span>All</span>
+    </div><!--
+    --><div class="web">
+      <span>Web</span>
+    </div><!--
+    --><div class="mobile">
+      <span>Mobile</span>
+    </div><!--
+    --><div class="print">
+      <span>Print</span>
+    </div>
   </div>
+  <h2 class="noPadTop botMarg20">Portfolio</h2>
 
-  <!--
-	--><div id="items" class="topMarg10">
-
+  <div id="items" class="topMarg10">
     <div id="olsetWebsite" class="item web">
       <a class="itemLink" href="olset-website.php" title="OLSET">
         <div class="itemOverlay">
-          <!-- <div><strong>OLSET</strong>A travel site for personalized hotel recommendations</div> -->
         </div>
         <div class="itemImage"></div>
         <div class="itemLabels">
-          <div class="title">olset.com</div>
+          <div class="title">Olset.com</div>
           <div class="role">design &amp; front-end dev</div>
         </div>
-        <!-- <img src="images/olset-website-thumb.png" /> -->
       </a>
     </div>
     <div id="olsetAnydo" class="item mobile">
@@ -38,7 +43,6 @@
           <div class="title">Any.do travel</div>
           <div class="role">design &amp; front-end dev</div>
         </div>
-        <!-- <img src="images/olset-website-thumb.png" /> -->
       </a>
     </div>
     <div id="olsetBizCards" class="item print">
@@ -52,7 +56,7 @@
       </a>
     </div>
     <div id="musicNotation" class="item mobile">
-      <a class="itemLink" href="music-notation-app.php" title="music notation app mockup">
+      <a class="itemLink" href="music-notation-app.php" title="Music notation app mockup">
         <div class="itemOverlay">
         </div>
         <div class="itemImage"></div>
@@ -60,7 +64,6 @@
           <div class="title">music notation app mockup</div>
           <div class="role">design</div>
         </div>
-        <!-- <img src="images/myfive-thumb.png" /> -->
       </a>
     </div>
     <div id="myFive" class="item web">
@@ -73,7 +76,6 @@
           <div class="title">myFive</div>
           <div class="role">wireframing, prototyping, user testing</div>
         </div>
-        <!-- <img src="images/myfive-thumb.png" /> -->
       </a>
 		</div>
 		<div id="oldPersonApp" class="item mobile">
@@ -86,7 +88,6 @@
           <div class="title">Old Person App</div>
           <div class="role">design &amp; layout</div>
         </div>
-        <!-- <img src="images/old-person-thumb.png" /> -->
       </a>
 		</div>
     <!-- <div id="thirdLayerSoftware" class="item web">
@@ -111,7 +112,6 @@
           <div class="title">Snake</div>
           <div class="role">solo project</div>
         </div>
-        <!-- <img src="images/snake-thumb.png" /> -->
       </a>
     </div>
     <div id="beforeItWasCool" class="item noMargTop web">
@@ -124,21 +124,8 @@
           <div class="title">Before it was cool</div>
           <div class="role">design &amp; front-end dev</div>
         </div>
-        <!-- <img src="images/biwc-thumb.png" /> -->
       </a>
 		</div>
-    <!-- <div id="ssa" class="item">
-      <a class="itemLink" href="ssa.php">
-        <div class="itemOverlay">
-          <div><strong>SSA</strong>A website for a Northwestern University student group</div>
-        </div>
-        <div class="itemImage"></div>
-        <div class="itemLabels">
-          <div class="title">Secular Student Alliance</div>
-          <div class="role">solo project</div>
-        </div>
-      </a>
-    </div> -->
     <div class="clear"></div>
 	</div>
   <div class="clear"></div>

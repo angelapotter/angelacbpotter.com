@@ -1,7 +1,7 @@
 <?php
 	$title='Third Layer Software';
-	$bodyId='thirdLayer';
-	$bodyClass='portfolioPage';
+	$body_id='thirdLayer';
+	$body_class='portfolioPage';
 	include $_SERVER["DOCUMENT_ROOT"] . '/includes/header.php';
 ?>
 
@@ -12,7 +12,6 @@
     <h2>Third Layer Software</h2>
     <div class="next"><a href="snake.php" title="next project"></a></div>
   </div>
-  <!-- <a href="http://www.thirdlayersoftware.com" title="Third Layer Software" target="_blank"> -->
   	<img src="images/thirdlayer_about.png" />
   <!-- </a> -->
   <div class="content whiteBG topMarg20">
@@ -21,8 +20,7 @@
       <div class="date">winter 2013</div>
       <div class="role">design &amp; layout</div>
     </div>
-	<!-- <span class="date">(Feb 2013, updated Apr 2013)</span>
-	
+
 	<br />
 	<p><strong>Solo project</strong></p>
 	<br /> -->

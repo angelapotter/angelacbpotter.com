@@ -1,27 +1,15 @@
 <?php
 	$title='Any.do travel';
-	$bodyId='olsetAnydo';
-	$bodyClass='portfolioPage';
+	$body_id='olsetAnydo';
+	$body_class='portfolioPage';
 	include $_SERVER["DOCUMENT_ROOT"] . '/includes/header.php';
 ?>
 
 <div class="item">
-  <div class="portfolioNav">
-    <div class="prev"><a href="olset-website.php" title="previous project"></a></div>
-    <h2>Any.do travel</h2>
-    <div class="next"><a href="olset-biz-cards.php" title="next project"></a></div>
-  </div>
-  <!-- <a href="https://play.google.com/store/apps/details?id=com.anydo" title="Any.do To-Do List for Android" target="_blank"> -->
-    <img src="images/anydo-screenshots.png" />
-  <!-- </a> -->
+  <img src="images/anydo-screenshots.png" />
+
   <div class="content whiteBG topMarg20">
-    <h2>Any.do travel</h2>
-    <!-- <span class="date">(ongoing)</span> -->
-    <!-- <br /> -->
-    <!-- <p><strong>Collaborators:</strong> 
-      <a href="https://www.olset.com/ux/pages/about" title="OLSET About Us" target="_blank">the OLSET team</a>, 
-      <a href="http://www.any.do" title="Any.do website" target="_blank">the Any.do team</a>
-    </p> -->
+    <h2><?php echo $title ?></h2>
     <div class="projectInfo">
       <div class="date">spring 2014</div>
       <div class="role">design &amp; front-end dev</div>
@@ -34,13 +22,13 @@
     <div class="right topMarg20">
       <span class="small inlineBlock"><a href="http://www.any.do" title="Any.do website" target="_blank">Learn more</a></span>
       <span class="small indented inlineBlock">
-        <a href="https://play.google.com/store/apps/details?id=com.anydo" 
+        <a href="https://play.google.com/store/apps/details?id=com.anydo"
            title="Google Play: Any.do" target="_blank">Download Any.do</a>
       </span>
     </div>
     <div class="clear"></div>
   </div>
-  <img class="topMarg20" src="images/anydo-mockups-1.png" style="max-width: 100%;"/>  
+  <img class="topMarg20" src="images/anydo-mockups-1.png" style="max-width: 100%;"/>
   <div class="clear"></div>
 </div>
 

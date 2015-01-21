@@ -1,0 +1,85 @@
+.leftNavContainer
+  width: 204px
+  float: left
+  position: relative
+  left: 0
+  top: 0
+  display: block
+  background: white
+  border-top: 0
+
+.leftNav
+  padding: $mainPadding 0
+
+  .subTab
+    color: $darkGray
+    font-size: 0.9em
+    padding-left: 38px
+
+    &:visited
+      color: $lightGray
+
+  a
+    display: block
+    position: relative
+    padding: 5px $mainPadding
+    margin: 0
+    cursor: pointer
+
+    &:before
+      $height: 18px
+      display: block
+      content: ''
+      position: absolute
+      left: 0
+      top: 50%
+      margin-top: $height / 2 * -1 - 1px
+      +opacity( 0 )
+      +triangle-right( $primaryColor, 10px, $height )
+
+    &.mainTab
+      font-weight: bold
+      color: $darkestGray
+
+    &.active,
+    &:hover
+      color: $primaryColor !important
+
+      &:before
+        +opacity( 1 )
+
+
+  .resumeLink
+    margin-top: 10px
+
+#nav
+  margin: 0 0 10px
+  width: 100%
+  display: table
+
+.halfNav, .tabContainer
+  border: 0
+  margin: 6px 0 0
+  padding: 0
+  display: block
+  float: left
+
+.halfNav
+  width: 50%
+
+.tabContainer
+  margin: 0 1.4%
+  width: 47.9%
+
+#nav .tab
+  color: $lightGray
+  display: block
+  font-size: 1.3em
+  text-align: center
+  width: 100%
+  padding: 0.5em 0 0.6em
+
+#nav .tab:hover,
+.activeTab
+  background-color: white !important
+  color: $primaryColor !important

@@ -1,6 +1,6 @@
 <?php
 	$title='portfolio v1';
-	$bodyId='portfoliov1';
+	$body_id='portfoliov1';
 	include 'header.php';
 ?>
 
@@ -64,7 +64,7 @@
     </div>
 
     <div class="clear"></div>
-		
+
 	</div>
 </div>
 <?php include 'includes/footer.php'; ?>

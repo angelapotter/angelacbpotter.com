@@ -1,6 +1,6 @@
 <?php
 $title='Step 1: Add Participants';
-$bodyId='step1';
+$body_id='step1';
 include 'header.php';
 ?>
 
@@ -12,9 +12,9 @@ include 'header.php';
       <div class="nextStep"><div>Step 2</div></div>
     </a>
   </div>
-  
+
 </div>
-        
+
 <!--LEFT BOX-->
 <div class="mainContentFrame">
   <div class="grayHeader">

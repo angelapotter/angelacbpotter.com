@@ -1,6 +1,6 @@
 <?php
 $title='Step 3: Begin Tracking';
-$bodyId='step3';
+$body_id='step3';
 include 'header.php';
 ?>
 
@@ -25,9 +25,9 @@ include 'header.php';
     <div class="clear"></div>
   </div>
   <div class="mainContent step3Content">
-  
+
     <?php include 'progress-bar.php'; ?>
-    
+
     <div id="trackContact" class="tracking">
       <h3 class="question" class="topMarg20"><!-- fill "contact?" --></h3>
       <div class="when">
@@ -88,5 +88,5 @@ include 'header.php';
     </div>
   </div>
 </div>
-  
+
 <?php include 'footer.php'; ?>

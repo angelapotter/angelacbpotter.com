@@ -1,7 +1,7 @@
 <?php
 	$title='miserly app mockup';
-	$bodyId='miserly';
-	$bodyClass='portfolioPage';
+	$body_id='miserly';
+	$body_class='portfolioPage';
 	include $_SERVER["DOCUMENT_ROOT"] . '/includes/header.php';
 ?>
 
@@ -22,9 +22,9 @@
     </div>
 
     <p>This is a mockup I did for a financial planning android app. I wanted it to be really easy to get started with app,
-    	but I also wanted to allow for advanced options. Recently 
-    	<a href="http://www.lukew.com/ff/entry.asp?1007" title="Mad Lib Style Form Increased Conversion by 25-40%">some 
-    		usability studies</a> have suggested that Mad Libs-style forms are a relatively painless way for users to enter information. 
+    	but I also wanted to allow for advanced options. Recently
+    	<a href="http://www.lukew.com/ff/entry.asp?1007" title="Mad Lib Style Form Increased Conversion by 25-40%">some
+    		usability studies</a> have suggested that Mad Libs-style forms are a relatively painless way for users to enter information.
     		I decided to use this style of form for this app to make it less overwhelming to enter complex financial information.
       <p>Below is my initial wireframe for the app.</p>
     <div class="clear"></div>

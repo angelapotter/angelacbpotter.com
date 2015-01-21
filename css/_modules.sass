@@ -18,6 +18,8 @@ $standardBorder: 1px solid $borderGray
 
 $headerHeight: 51px
 
+$standardTransition: 0.3s ease-in
+
 =border-radius($pixels)
   border-radius: $pixels
   -webkit-border-radius: $pixels
@@ -31,7 +33,6 @@ $headerHeight: 51px
 =opacity($opacity)
   opacity: $opacity
   filter: alpha(opacity = $opacity * 100)
-
 
 
 // FROM COMPASS
@@ -65,3 +66,21 @@ $headerHeight: 51px
   -o-transition-delay:      $delay
   -webkit-transition-delay: $delay
   transition-delay:         $delay
+
+
+// CUSTOMS
+
+@mixin transform( $transform )
+  -webkit-transform: $transform
+  -moz-transform: $transform
+  -o-transform: $transform
+  -ms-transform: $transform
+  transform: $transform
+
+@mixin transition-transform( $transition )
+  +transition( transform $transition, -webkit-transform $transition, -moz-transform $transition, -o-transform $transition )
+
+@mixin triangle-right( $color, $width: 11px, $height: 18px )
+  border-left: $width solid $color
+  border-top: ($height / 2) solid transparent
+  border-bottom: ($height / 2) solid transparent

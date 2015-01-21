@@ -1,7 +1,7 @@
 <?php
 	$title='OLSET business cards';
-	$bodyId='olsetBizCards';
-	$bodyClass='portfolioPage';
+	$body_id='olsetBizCards';
+	$body_class='portfolioPage';
 	include $_SERVER["DOCUMENT_ROOT"] . '/includes/header.php';
 ?>
 
